@@ -13,7 +13,7 @@
             <!--->
             <div class="form-group">
                  <label for="alias">Publier</label><br>
-                 <input type="checkbox" name="pb" id="pb">
+                 <input type="checkbox" name="pb" value="1" id="pb">
             </div>
 
             <!---->
