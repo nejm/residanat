@@ -12,15 +12,14 @@
         <?php
             foreach ($articles as $article)
             {
-                echo "<tr><td>".$article->id.
+                echo "<form action='".base_url("admin/modifier/")."' method='post'><tr><td>".$article->id.
                      "</td><td>".$article->titre.
                      "</td><td>";
                     if($article->etat == 1) echo "Oui"; else echo "Non";
                     echo "</td><td><input type='submit' value='modifier' class='btn btn-default'></td></tr>";
+                    echo "<input type='hidden' name='a' value=".$article->id."></form>";
             }
         ?>
-        <input type="hidden" name="a" value=<?=$article->id;?>>
-
     </table>
 </form>
 </div>

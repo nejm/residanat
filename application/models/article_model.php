@@ -21,6 +21,17 @@ class Article_model extends CI_Model {
         return false;
     }
 
+    function getById($id)
+    {
+        $q = $this->db
+            ->where('id',$id)
+            ->get("article");
+        if ($q->num_rows >0)
+            return $q->result();
+        return false;
+    }
+
+
     function ajout($data)
     {
         //if (is_null($data['pb'])) $data['pb']=0;

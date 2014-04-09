@@ -86,21 +86,24 @@ class Admin extends CI_Controller{
         $this->load->view('administration/ajout_article',$data);
     }
 
-    function modifier($x=0)
+    function modifier($a=0)
     {
+        $a=$this->input->post("a");
         $data=[];
-        if($x===0)
+        $this->load->model("article_model");
+        if($a==0)
         {
-            $this->load->model("article_model");
             $articles = $this->article_model->getAll();
             $data['articles']=$articles;
-
             $this->load->view("administration/dashboardheader");
             $this->load->view("administration/liste_article",$data);
         }
         else
         {
-            echo $x;
+            $article = $this->article_model->getById($a);
+            $data['article']=$article;
+            $this->load->view("administration/dashboardheader");
+            $this->load->view("administration/modif_article",$data);
         }
     }
 
