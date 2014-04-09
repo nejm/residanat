@@ -19,11 +19,11 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="http://getbootstrap.com/examples/dashboard/#">Project name</a>
+            <a class="navbar-brand" href="">Administration</a>
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="http://getbootstrap.com/examples/dashboard/#">Dashboard</a></li>
+                <li><a href=<?=base_url('admin/dashboard')?>>Dashboard</a></li>
                 <li><a href="http://getbootstrap.com/examples/dashboard/#">Settings</a></li>
                 <li><a href="http://getbootstrap.com/examples/dashboard/#">Profile</a></li>
                 <li><a href=<?=base_url()."admin/logout";?>>Déconexion</a></li>

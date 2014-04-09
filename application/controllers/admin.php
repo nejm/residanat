@@ -40,7 +40,7 @@ class Admin extends CI_Controller{
             }else
             {
                 $data['msg']="<div class='alert alert-danger'>
-                <a class='close'' data-dismiss='alert'>×</a>
+                <a class='close'' data-dismiss='alert'>x</a>
                 <strong>Error !</strong>
                 Login ou mot de passe invalide</div>";
             }
@@ -88,6 +88,7 @@ class Admin extends CI_Controller{
 
     function modifier()
     {
+        if(!isset($_SESSION['name'])) redirect('admin/');
         $a=$this->input->post("a");
         $data=[];
         $this->load->model("article_model");
@@ -100,6 +101,7 @@ class Admin extends CI_Controller{
         }
         else
         {
+            if(!isset($_SESSION['name'])) redirect('admin/');
             $article = $this->article_model->getById($a);
             $data['article']=$article;
             $this->load->view("administration/dashboardheader");
@@ -123,13 +125,37 @@ class Admin extends CI_Controller{
 
     }
 
-    function consulteChoix()
+    function choix()
     {
+        if(!isset($_SESSION['name'])) redirect('admin/');
+        $this->load->model('etudiant_model');
 
+        $this->load->library('pagination');
+
+        $config['full_tag_open'] = "<ul classe='pagination'>";
+        $config['full_tag_close'] = "</ul>";
+
+        $config['base_url'] = base_url('admin/choix');
+        $config['total_rows'] = $this->etudiant_model->getNbr();
+        $config['per_page'] = 20;
+
+        $data=[];
+
+        $this->pagination->initialize($config);
+
+        $page = ($this->uri->segment(3)) ? $this->uri->segment(3) : 0;
+        $data["etudiants"] = $this->etudiant_model->
+            getEtudiant($config["per_page"], $page);
+        $data["links"] = $this->pagination->create_links();
+
+        //$data['etudiants'] = $this->etudiant_model->getAll();
+        $this->load->view('administration/dashboardheader');
+        $this->load->view('administration/choix',$data);
     }
 
     function logout()
     {
+        if(!isset($_SESSION['name'])) redirect('admin/');
         $this->session->unset_userdata('id');
         $this->session->unset_userdata('name');
         $this->session->set_flashdata('success', 'Vous êtes désormais déconnecté(e).');
