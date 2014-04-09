@@ -1,38 +1,35 @@
-<!doctype html>
-<html>
-<head>
-    <link rel="stylesheet" href=<?=css_url("bootstrap.min");?>>
-    <link rel="stylesheet" href=<?=css_url("signin.min");?>>
-</head>
-<body>
-<div class="container">
+<form class="form" role="form" action='<?php echo base_url(); ?>admin/ajout' method='post'>
+        <div class="col-md-6">
+            <div class="form-group">
+                <label for="titre">Titre</label>
+                <input type="text" class="form-control" name="titre" id="titre">
+            </div>
 
-    <form role="form">
+            <div class="form-group">
+                <label for="alias">Alias</label>
+                <input type="text" class="form-control" name="alias" id="alias">
+            </div>
 
-        <div class="form-group">
-            <label for="exampleInputEmail1">Titre</label>
-            <input type="email" class="form-control">
+            <!--->
+            <div class="form-group">
+                 <label for="alias">Publier</label><br>
+                 <input type="checkbox" name="pb" id="pb">
+            </div>
+
+            <!---->
+
+            <div class="form-group">
+                <label for="pb_par">Publier par</label>
+                <input type="text" class="form-control" name="pb_par" disabled value=<?=$_SESSION['name'];?>>
+            </div>
+             <input type="submit" class="btn btn-primary" value="Envoyer">
         </div>
-
-        <div class="form-group">
-            <label for="exampleInputPassword1">Alias</label>
-            <input type="text" class="form-control">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label for="contenu">Contenu</label>
+                <textarea cols="8" rows="10" class="form-control" name="contenu" id="contenu"></textarea>
+            </div>
         </div>
-
-        <div class="checkbox">
-            <label>
-                <input type="checkbox"> Publier
-            </label>
-        </div>
-
-        <div class="form-group">
-            <label for="exampleInputEmail1">Contenu</label>
-            <textarea class="form-control" rows="3"></textarea>
-        </div>
-        <button type="submit" class="btn btn-default">Submit</button>
     </form>
-</div>
-<script type="text/javascript" src=<?=js_url("jquery.min");?>></script>
-<script type="text/javascript" src=<?=js_url("bootstrap.min");?>></script>
-</body>
-</html>
+<?=validation_errors();?>
+
