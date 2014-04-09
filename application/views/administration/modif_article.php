@@ -1,5 +1,7 @@
-<form class="form" role="form" action='<?php echo base_url(); ?>admin/modifier' method='post'>
+
+<form class="form" role="form" action='<?php echo base_url(); ?>admin/update' method='post'>
     <div class="col-md-6">
+        <input type="hidden" name="id" value=<?=$article[0]->id?>>
         <div class="form-group">
             <label for="titre">Titre</label>
             <input type="text" class="form-control" name="titre" id="titre" value="<?=$article[0]->titre;?>">
@@ -13,7 +15,12 @@
         <!--->
         <div class="form-group">
             <label for="pb">Publier</label><br>
-            <input type="checkbox" name="pb" value="1" id="pb">
+            <?php
+                if ($article[0]->etat==1)
+                    echo "<input type='checkbox' name='etat' value='1' id='pb' checked>";
+                else
+                    echo "<input type='checkbox' name='etat' value='1' id='pb'>";
+            ?>
         </div>
 
         <!---->

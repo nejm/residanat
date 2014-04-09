@@ -1,16 +1,16 @@
 
     <div class="row placeholders">
         <div class="col-xs-8 col-sm-4 placeholder">
-            <img data-src="holder.js/200x200/auto/sky" class="img-responsive" alt="200x200" src=<?=img_url('etudiant.png')?>>
+            <img data-src="holder.js/200x200/auto/sky" class="img-thumbnail" alt="200x200" src=<?=img_url('etudiant.png')?>>
             <h4>Etudiants</h4>
             <!--<span class="text-muted">Something else</span>-->
         </div>
         <div class="col-xs-8 col-sm-4 placeholder">
-            <img data-src="holder.js/200x200/auto/vine" class="img-responsive" alt="200x200" src=<?=img_url("specialite.png")?>>
+            <img data-src="holder.js/200x200/auto/vine" class="img-thumbnail" alt="200x200" src=<?=img_url("specialite.png")?>>
             <h4>Spécialités</h4>
         </div>
         <div class="col-xs-8 col-sm-4 placeholder">
-            <img data-src="holder.js/200x200/auto/sky" class="img-responsive" alt="200x200" src=<?=img_url('articles.png')?>>
+            <img data-src="holder.js/200x200/auto/sky" class="img-thumbnail" alt="200x200" src=<?=img_url('articles.png')?>>
             <h4>Articles</h4>
 
 <!--        </div>

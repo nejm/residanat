@@ -86,7 +86,7 @@ class Admin extends CI_Controller{
         $this->load->view('administration/ajout_article',$data);
     }
 
-    function modifier($a=0)
+    function modifier()
     {
         $a=$this->input->post("a");
         $data=[];
@@ -105,6 +105,27 @@ class Admin extends CI_Controller{
             $this->load->view("administration/dashboardheader");
             $this->load->view("administration/modif_article",$data);
         }
+    }
+
+    function update()
+    {
+        $data=array(
+            'id'     => $this->input->post('id'),
+            'titre'  => $this->input->post('titre'),
+            'contenu'=> $this->input->post('contenu'),
+            'alias'  => $this->input->post('alias'),
+            'etat'   => $this->input->post('etat'),
+            'par'    => $_SESSION['id']
+        );
+        $this->load->model('article_model');
+        $this->article_model->modifier($data);
+        redirect('admin/modifier');
+
+    }
+
+    function consulteChoix()
+    {
+
     }
 
     function logout()

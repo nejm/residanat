@@ -48,6 +48,15 @@ class Article_model extends CI_Model {
 
     function modifier($data)
     {
-        $update=[];
+        $update=array(
+            'titre'  => $data['titre'],
+            'contenu'=> $data['contenu'],
+            'alias'  => $data['alias'],
+            'etat'   => $data['etat'],
+            'par'    => $data['par']
+        );
+        $this->db->where('id', $data['id']);
+        $this->db->update('article', $update);
+
     }
 } 
