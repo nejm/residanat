@@ -45,16 +45,15 @@ class Admin extends CI_Controller{
                 Login ou mot de passe invalide</div>";
             }
         }
-        $this->load->view("login",$data);
+        $this->load->view("administration/login",$data);
     }
 
     function dashboard()
     {
         if(!isset($_SESSION['name'])) redirect('admin/');
 
-        $this->load->view("dashboardheader");
-        $this->load->view("dashboard");
-        $this->load->view("dashboardfooter");
+        $this->load->view("administration/dashboardheader");
+        $this->load->view("administration/dashboard");
     }
 
     function ajout()
@@ -70,7 +69,6 @@ class Admin extends CI_Controller{
 
         if($this->form_validation->run() !== false)
         {
-            var_dump($_SESSION['id']);
             $this->load->model('article_model');
             $this
                 ->article_model
@@ -84,9 +82,8 @@ class Admin extends CI_Controller{
             redirect('admin/dashboard');
             die();
         }
-        $this->load->view("dashboardheader");
-        $this->load->view('ajout_article',$data);
-        $this->load->view("dashboardfooter");
+        $this->load->view("administration/dashboardheader");
+        $this->load->view('administration/ajout_article',$data);
     }
 
     function modifier($x=0)
@@ -98,9 +95,12 @@ class Admin extends CI_Controller{
             $articles = $this->article_model->getAll();
             $data['articles']=$articles;
 
-            $this->load->view("dashboardheader");
-            $this->load->view("liste_article",$data);
-            $this->load->view("dashboardfooter");
+            $this->load->view("administration/dashboardheader");
+            $this->load->view("administration/liste_article",$data);
+        }
+        else
+        {
+            echo $x;
         }
     }
 
