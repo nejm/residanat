@@ -132,8 +132,26 @@ class Admin extends CI_Controller{
 
         $this->load->library('pagination');
 
-        $config['full_tag_open'] = "<ul classe='pagination'>";
-        $config['full_tag_close'] = "</ul>";
+        $config['full_tag_open'] = '<ul class="pagination">';
+        $config['full_tag_close'] = '</ul>';
+        $config['first_link'] = '&laquo; First';
+        $config['first_tag_open'] = '<li class="prev page">';
+        $config['first_tag_close'] = '</li>';
+        $config['last_link'] = 'Last &raquo;';
+        $config['last_tag_open'] = '<li class="next page">';
+        $config['last_tag_close'] = '</li>';
+        $config['next_link'] = '>';
+        $config['next_tag_open'] = '<li class="next page">';
+        $config['next_tag_close'] = '</li>';
+        $config['prev_link'] = '<';
+        $config['prev_tag_open'] = '<li class="prev page">';
+        $config['prev_tag_close'] = '</li>';
+        $config['cur_tag_open'] = '<li class="active"><a href="">';
+        $config['cur_tag_close'] = '</a></li>';
+        $config['num_tag_open'] = '<li class="page">';
+        $config['num_tag_close'] = '</li>';
+        $config['anchor_class'] = 'class="follow_link"';
+
 
         $config['base_url'] = base_url('admin/choix');
         $config['total_rows'] = $this->etudiant_model->getNbr();
@@ -148,9 +166,47 @@ class Admin extends CI_Controller{
             getEtudiant($config["per_page"], $page);
         $data["links"] = $this->pagination->create_links();
 
-        //$data['etudiants'] = $this->etudiant_model->getAll();
+
         $this->load->view('administration/dashboardheader');
         $this->load->view('administration/choix',$data);
+    }
+
+    function media()
+    {
+        $this->load->model('media_model');
+        $data['img'] = $this->media_model->getAll();
+        $this->load->view('administration/dashboardheader');
+        $this->load->view('administration/liste_media',$data);
+
+        if( isset($_POST['upload']) ) // si formulaire soumis
+        {
+            $content_dir = 'assets/img/'; // dossier où sera déplacé le fichier
+            $tmp_file = $_FILES['fichier']['tmp_name'];
+            if( !is_uploaded_file($tmp_file) )
+            {
+                exit("Le fichier est introuvable");
+            }
+            // on vérifie maintenant l'extension
+            $type_file = $_FILES['fichier']['type'];
+            if( !strstr($type_file, 'jpg') && !strstr($type_file, 'jpeg') && !strstr($type_file, 'png') && !strstr($type_file, 'gif') )
+            {
+                exit("Le fichier n'est pas une image");
+            }
+            // on fait un test de sécurité
+            $name_file = $_FILES['fichier']['name'];
+            if( preg_match('#[\x00-\x1F\x7F-\x9F/\\\\]#', $name_file) )
+            {
+                exit("Nom de fichier non valide");
+            }
+            // on copie le fichier dans le dossier de destination
+            else if( !move_uploaded_file($tmp_file, $content_dir . $name_file) )
+            {
+                exit("Impossible de copier le fichier dans $content_dir");
+            }
+
+            redirect('admin/media','refresh');
+        }
+
     }
 
     function logout()
