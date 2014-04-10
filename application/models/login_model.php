@@ -4,21 +4,26 @@ class Login_model extends CI_Model{
     function __construct(){
         parent::__construct();
     }
-    
+
+
     public function validate($cin,$insc)
     {
-        $q = $this
+       // $query = $this->db->get('candidats');
+        $q = $this->db->get_where('candidats', array('cin' => $cin,'num'=>$insc));
+       /* $q = $this
                 ->db
                 ->where('cin',$cin)
-                ->where('insc',$insc)
+                ->where('num',$insc)
                 ->limit(1)
-                ->get('user');
+                ->get('condidats');*/
         // Let's check if there are any results
+
         if($q->num_rows > 0)
         {
             return $q->row();
         }
         return false;
     }
+
 }
 ?>
