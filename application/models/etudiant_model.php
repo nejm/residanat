@@ -19,6 +19,12 @@ class Etudiant_model extends CI_Model {
         return $q->result();
     }
 
+    function getByCin($cin)
+    {
+        $q = $this->db->where('cin',$cin)->limit(1)->get("candidats");
+        return $q->row();
+    }
+
     function getNbr()
     {
         return $this->db->count_all_results('candidats');;

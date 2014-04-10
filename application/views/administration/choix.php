@@ -20,6 +20,7 @@
         <th>Nationalité</th>
         <th>Résultat</th>
         <th>Rang</th>
+        <th>Choix</th>
     </tr>
     </thead>
     <?php
@@ -31,8 +32,11 @@
                       <td>".ucwords(strtolower($etudiant->nom))."</td>
                       <td>".ucfirst(strtolower($etudiant->nationalite))."</td>
                       <td>".round($etudiant->moyenne,2)."</td>
-                      <td>{$etudiant->rang}</td>
-                      </tr>";
+                      <td>{$etudiant->rang}</td><td>";
+
+            if ($etudiant->deja_choisit)
+                echo "<a href=".base_url("admin/choix/".$etudiant->cin).">Voir</a>";
+            echo     "</td></tr>";
         }
     ?>
 </table>

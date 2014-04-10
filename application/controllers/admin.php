@@ -89,9 +89,14 @@ class Admin extends CI_Controller{
     function modifier()
     {
         if(!isset($_SESSION['name'])) redirect('admin/');
+        if(isset($_SESSION['flash']))
+        {
+            $data['msg'] = "<div id='alert' class='alert alert-success'><a class='close'>x</a>{$_SESSION['flash']}</div>";
+            unset($_SESSION['flash']);
+        }
         $a=$this->input->post("a");
-        $data=[];
         $this->load->model("article_model");
+        //afficher toutes la liste des article
         if($a==0)
         {
             $articles = $this->article_model->getAll();
@@ -101,11 +106,11 @@ class Admin extends CI_Controller{
         }
         else
         {
-            if(!isset($_SESSION['name'])) redirect('admin/');
             $article = $this->article_model->getById($a);
             $data['article']=$article;
             $this->load->view("administration/dashboardheader");
             $this->load->view("administration/modif_article",$data);
+
         }
     }
 
@@ -121,54 +126,66 @@ class Admin extends CI_Controller{
         );
         $this->load->model('article_model');
         $this->article_model->modifier($data);
+        $_SESSION['flash'] = "Article '{$this->input->post('titre')}' modifié avec succées";
         redirect('admin/modifier');
 
     }
 
-    function choix()
+    function choix($cin=NULL)
     {
         if(!isset($_SESSION['name'])) redirect('admin/');
-        $this->load->model('etudiant_model');
+        if(is_null($cin) or $cin<=100000)
+        {
+            $this->load->model('etudiant_model');
 
-        $this->load->library('pagination');
+            $this->load->library('pagination');
 
-        $config['full_tag_open'] = '<ul class="pagination">';
-        $config['full_tag_close'] = '</ul>';
-        $config['first_link'] = '&laquo; First';
-        $config['first_tag_open'] = '<li class="prev page">';
-        $config['first_tag_close'] = '</li>';
-        $config['last_link'] = 'Last &raquo;';
-        $config['last_tag_open'] = '<li class="next page">';
-        $config['last_tag_close'] = '</li>';
-        $config['next_link'] = '>';
-        $config['next_tag_open'] = '<li class="next page">';
-        $config['next_tag_close'] = '</li>';
-        $config['prev_link'] = '<';
-        $config['prev_tag_open'] = '<li class="prev page">';
-        $config['prev_tag_close'] = '</li>';
-        $config['cur_tag_open'] = '<li class="active"><a href="">';
-        $config['cur_tag_close'] = '</a></li>';
-        $config['num_tag_open'] = '<li class="page">';
-        $config['num_tag_close'] = '</li>';
-        $config['anchor_class'] = 'class="follow_link"';
-
-
-        $config['base_url'] = base_url('admin/choix');
-        $config['total_rows'] = $this->etudiant_model->getNbr();
-        $config['per_page'] = 20;
-
-        $data=[];
-
-        $this->pagination->initialize($config);
-
-        $page = ($this->uri->segment(3)) ? $this->uri->segment(3) : 0;
-        $data["etudiants"] = $this->etudiant_model->
-            getEtudiant($config["per_page"], $page);
-        $data["links"] = $this->pagination->create_links();
+            $config['full_tag_open'] = '<ul class="pagination">';
+            $config['full_tag_close'] = '</ul>';
+            $config['first_link'] = '&laquo; First';
+            $config['first_tag_open'] = '<li class="prev page">';
+            $config['first_tag_close'] = '</li>';
+            $config['last_link'] = 'Last &raquo;';
+            $config['last_tag_open'] = '<li class="next page">';
+            $config['last_tag_close'] = '</li>';
+            $config['next_link'] = '>';
+            $config['next_tag_open'] = '<li class="next page">';
+            $config['next_tag_close'] = '</li>';
+            $config['prev_link'] = '<';
+            $config['prev_tag_open'] = '<li class="prev page">';
+            $config['prev_tag_close'] = '</li>';
+            $config['cur_tag_open'] = '<li class="active"><a href="">';
+            $config['cur_tag_close'] = '</a></li>';
+            $config['num_tag_open'] = '<li class="page">';
+            $config['num_tag_close'] = '</li>';
+            $config['anchor_class'] = 'class="follow_link"';
 
 
-        $this->load->view('administration/dashboardheader');
-        $this->load->view('administration/choix',$data);
+            $config['base_url'] = base_url('admin/choix');
+            $config['total_rows'] = $this->etudiant_model->getNbr();
+            $config['per_page'] = 20;
+
+            $data=[];
+
+            $this->pagination->initialize($config);
+
+            $page = ($this->uri->segment(3)) ? $this->uri->segment(3) : 0;
+            $data["etudiants"] = $this->etudiant_model->
+                getEtudiant($config["per_page"], $page);
+            $data["links"] = $this->pagination->create_links();
+
+
+            $this->load->view('administration/dashboardheader');
+            $this->load->view('administration/choix',$data);
+        }else
+        {
+            $this->load->model('choix_model');
+            $this->load->model('etudiant_model');
+            $data ['choix'] = $this->choix_model->get($cin);
+            $data ['etudiant'] = $this->etudiant_model->getByCin($cin);
+            $this->load->view('administration/dashboardheader');
+            $this->load->view('administration/liste_choix',$data);
+        }
     }
 
     function media()
@@ -218,5 +235,4 @@ class Admin extends CI_Controller{
         session_destroy();
         redirect(base_url('admin'), 'refresh');
     }
-
 } 
