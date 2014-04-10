@@ -5,35 +5,47 @@ class Login extends CI_Controller{
     function __construct()
     {
         parent::__construct();
+        $this->load->model('login_model');
         session_start();
+
     }
 
     public function index()
     {
-        if(isset($_SESSION['cin'])) {
-            redirect('resultat');
+         $this->load->view('login_view');
+
+    }
+
+     public function user(){
+
+ 
+       /* if(isset($_SESSION['cin'])) {
+         // redirect('resultat');
+
             return;
-        }
+        }*/
         $this->load->library('form_validation');
-        $this->form_validation->set_rules('username','User Name','trim|required');
-        $this->form_validation->set_rules('password','Password','trim|required');
+        $this->form_validation->set_rules('cin','CIN','trim|required');
+        $this->form_validation->set_rules('Num_inscription','numero d\'inscription','trim|required');
+
 
         if($this->form_validation->run() !== false)
         {
-            $this->load->model('login_model');
-            $res = $this
+    
+             $res = $this
                     ->login_model
                     ->validate(
-                        $this->input->post('username'),
-                        $this->input->post('password')
+                        $this->input->post('cin'),
+                        $this->input->post('Num_inscription')
                         );
             if($res !== false)
             {
-                $_SESSION['cin']=$this->input->post('username');
+                $_SESSION['cin']=$this->input->post('cin');
                 redirect('resultat');
+               
             }
         }
-        $this->load->view('login_view');
+        
     }
 
     public function logout()
