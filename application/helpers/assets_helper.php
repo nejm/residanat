@@ -22,3 +22,18 @@
              return base_url().'assets/img/'.$nom;
          }
      }
+     if ( ! function_exists('zoombox_css()'))
+     {
+         function zoombox_css()
+         {
+             return base_url().'assets/zoombox/zoombox.css';
+         }
+     }
+     if ( ! function_exists('zoombox_js()'))
+     {
+         function zoombox_js()
+         {
+             return base_url().'assets/zoombox/zoombox.js';
+         }
+     }
+

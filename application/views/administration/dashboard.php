@@ -1,4 +1,15 @@
-
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+            <ul class="nav nav-sidebar">
+                <li><a href=<?=base_url("admin/ajout/");?>>Nouveau Article</a></li>
+                <li><a href=<?=base_url("admin/modifier/");?>>Modifier Article</a></li>
+                <li><a href=<?=base_url("admin/media")?>>Gérer Media</a></li>
+                <li><a href=<?=base_url("admin/choix/");?>>Consulter Choix</a></li>
+            </ul>
+        </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+            <h1 class="page-header">Dashboard</h1>
     <div class="row placeholders">
         <div class="col-xs-8 col-sm-4 placeholder">
             <img data-src="holder.js/200x200/auto/sky" class="img-thumbnail" alt="200x200" src=<?=img_url('etudiant.png')?>>
@@ -20,10 +31,7 @@
             <span class="text-muted">Something else</span>
         </div>-->
     </div>
-
-
-
-
+</div>
 </div>
 </div>
 </div>
