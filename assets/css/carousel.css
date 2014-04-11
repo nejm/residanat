@@ -177,6 +177,6 @@ color: #FFF;
 
 @media (min-width: 992px) {
   .featurette-heading {
-    margin-top: 120px;
+    margin-top: 20;
   }
 }

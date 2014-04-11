@@ -30,6 +30,8 @@
                     <li><a href="#">One more separated link</a></li>
                   </ul>
                 </li>
+                <li><a href="#login">resultat</a></li>
+                <li><a href='<?php echo base_url(); ?>signup'>spécialité</a></li>
               </ul>
             </div>
           </div>
@@ -52,11 +54,11 @@
         <div class="item active">
           <img data-src="holder.js/900x500/auto/#777:#7a7a7a/text:First slide"  src=<?=img_url("medical3.jpg");?>>
           <div class="container">
-            <div class="carousel-caption">
+           <!-- <div class="carousel-caption">
               <h1>Example headline.</h1>
               <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
               <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
-            </div>
+            </div>-->
           </div>
         </div>
         <div class="item">

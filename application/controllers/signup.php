@@ -17,17 +17,21 @@ class SignUp extends CI_Controller{
 
 		$data['title'] = 'signUp form';
 
-		$this->form_validation->set_rules('youremail', 'youremail', 'required');
-		$this->form_validation->set_rules('password', 'password', 'required');
+		$this->form_validation->set_rules('Numéro de convocation', 'Numéro de convocation', 'required');
+		$this->form_validation->set_rules('Numéro cin', 'Numéro cin', 'required');
+		$this->form_validation->set_rules('email','email','required');
 
 		if ($this->form_validation->run() === FALSE)
 		{
 
 			$this->load->view('header');
-			$this->load->view('signUp');
+			$this->load->view('register');
 			$this->load->view('footer');
-		}
-		
+		}	
+	}
+
+	function valider(){
+
 	}
 
 

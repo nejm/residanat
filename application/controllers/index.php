@@ -11,7 +11,8 @@ class Index extends CI_Controller {
 
     function index()
     {
-        $this->load->view("accueil");
+        $this->load->view("pages_Content");
+        $this->load->view("features");
         $this->load->view("footer");
     }
     function textes_reglementaires()
