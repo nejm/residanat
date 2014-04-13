@@ -22,7 +22,6 @@ class Login extends CI_Controller{
         $this->load->library('form_validation');
         $this->form_validation->set_rules('cin','CIN','trim|required');
         $this->form_validation->set_rules('Num_inscription','numero d\'inscription','trim|required');
-        $this->form_validation->set_rules('username', 'Username', 'callback_username_check');
         $this->form_validation->set_message('required','il faut saisir %s');
         
 
