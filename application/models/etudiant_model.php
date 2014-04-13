@@ -1,10 +1,4 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: Nejm
- * Date: 09/04/14
- * Time: 21:38
- */
+<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 class Etudiant_model extends CI_Model {
 
@@ -27,7 +21,15 @@ class Etudiant_model extends CI_Model {
 
     function getNbr()
     {
-        return $this->db->count_all_results('candidats');;
+        return $this->db->count_all_results('candidats');
+    }
+
+    function getMadeChoice()
+    {
+        $q = $this->db->where('deja_choisit',1)->get('candidats');
+        if($q->num_rows > 0)
+            return $q->result();
+        return false;
     }
 
     public function getEtudiant($limit, $start) {
@@ -42,4 +44,17 @@ class Etudiant_model extends CI_Model {
         }
         return false;
     }
+
+    function ajout($data)
+    {
+        $insert=array(
+            'num'  => $data['conv'],
+            'cin'=> $data['cin'],
+            'nom'  => $data['nom'],
+            'nationalite'   => $data['nationalite']
+        );
+        $this->db->insert('article',$insert);
+
+    }
+
 }

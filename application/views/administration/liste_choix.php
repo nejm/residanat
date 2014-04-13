@@ -1,10 +1,10 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-sm-3 col-md-2 sidebar">
-            <ul class="nav nav-sidebar">
+            <ul class="nav nav-pills nav-stacked">
                 <li><a href=<?=base_url("admin/ajout/");?>>Nouveau Article</a></li>
                 <li><a href=<?=base_url("admin/modifier/");?>>Modifier Article</a></li>
-                <li><a href=<?=base_url("admin/media")?>>Gérer Media</a></li>
+                <li><a href=<?=base_url("admin/media");?>>Gérer Media</a></li>
                 <li class="active"><a href=<?=base_url("admin/choix/");?>>Consulter Choix</a></li>
             </ul>
         </div>
@@ -20,9 +20,15 @@
             </h4>
             <table class="table table-bordered table-hover">
                 <?php
-                foreach ($choix as $c)
+                if($choix !== false)
                 {
-                    echo "<tr><td>{$c->libelle}</td><td>{$c->priorite}</td></tr>";
+                    foreach ($choix as $c)
+                    {
+                        echo "<tr><td>{$c->libelle}</td><td>{$c->priorite}</td></tr>";
+                    }
+                }else
+                {
+                    echo "Cet étudiant n'a pas encore fait son choix";
                 }
                 ?>
             </table>

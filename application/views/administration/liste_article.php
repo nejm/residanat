@@ -1,10 +1,10 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-sm-3 col-md-2 sidebar">
-            <ul class="nav nav-sidebar">
+            <ul class="nav nav-pills nav-stacked">
                 <li><a href=<?=base_url("admin/ajout/");?>>Nouveau Article</a></li>
                 <li class="active"><a href=<?=base_url("admin/modifier/");?>>Modifier Article</a></li>
-                <li><a href="">Gérer Media</a></li>
+                <li><a href=<?=base_url("admin/media/");?>>Gérer Media</a></li>
                 <li><a href=<?=base_url("admin/choix/");?>>Consulter Choix</a></li>
             </ul>
         </div>
@@ -25,12 +25,11 @@
                     <?php
                         foreach ($articles as $article)
                         {
-                            echo "<form action='".base_url("admin/modifier/")."' method='post'><tr><td>".$article->id.
+                            echo "<tr><td>".$article->id.
                                  "</td><td>".$article->titre.
                                  "</td><td>";
                                 if($article->etat == 1) echo "Oui"; else echo "Non";
-                                echo "</td><td><input type='submit' value='modifier' class='btn btn-default'></td></tr>";
-                                echo "<input type='hidden' name='a' value=".$article->id."></form>";
+                                echo "</td><td><a href='".base_url("admin/modifier/{$article->id}")."' class='btn btn-info'>Modifier</a></td></tr>";
                         }
                     ?>
                 </table>
@@ -44,7 +43,7 @@
 <?php
 if(isset($msg)):?>
     <script type="text/javascript">
-            alertify.success("Article modifié");
+            alertify.success("<?php echo $article->titre;?> modifié avec succées");
     </script>
 <?php endif ?>
 </body>

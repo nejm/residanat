@@ -1,7 +1,7 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-sm-3 col-md-2 sidebar">
-            <ul class="nav nav-sidebar">
+            <ul class="nav nav-pills nav-stacked">
                 <li><a href=<?=base_url("admin/ajout/");?>>Nouveau Article</a></li>
                 <li><a href=<?=base_url("admin/modifier/");?>>Modifier Article</a></li>
                 <li><a href=<?=base_url("admin/media")?>>Gérer Media</a></li>
@@ -35,7 +35,7 @@
                       <td>{$etudiant->rang}</td><td>";
 
             if ($etudiant->deja_choisit)
-                echo "<a href=".base_url("admin/choix/".$etudiant->cin).">Voir</a>";
+                echo "<a class='label label-primary' href=".base_url("admin/choix/".$etudiant->cin).">Voir</a>";
             echo     "</td></tr>";
         }
     ?>

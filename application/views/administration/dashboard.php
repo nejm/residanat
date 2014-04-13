@@ -1,11 +1,12 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-sm-3 col-md-2 sidebar">
-            <ul class="nav nav-sidebar">
+            <ul class="nav nav-pills nav-stacked">
                 <li><a href=<?=base_url("admin/ajout/");?>>Nouveau Article</a></li>
-                <li><a href=<?=base_url("admin/modifier/");?>>Modifier Article</a></li>
+                <li><a href=<?=base_url("admin/modifier/");?>>Liste Article</a></li>
                 <li><a href=<?=base_url("admin/media")?>>Gérer Media</a></li>
-                <li><a href=<?=base_url("admin/choix/");?>>Consulter Choix</a></li>
+                <li><a href=<?=base_url("admin/choix/");?>>Liste Etudiant</a></li>
+                <li><a href="">Ajouter Etudiant</a></li>
             </ul>
         </div>
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
@@ -14,11 +15,12 @@
         <div class="col-xs-8 col-sm-4 placeholder">
             <img data-src="holder.js/200x200/auto/sky" class="img-thumbnail" alt="200x200" src=<?=img_url('etudiant.png')?>>
             <h4>Etudiants</h4>
-            <!--<span class="text-muted">Something else</span>-->
+            <span class="text-muted">Total de <?=$nombre?></span>
         </div>
         <div class="col-xs-8 col-sm-4 placeholder">
             <img data-src="holder.js/200x200/auto/vine" class="img-thumbnail" alt="200x200" src=<?=img_url("specialite.png")?>>
             <h4>Spécialités</h4>
+            <span class="text-muted">Total de <?=$places->nbr_place?> places libres</span>
         </div>
         <div class="col-xs-8 col-sm-4 placeholder">
             <img data-src="holder.js/200x200/auto/sky" class="img-thumbnail" alt="200x200" src=<?=img_url('articles.png')?>>
