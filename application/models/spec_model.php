@@ -18,4 +18,10 @@ class Spec_model extends CI_Model{
             ->get('specialite');
         return $q->result();
     }
+
+    function getSum()
+    {
+        return $this->db->select_sum('nbr_place')->get('specialite')->row();
+
+    }
 } 

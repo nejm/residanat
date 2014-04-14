@@ -7,6 +7,9 @@
     <link rel="stylesheet" href=<?=css_url("dashboard");?>>
     <link rel="stylesheet" href=<?=css_url("flat-ui");?>>
     <link rel="stylesheet" href=<?=css_url("bootstrap-switch");?>>
+    <link rel="stylesheet" href=<?=css_url("alertify.bootstrap");?>>
+    <link rel="stylesheet" href=<?=css_url("alertify.core");?>>
+    <link rel="stylesheet" href=<?=css_url("alertify.default");?>>
     <link rel="stylesheet" href=<?=zoombox_css();?>>
 
 
