@@ -91,7 +91,7 @@ class SignUp extends CI_Controller{
 			$this->email->message($msgBody);	
 
 			if($this->email->send()){
-			 	$data['msg']="email sended successfully";
+			 	$data['msg']="email sent successfully";
 			}
 			
 			else
