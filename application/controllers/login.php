@@ -10,26 +10,27 @@ class Login extends CI_Controller{
 
     }
 
-    public function index()
-    {
-         $this->load->view('login_view');
-
-    }
+   
 
      public function user()
      {
-        if(isset($_SESSION['cin'])) {
+       /* if(isset($_SESSION['cin'])) {
             redirect('resultat');
             return;
-        }
+        }*/
+         $data=[];
         $this->load->library('form_validation');
         $this->form_validation->set_rules('cin','CIN','trim|required');
         $this->form_validation->set_rules('Num_inscription','numero d\'inscription','trim|required');
+        $this->form_validation->set_message('required','il faut saisir %s');
+        
+
 
 
         if($this->form_validation->run() !== false)
         {
     
+
              $res = $this
                     ->login_model
                     ->validate(
@@ -41,8 +42,21 @@ class Login extends CI_Controller{
                 $_SESSION['cin']=$this->input->post('cin');
                 redirect('resultat');
                
+            }else{
+                 $data['err_message'] ='votre numero de convocation ou votre cin est incorrect';
+                 $this->load->view('header');
+                 $this->load->view('errors_View/login',$data);
+                 $this->load->view('footer');
+                
             }
         }
+        else{
+                 $data['err_message']=validation_errors();
+                 $this->load->view('header');
+                 $this->load->view('errors_View/login',$data);
+                 $this->load->view('footer');
+        }
+               
         
     }
 

@@ -19,13 +19,49 @@ body {
   right: 0;
   left: 0;
   z-index: 20;
+
 }
+.navbar-inverse{
+  background-color: #7586f1;
+}
+.navbar-collapse, .navbar-inverse .navbar-form {
+border-color: #7586f1;
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus {
+color: #fff;
+background-color: #7586f1;
+}
+
+.navbar-inverse {
+border-color: #7586f1;
+}
+.navbar-inverse .navbar-nav>li>a {
+ color: #FFF;
+}
+.navbar-inverse .navbar-brand {
+color: #FFF;
+}
+
+
+
+/*control */
+.carousel-control.left{
+  background-image: linear-gradient(to right,rgba(0, 20, 250, 0.5) 0,rgba(0,0,0,.0001) 100%);
+}
+.carousel-control.right{
+  background-image: linear-gradient(to left,rgba(0, 20, 250, 0.5) 0,rgba(0,0,0,.0001) 100%);
+}
+
+
 
 /* Flip around the padding for proper display in narrow viewports */
 .navbar-wrapper .container {
   padding-right: 0;
   padding-left: 0;
+
 }
+
 .navbar-wrapper .navbar {
   padding-right: 15px;
   padding-left: 15px;
@@ -48,7 +84,6 @@ body {
 /* Declare heights because of positioning of img element */
 .carousel .item {
   height: 500px;
-  background-color: #777;
 }
 .carousel-inner > .item > img {
   position: absolute;
@@ -142,6 +177,6 @@ body {
 
 @media (min-width: 992px) {
   .featurette-heading {
-    margin-top: 120px;
+    margin-top: 20;
   }
 }
