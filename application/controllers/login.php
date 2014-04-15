@@ -10,14 +10,21 @@ class Login extends CI_Controller{
 
     }
 
-   
+   function index()
+    {
+       if(isset($_SESSION['cin'])) {
+            redirect('resultat');
+            return;
+        }
+    }
 
      public function user()
      {
-       /* if(isset($_SESSION['cin'])) {
+         if(isset($_SESSION['cin'])) {
             redirect('resultat');
             return;
-        }*/
+        }
+       
          $data=[];
         $this->load->library('form_validation');
         $this->form_validation->set_rules('cin','CIN','trim|required');

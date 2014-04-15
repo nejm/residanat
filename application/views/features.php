@@ -26,12 +26,11 @@
                   <input class="form-control" placeholder="CIN" name="cin" type="text">
               </div>
               <div class="form-group">
-                <input class="form-control" placeholder="numéro d'inscription" name="password" type="password" value="">
+                <input class="form-control" placeholder="numéro d'inscription" name="Num_inscription" type="password" >
               </div>
               <input class="btn btn-lg btn-success btn-block" type="submit" value="Login">
             </fieldset>
               </form>
-               <?= validation_errors(); ?>
           </div>
       </div>
     </div>

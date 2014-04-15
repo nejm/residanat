@@ -13,16 +13,16 @@ Le mot de passe obtenu est strictement personnel et ne doit être communiqué à
 <div class="row">
     <div class="col-md-4"></div>
     <div class="col-md-4">
-        <form role="form" class="form-horizontal">
+        <form role="form" class="form-horizontal"action='<?php echo base_url(); ?>signup/valider' method='post'>
 
             <div class="form-group">
                 <label for="conv">N°Convocation</label>
-                <input type="text" class="form-control" id="conv" name="Numéro de convocation" placeholder="Numéro de convocation" >
+                <input type="text" class="form-control" id="conv" name="Num_convocation" placeholder="Numéro de convocation" >
             </div>
 
             <div class="form-group">
                 <label for="cin">N°CIN</label>
-                <input type="text" class="form-control" id="cin" placeholder="Numéro cin"  name="Numéro cin"required>
+                <input type="text" class="form-control" id="cin" placeholder="Numéro de cin"  name="Num_cin"required>
             </div>
 
             <div class="form-group">
@@ -32,7 +32,7 @@ Le mot de passe obtenu est strictement personnel et ne doit être communiqué à
 
             <div class="form-group">
                 <label for="tel">Téléphone</label>
-                <input type="number" class="form-control" id="tel" placeholder="Numéro de téléphone" required>
+                <input type="number" class="form-control" id="tel" placeholder="Numéro de téléphone"  name='tel'required>
             </div>
 
             <div class="form-group">
@@ -41,6 +41,7 @@ Le mot de passe obtenu est strictement personnel et ne doit être communiqué à
             </div>
             <input type="submit" class="btn btn-primary" value="Enregistrer">
         </form>
+          <?= validation_errors(); ?>
     </div>
     <div class="col-md-4"></div>
 </div>
