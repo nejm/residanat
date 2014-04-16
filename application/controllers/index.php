@@ -7,6 +7,7 @@ class Index extends CI_Controller {
         parent::__construct();
         $this->load->view("header");
         $this->load->view("menu");
+        session_start();
     }
 
     function index()
@@ -15,6 +16,7 @@ class Index extends CI_Controller {
         $this->load->view("features");
         $this->load->view("footer");
     }
+
     function textes_reglementaires()
     {
         $this->load->view("register");

@@ -33,7 +33,7 @@ class SignUp extends CI_Controller{
 		$this->form_validation->set_rules('Num_convocation', 'Numero de convocation', 'required');
 		$this->form_validation->set_rules('Num_cin', 'Numéro de cin', 'required');
 		$this->form_validation->set_rules('email','email','required');
-		$this->form_validation->set_rules('tel','teliphone','required');
+		$this->form_validation->set_rules('tel','téléphone','required');
 		$this->form_validation->set_message('required', 'il faut saisir le %s');
 
 

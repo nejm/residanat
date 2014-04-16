@@ -216,10 +216,9 @@ class Admin extends CI_Controller
     function logout()
     {
         if (!isset($_SESSION['name'])) redirect('admin/');
-        $this->session->unset_userdata('id');
-        $this->session->unset_userdata('name');
-        $this->session->set_flashdata('success', 'Vous êtes désormais déconnecté(e).');
-        session_destroy();
+        unset($_SESSION['id']);
+        unset($_SESSION['name']);
+        //$this->session->unset_userdata('name');
         redirect(base_url('admin'), 'refresh');
     }
 } 

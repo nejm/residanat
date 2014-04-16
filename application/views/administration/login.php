@@ -9,9 +9,14 @@
 <div class="container">
     <form class="form-signin" role="form" action='<?php echo base_url(); ?>admin/' method='post' role="form">
 
-
-
         <h2 class="form-signin-heading">Connexion</h2>
+
+        <?php
+            if(isset($msg))
+            {
+                echo $msg;
+            }
+        ?>
 
         <input type="text" class="form-control" placeholder="Login" name="login" required autofocus>
         <input type="password" class="form-control" placeholder="Password" name="pass" required>

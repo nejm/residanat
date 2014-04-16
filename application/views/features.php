@@ -15,24 +15,27 @@
    
     <div class="row">
     <div class="col-md-8">
+        <?php if(!isset($_SESSION['cin'])):?>
         <div class="panel panel-default">
           <div class="panel-heading">
             <h3 class="panel-title">Please sign in</h3>
         </div>
-          <div class="panel-body">
-             <form action='<?php echo base_url(); ?>login/user' method='post' name='process'>
-                    <fieldset>
-                <div class="form-group">
-                  <input class="form-control" placeholder="CIN" name="cin" type="text">
+              <div class="panel-body">
+                 <form action='<?php echo base_url(); ?>login/user' method='post' name='process'>
+                        <fieldset>
+                    <div class="form-group">
+                      <input class="form-control" placeholder="CIN" name="cin" type="text">
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control" placeholder="numéro d'inscription" name="Num_inscription" type="password" >
+                  </div>
+                  <input class="btn btn-lg btn-success btn-block" type="submit" value="Login">
+                </fieldset>
+                  </form>
               </div>
-              <div class="form-group">
-                <input class="form-control" placeholder="numéro d'inscription" name="Num_inscription" type="password" >
-              </div>
-              <input class="btn btn-lg btn-success btn-block" type="submit" value="Login">
-            </fieldset>
-              </form>
-          </div>
+
       </div>
+        <?php endif?>
     </div>
  
 </div>

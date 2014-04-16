@@ -55,6 +55,8 @@ if ( ! function_exists('site_url'))
  * Segments can be passed in as a string or an array, same as site_url
  * or a URL to a file can be passed in, e.g. to an image file.
  *
+ * Current URL
+ *
  * @access	public
  * @param string
  * @return	string
@@ -71,8 +73,6 @@ if ( ! function_exists('base_url'))
 // ------------------------------------------------------------------------
 
 /**
- * Current URL
- *
  * Returns the full URL (including segments) of the page where this
  * function is placed
  *

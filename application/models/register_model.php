@@ -13,7 +13,8 @@ class Register_model extends CI_Model{
 		   'cin' => $cin ,
 		   'mail' => $email,
 		   'tel'=>$tel,
-		   'mot_de_passe'=>$pass
+		   'mot_de_passe'=>$pass,
+           'nationalite' => 'Tunisienne'
 		);
 
 		$this->db->insert('candidats', $data); 

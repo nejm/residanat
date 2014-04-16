@@ -5,7 +5,8 @@
                 <li><a href=<?=base_url("admin/ajout/");?>>Nouveau Article</a></li>
                 <li class="active"><a href=<?=base_url("admin/modifier/");?>>Modifier Article</a></li>
                 <li><a href=<?=base_url("admin/media/");?>>Gérer Media</a></li>
-                <li><a href=<?=base_url("admin/choix/");?>>Consulter Choix</a></li>
+                <li><a href=<?=base_url("admin/choix/");?>>Liste Etudiant</a></li>
+                <li><a href=<?=base_url("admin/etudiant/")?>>Ajouter Etudiant</a></li>
             </ul>
         </div>
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">

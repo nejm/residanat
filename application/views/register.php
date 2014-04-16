@@ -6,10 +6,7 @@
 </head>
 <body>
 <div class="container">
- <h2 class="featurette-heading">sign up <span class="text-muted">Accéder au choix des spécialités </span></h2>
-          <p class="lead">Cette inscription est obligatoire et vous permet de recevoir par email et par SMS le mot de passe d’accès pour passer à l’étape 2 (Faites votre choix).
-Veuillez vérifier tous les champs avant validation et génération du mot de passe.
-Le mot de passe obtenu est strictement personnel et ne doit être communiqué à aucune autre personne.</p>
+ <h2 class="featurette-heading">Sign Up <span class="text-muted">Accéder au choix des spécialités </span></h2>
 <div class="row">
     <div class="col-md-4"></div>
     <div class="col-md-4">

