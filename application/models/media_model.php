@@ -23,8 +23,8 @@ class Media_model extends CI_Model{
             $i++;
             $data[$i]=array(
                             'nom'  => $x,
-                            'url'  => "<img src='".base_url()."/assets/img/".$map[$i]."' with=50px height=50px>",
-                            'real' => base_url()."/assets/img/".$map[$i]
+                            'url'  => "<img src='".base_url()."assets/img/".$map[$i]."' with=50px height=50px>",
+                            'real' => base_url()."assets/img/".$map[$i]
             );
         }
 

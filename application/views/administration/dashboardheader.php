@@ -10,6 +10,7 @@
     <link rel="stylesheet" href=<?=css_url("alertify.bootstrap");?>>
     <link rel="stylesheet" href=<?=css_url("alertify.core");?>>
     <link rel="stylesheet" href=<?=css_url("alertify.default");?>>
+    <!--<link rel="stylesheet" href=<?=css_url("foundation.min");?>>-->
     <link rel="stylesheet" href=<?=zoombox_css();?>>
 
 

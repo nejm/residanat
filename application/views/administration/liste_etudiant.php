@@ -10,37 +10,41 @@
             </ul>
         </div>
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-            <h1 class="page-header">Dashboard</h1>
-<table class="table table-bordered table-hover">
-    <thead>
-    <tr>
-        <th>#</th>
-        <th>Num</th>
-        <th>CIN</th>
-        <th>Nom & Prénom</th>
-        <th>Nationalité</th>
-        <th>Résultat</th>
-        <th>Rang</th>
-        <th>Choix</th>
-    </tr>
-    </thead>
-    <?php
-        foreach ($etudiants as $etudiant)
-        {
-            echo "<tr><td>{$etudiant->id}</td>
-                      <td>{$etudiant->num}</td>
-                      <td>{$etudiant->cin}</td>
-                      <td>".ucwords(strtolower($etudiant->nom))."</td>
-                      <td>".ucfirst(strtolower($etudiant->nationalite))."</td>
-                      <td>".round($etudiant->moyenne,2)."</td>
-                      <td>{$etudiant->rang}</td><td>";
+            <h1 class="page-header">Liste des étudiants</h1>
 
-            if ($etudiant->deja_choisit)
-                echo "<a class='label label-primary' href=".base_url("admin/choix/".$etudiant->cin).">Voir</a>";
-            echo     "</td></tr>";
-        }
-    ?>
-</table>
+
+            <table class="table table-bordered table-hover" id="tableau_filtre">
+                <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Num</th>
+                    <th>CIN</th>
+                    <th>Nom & Prénom</th>
+                    <th>Nationalité</th>
+                    <th>Résultat</th>
+                    <th>Rang</th>
+                    <th>Choix</th>
+                </tr>
+                </thead>
+                <tbody>
+                <?php
+                    foreach ($etudiants as $etudiant)
+                    {
+                        echo "<tr><td>{$etudiant->id}</td>
+                                  <td>{$etudiant->num}</td>
+                                  <td>{$etudiant->cin}</td>
+                                  <td>".ucwords(strtolower($etudiant->nom))."</td>
+                                  <td>".ucfirst(strtolower($etudiant->nationalite))."</td>
+                                  <td>".round($etudiant->moyenne,2)."</td>
+                                  <td>{$etudiant->rang}</td><td>";
+
+                        if ($etudiant->deja_choisit)
+                            echo "<a class='label label-primary' href=".base_url("admin/choix/".$etudiant->cin).">Voir</a>";
+                        echo     "</td></tr>";
+                    }
+                ?>
+                </tbody>
+            </table>
 <?php
     echo $links;?>
 
@@ -55,6 +59,6 @@
 <script src=<?=js_url("bootstrap.min")?>></script>
 <script src=<?=js_url("bootstrap-switch")?>></script>
 
-</body>
+
 </body>
 </html>

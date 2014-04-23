@@ -23,6 +23,10 @@ class Etudiant_model extends CI_Model {
     {
         return $this->db->count_all_results('candidats');
     }
+    function getNbrMadeChoice()
+    {
+        return $this->db->where('deja_choisit',1)->count_all_results('candidats');
+    }
 
     function getMadeChoice()
     {
@@ -55,6 +59,18 @@ class Etudiant_model extends CI_Model {
         );
         $this->db->insert('article',$insert);
 
+    }
+
+    function getByMoy($min,$max)
+    {
+        return $this->db->where('moyenne > ',$min)->where('moyenne < ',$max)->count_all_results('candidats');
+    }
+    function searchByName($name)
+    {
+        $q = $this->db->like('nom',$name)->get('candidats');
+        if($q->num_rows > 0)
+            return $q->result();
+        return false;
     }
 
 }

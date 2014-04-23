@@ -32,7 +32,6 @@
                     }
                 ?>
             </table>
-
         </div>
     </div>
 </div>
@@ -50,6 +49,13 @@
     $('input[type=file]').bootstrapFileInput();
     $('.file-inputs').bootstrapFileInput();
 </script>
+<script src=<?=js_url("alertify.min")?>></script>
+<?php
+if(isset($msg)):?>
+    <script type="text/javascript">
+        alertify.error("Extension du fichier invalide");
+    </script>
+<?php endif ?>
 
 </body>
 </body>

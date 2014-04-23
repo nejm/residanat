@@ -11,7 +11,7 @@
         </div>
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
             <h1 class="page-header">Dashboard</h1>
-<form class="form" role="form" action='<?php echo base_url(); ?>admin/ajout' method='post'>
+    <form class="form" role="form" action='<?php echo base_url(); ?>admin/ajout' method='post'>
         <div class="col-md-6">
             <div class="form-group">
                 <label for="titre">Titre</label>
@@ -35,13 +35,11 @@
                 <label for="pb_par">Publier par</label>
                 <input type="text" class="form-control" name="pb_par" disabled value=<?=$_SESSION['name'];?>>
             </div>
-             <input type="submit" class="btn btn-info" value="Envoyer">
-        </div>
-        <div class="col-md-6">
-            <div class="form-group">
-                <label for="contenu">Contenu</label>
-                <textarea cols="8" rows="10" class="form-control" name="contenu" id="contenu"></textarea>
-            </div>
+                <div class="form-group">
+                    <label for="contenu">Contenu</label>
+                    <textarea cols="8" rows="10" class="form-control" name="contenu" id="contenu"></textarea>
+                </div>
+            <input type="submit" class="btn btn-info" value="Envoyer">
         </div>
     </form>
 <?=validation_errors();?>
@@ -52,10 +50,33 @@
 <script src=<?=js_url("jquery")?>></script>
 <script src=<?=js_url("bootstrap.min")?>></script>
 <script src=<?=js_url("bootstrap-switch")?>></script>
+<script src=<?=js_url("tinymce/tinymce.min")?>></script>
 
+<?php
+    $data = "";
+    foreach ($imgs as $i)
+    {
 
+        $data.= "{title: '".$i['nom']."', ";
+        $data.= "value: '".$i['real']."'},";
+    }
+//var_dump($data);
+    substr($data,0,-1);
+?>
 <script type="text/javascript">
     $("#pb").bootstrapSwitch();
+        tinymce.init({
+            selector: "textarea",
+            theme: "modern",
+            plugins: [
+                "advlist autolink link image lists charmap print preview hr spellchecker",
+                "searchreplace wordcount visualblocks visualchars code fullscreen insertdatetime media nonbreaking",
+                "save table contextmenu directionality emoticons template paste textcolor"
+            ],
+            image_list: [
+                <?=$data?>
+            ]
+        });
 </script>
 
 </body>

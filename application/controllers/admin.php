@@ -49,18 +49,31 @@ class Admin extends CI_Controller
     {
         if (!isset($_SESSION['name'])) redirect('admin/');
         $this->load->model('etudiant_model');
-        $this->load->model('spec_model');
-
+        $this->load->model('specialite_model');
+        $moyennes=[];
         $data['nombre'] = $this->etudiant_model->getNbr();
-        $data['places'] = $this->spec_model->getSum();
+        $data['places'] = $this->specialite_model->getSum();
+        $data['spec']=$this->specialite_model->getAll();
+        $data['choix']=$this->etudiant_model->getNbrMadeChoice();
+        //$data['test'] = $this->etudiant_model->getByMoy(13.5,14);
+        for($i=12;$i<17;$i=$i+2)
+        {
+            $j=$i+1;
+            $moyennes["$i-$i.5"] = $this->etudiant_model->getByMoy($i,$i+(1/2));
+            $moyennes["$i.5-$j"] = $this->etudiant_model->getByMoy(($i+(1/2)),$i+1);
+        }
+        $data['moyenne'] = $moyennes;
         $this->load->view("administration/dashboardheader");
         $this->load->view("administration/dashboard", $data);
+
     }
 
     function ajout()
     {
         if (!isset($_SESSION['name'])) redirect('admin/');
         $data['nom'] = $_SESSION['name'];
+        $this->load->model('media_model');
+        $data['imgs'] = $this->media_model->getAll();
 
         $this->load->library('form_validation');
         $this->form_validation->set_rules('titre', 'Titre', 'trim|required');
@@ -127,7 +140,7 @@ class Admin extends CI_Controller
     function choix($cin = NULL)
     {
         if (!isset($_SESSION['name'])) redirect('admin/');
-        if (is_null($cin) or $cin <= 100000) {
+        if (is_null($cin) or $cin < 592) {
             $this->load->model('etudiant_model');
 
             $this->load->library('pagination');
@@ -183,6 +196,11 @@ class Admin extends CI_Controller
 
     function media()
     {
+        if(isset($_SESSION['msg']))
+        {
+            $data['msg'] = $_SESSION['msg'];
+            unset($_SESSION['msg']);
+        }
         $this->load->model('media_model');
         $data['img'] = $this->media_model->getAll();
         $this->load->view('administration/dashboardheader');
@@ -193,20 +211,21 @@ class Admin extends CI_Controller
             $content_dir = 'assets/img/'; // dossier où sera déplacé le fichier
             $tmp_file = $_FILES['fichier']['tmp_name'];
             if (!is_uploaded_file($tmp_file)) {
-                exit("Le fichier est introuvable");
+                $_SESSION['msg'] = "Le fichier est introuvable";
             }
             // on vérifie maintenant l'extension
             $type_file = $_FILES['fichier']['type'];
             if (!strstr($type_file, 'jpg') && !strstr($type_file, 'jpeg') && !strstr($type_file, 'png') && !strstr($type_file, 'gif')) {
-                exit("Le fichier n'est pas une image");
+                $_SESSION['msg'] = "Le fichier n'est pas une image";
+                redirect($_SERVER['HTTP_REFERER']);
             }
             // on fait un test de sécurité
             $name_file = $_FILES['fichier']['name'];
             if (preg_match('#[\x00-\x1F\x7F-\x9F/\\\\]#', $name_file)) {
-                exit("Nom de fichier non valide");
+                $_SESSION['msg'] = "Nom de fichier non valide" ;
             } // on copie le fichier dans le dossier de destination
             else if (!move_uploaded_file($tmp_file, $content_dir . $name_file)) {
-                exit("Impossible de copier le fichier dans $content_dir");
+                $_SESSION['msg'] = "Impossible de copier le fichier dans $content_dir";
             }
 
             redirect('admin/media', 'refresh');
