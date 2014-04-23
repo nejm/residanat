@@ -85,11 +85,12 @@ class SignUp extends CI_Controller{
 
 		function send($msgBody){
 			$this->load->library('email');
-			$this->email->from('residanat@residanat.tn', 'Residanat administration');
+			$this->email->from('haddadaseif@gmail.com', 'Residanat administration');
 			$this->email->to( $this->input->post('email')); 
-			$this->email->subject('Password');
+			$this->email->subject('Email Test');
 			$this->email->message($msgBody);	
 
+			var_dump($this->email);
 			if($this->email->send()){
 			 	$data['msg']="email sent successfully";
 			}
