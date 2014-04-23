@@ -25,5 +25,16 @@ class Login_model extends CI_Model{
         return false;
     }
 
+    public function validateResidant($cin,$pass){
+         $q = $this->db->get_where('candidats', array('cin' => $cin,'mot_de_passe'=>$pass));
+      
+        if($q->num_rows > 0)
+        {
+            return $q->row();
+        }
+        return false;
+
+    }
+
 }
 ?>

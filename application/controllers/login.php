@@ -67,6 +67,56 @@ class Login extends CI_Controller{
         
     }
 
+
+     public function residant()
+     {
+         if(isset($_SESSION['cin'])) {
+            redirect('resultat');
+            return;
+        }
+       
+         $data=[];
+        $this->load->library('form_validation');
+        $this->form_validation->set_rules('cin','CIN','trim|required');
+        $this->form_validation->set_rules('password','mot de passe','trim|required');
+        $this->form_validation->set_message('required','il faut saisir %s');
+        
+
+
+
+        if($this->form_validation->run() !== false)
+        {
+    
+
+             $res = $this
+                    ->login_model
+                    ->validateResidant(
+                        $this->input->post('cin'),
+                        $this->input->post('password')
+                        );
+            if($res !== false)
+            {
+                $_SESSION['cin']=$this->input->post('cin');
+                redirect('resultat');
+               
+            }else{
+                 $data['err_message'] ='votre mot de passe ou votre cin est incorrect';
+                 $this->load->view('header');
+                 $this->load->view('errors_View/login',$data);
+                 $this->load->view('footer');
+                
+            }
+        }
+        else{
+                 $data['err_message']=validation_errors();
+                 $this->load->view('header');
+                 $this->load->view('errors_View/login',$data);
+                 $this->load->view('footer');
+        }
+               
+        
+    }
+
     public function logout()
     {
         unset($_SESSION['cin']);

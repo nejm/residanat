@@ -16,10 +16,12 @@
           
           <a class="item">Acceuil</a>
           <a class="item">Textes Règlementaire</a>
-          <a class="item">Spécialité<a>
+          <a class="item" href="<?php echo base_url(); ?>loginSpecialite/">Spécialité<a>
           <a class="item">Collège et formation</a>
           <a class="item">Stage à l'étranger</a>
-          <a class="item" href="#login">resultat</a>
+          <a class="item" data-toggle="modal" data-target="#myModal" href="#">
+            resultat
+          </a>
           <a class="item">Plan du site</a>
 
         </div>
@@ -37,7 +39,4 @@
       </div>
     </div>
   </div>
-
-
-
 

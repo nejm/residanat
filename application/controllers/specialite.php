@@ -31,7 +31,7 @@ class Specialite extends CI_Controller{
 
      	 foreach ($res[$i] as $row)
 		    {
-		       $this->specialite_model->DoChoix($row['code_specialite'],$i+1);//,$_SESSION['cin']
+		       $this->specialite_model->DoChoix($row['code_specialite'],$i+1,$_SESSION['cin']);//
 		       
 		    }
      

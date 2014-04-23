@@ -40,9 +40,9 @@ class Specialite_model extends CI_Model{
         return $res->result_array();
     }
 
-    function DoChoix($code_specialite,$p){
+    function DoChoix($code_specialite,$p,$cin){
         $data = array(
-           'cin' => '0694224' ,
+           'cin' => $cin ,
            'code_specialite'=>$code_specialite,
            'priorite'=>$p
         );
