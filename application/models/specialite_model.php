@@ -19,24 +19,20 @@ class Specialite_model extends CI_Model{
         return $q->result();
     }
 
-/*
+
     function getSum()
     {
         return $this->db->select_sum('nbr_place')->get('specialite')->row();
 
     }
 
-    function doChoix($cin,$code,$p){
-        $query="insert into choix_condidats (cin,code_specialite,priorite) values(?,?,?)";
-        $res=$this->db->($query,array($cin,$code,$p))
-    }
 
 
     function getNonChoisi($cin){
         $query="select libelle from specialite where code_specialite not in (select code_specialite from choix_candidats where cin =?)";
         $res=$this->db->query($query,array($cin));
         return $res->result();
-    }*/
+    }
     function getById($id){
         $query="select code_specialite from specialite where id = ?";
         $res=$this->db->query($query, array($id));
@@ -44,9 +40,9 @@ class Specialite_model extends CI_Model{
         return $res->result_array();
     }
 
-    function DoChoix($code_specialite,$p){
+    function DoChoix($code_specialite,$p,$cin){
         $data = array(
-           'cin' => '0694224' ,
+           'cin' => $cin ,
            'code_specialite'=>$code_specialite,
            'priorite'=>$p
         );
