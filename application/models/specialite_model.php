@@ -47,13 +47,14 @@ class Specialite_model extends CI_Model{
 
     function getNonChoisi($cin){
 
-             
-       $res= $this->db      
-       ->where('cin',$cin)->from('specialite')
-            ->join('choix_candidats',' specialite.code_specialite !=choix_candidats.code_specialite','full')->get();
-       
+      $res = $this->db->query("
+            SELECT * FROM specialite where code_specialite NOT IN (
+              SELECT code_specialite FROM choix_candidats where cin = ".$cin."
+            )
+        ");
         return $res->result();
     }
+
     function getById($id){
         $query="select code_specialite from specialite where id = ?";
         $res=$this->db->query($query, array($id));

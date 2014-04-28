@@ -44,7 +44,7 @@
     <div><p>Les Spécialités à choisir</p></div>
     <ol class="simple_with_animation vertical" id="init">
     <?php 
-   
+        
         foreach ($spec as $key ) {
             
             echo "<li data-id='$key->id'> $key->libelle</li>";
@@ -88,12 +88,16 @@
      <script src=<?=js_url("application")?>></script>
      
 <script>
+function capitaliseFirstLetter(string)
+{
+    return string.charAt(0).toUpperCase() + string.slice(1);
+}
 
     function filter(element) {
         var value = $(element).val();
 
         $("#init > li").each(function() {
-            if ($(this).text().search(value) > -1) {
+            if ($(this).text().search(capitaliseFirstLetter(value)) > -1) {
                 $(this).show();
             }
             else {
