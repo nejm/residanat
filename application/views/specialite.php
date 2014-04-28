@@ -71,7 +71,7 @@
         <ol class="simple_with_animation vertical" id="cat" height="100px">
         <p>drop les spécialité ici</p>
          <?php 
-   
+        if($specChoisi!=false)
         foreach ($specChoisi as $key ) {
             
             echo "<li data-id='$key->id'> $key->libelle</li>";
