@@ -37,9 +37,12 @@
 </head>
 
 <body>
+<input type="text" onkeyup="filter(this)" />
+
+
 <div class="col-md-6" style="height:800px;overflow-y:scroll">
     <div><p>Les Spécialités à choisir</p></div>
-    <ol class="simple_with_animation vertical">
+    <ol class="simple_with_animation vertical" id="init">
     <?php 
    
         foreach ($spec as $key ) {
@@ -60,6 +63,7 @@
    <button type="submit" class="btn btn btn-primary">
           Log out
     </button>
+
     </form>
 
     <div class="col-md-6" style="max-height:800px;overflow-y:scroll">
@@ -84,6 +88,20 @@
      <script src=<?=js_url("application")?>></script>
      
 <script>
+
+    function filter(element) {
+        var value = $(element).val();
+
+        $("#init > li").each(function() {
+            if ($(this).text().search(value) > -1) {
+                $(this).show();
+            }
+            else {
+                $(this).hide();
+            }
+        });
+    }
+
 
 $("#submit").click(function(){
 

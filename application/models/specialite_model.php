@@ -46,8 +46,12 @@ class Specialite_model extends CI_Model{
 
 
     function getNonChoisi($cin){
-       $res= $this->db->where('cin',$cin)->from('specialite')
-            ->join('choix_candidats','choix_candidats.code_specialite != specialite.code_specialite','left')->order_by("priorite", "asc")->get();
+
+             
+       $res= $this->db      
+       ->where('cin',$cin)->from('specialite')
+            ->join('choix_candidats',' specialite.code_specialite !=choix_candidats.code_specialite','full')->get();
+       
         return $res->result();
     }
     function getById($id){
@@ -62,6 +66,7 @@ class Specialite_model extends CI_Model{
     function deletePred($cin){
          $this->db->delete('choix_candidats', array('cin' => $cin)); 
     }
+
     function DoChoix($code_specialite,$p,$cin){
        
 
