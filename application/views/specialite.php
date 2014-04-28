@@ -37,9 +37,12 @@
 </head>
 
 <body>
+<input type="text" onkeyup="filter(this)" />
+
+
 <div class="col-md-6" style="height:800px;overflow-y:scroll">
     <div><p>Les Spécialités à choisir</p></div>
-    <ol class="simple_with_animation vertical">
+    <ol class="simple_with_animation vertical" id="init">
     <?php 
    
         foreach ($spec as $key ) {
@@ -54,20 +57,51 @@
 
 </div>
 
- <input type='Submit' id="submit" value='envoyer'/>
-<div class="col-md-6" style="max-height:800px;overflow-y:scroll">
-<div><p>Remplir la formulaire</p></div>
-    <ol class="simple_with_animation vertical" id="cat" height="100px">
-    <p>drop les spécialité ici</p>
-                       
-    </ol>
-</div>
+ <button type="submit" class="btn btn btn-primary" id="submit">envoyer</button>
+   
+<form action='<?php echo base_url(); ?>loginSpecialite/logout' method='post' name='process'>
+   <button type="submit" class="btn btn btn-primary">
+          Log out
+    </button>
+
+    </form>
+
+    <div class="col-md-6" style="max-height:800px;overflow-y:scroll">
+    <div><p>Remplir la formulaire</p></div>
+        <ol class="simple_with_animation vertical" id="cat" height="100px">
+        <p>drop les spécialité ici</p>
+         <?php 
+   
+        foreach ($specChoisi as $key ) {
+            
+            echo "<li data-id='$key->id'> $key->libelle</li>";
+            # code...
+        }
+
+    ?>
+                           
+        </ol>
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src=<?=js_url("bootstrap.min")?>></script>
      <script src=<?=js_url("application")?>></script>
      
 <script>
+
+    function filter(element) {
+        var value = $(element).val();
+
+        $("#init > li").each(function() {
+            if ($(this).text().search(value) > -1) {
+                $(this).show();
+            }
+            else {
+                $(this).hide();
+            }
+        });
+    }
+
 
 $("#submit").click(function(){
 

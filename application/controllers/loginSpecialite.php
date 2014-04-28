@@ -15,10 +15,10 @@ class LoginSpecialite extends CI_Controller{
         $this->load->view('header');
         $this->load->view('loginSpecialite');
         $this->load->view('footer');
-      /* if(isset($_SESSION['cin'])) {
+      if(isset($_SESSION['cinSpec'])) {
             redirect('specialite');
             return;
-        }*/
+        }
 
     }
 
@@ -28,10 +28,10 @@ class LoginSpecialite extends CI_Controller{
      public function residant()
      {
 
-        /* if(isset($_SESSION['cin'])) {
+         if(isset($_SESSION['cinSpec'])) {
             redirect('specialite');
             return;
-        }*/
+        }
        
          $data=[];
         $this->load->library('form_validation');
@@ -55,7 +55,7 @@ class LoginSpecialite extends CI_Controller{
 
             if($res !== false)
             {
-                $_SESSION['cin']=$this->input->post('cin');
+                $_SESSION['cinSpec']=$this->input->post('cin');
                 redirect('specialite');
                
             }else{
@@ -78,7 +78,8 @@ class LoginSpecialite extends CI_Controller{
 
     public function logout()
     {
-        unset($_SESSION['cin']);
+        unset($_SESSION['cinSpec']);
+        redirect('index');
     }
 
 }
