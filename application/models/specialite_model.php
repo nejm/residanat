@@ -28,9 +28,26 @@ class Specialite_model extends CI_Model{
 
 
 
+
+    function getChoisit($cin)
+    {
+       $q = $this->db->where('cin',$cin)->from('choix_candidats')
+            ->join('specialite','choix_candidats.code_specialite = specialite.code_specialite')->order_by("priorite", "asc")->get();
+        
+        if($q->num_rows > 0)
+            return $q->result();
+        return false;
+    }
+
+
+
+
+
+
+
     function getNonChoisi($cin){
-        $query="select libelle from specialite where code_specialite not in (select code_specialite from choix_candidats where cin =?)";
-        $res=$this->db->query($query,array($cin));
+       $res= $this->db->where('cin',$cin)->from('specialite')
+            ->join('choix_candidats','choix_candidats.code_specialite != specialite.code_specialite','left')->order_by("priorite", "asc")->get();
         return $res->result();
     }
     function getById($id){
@@ -40,7 +57,14 @@ class Specialite_model extends CI_Model{
         return $res->result_array();
     }
 
+
+
+    function deletePred($cin){
+         $this->db->delete('choix_candidats', array('cin' => $cin)); 
+    }
     function DoChoix($code_specialite,$p,$cin){
+       
+
         $data = array(
            'cin' => $cin ,
            'code_specialite'=>$code_specialite,
@@ -49,4 +73,6 @@ class Specialite_model extends CI_Model{
 
         $this->db->insert('choix_candidats', $data); 
     }
+
+
 } 
