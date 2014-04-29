@@ -1,10 +1,682 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list id="2d8039a6-4a93-44cc-a0e8-3e7e9d03633b" name="Default" comment="charts and a lot of other stuff">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/system/libraries/Email.php" afterPath="$PROJECT_DIR$/system/libraries/Email.php" />
+    <list id="2d8039a6-4a93-44cc-a0e8-3e7e9d03633b" name="Default" comment="charts and a lot of other stuff" />
+    <list default="true" id="7fad9f16-3c73-4067-ae76-4b8ad3acac61" name="home page &amp; specialite modification (cherry picked from commit 437d27a)" comment="more stuff">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/ajax-loader.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/ajaxfileupload.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/administration/ajout_user.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/bootstrap-slider.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/administration/etudiant.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/css/login.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/models/online_model.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/administration/profile.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/css/slider.css" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\AUTHORS.txt" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\Gruntfile.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\MIT-LICENSE.txt" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\README.md" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\accordion\collapsible.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\accordion\custom-icons.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\accordion\default.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\accordion\fillspace.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\accordion\hoverintent.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\accordion\index.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\accordion\no-auto-height.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\accordion\sortable.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\addClass\default.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\addClass\index.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\animate\default.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\animate\index.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\autocomplete\categories.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\autocomplete\combobox.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\autocomplete\custom-data.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\autocomplete\default.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\autocomplete\folding.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\autocomplete\images\jquery_32x32.png" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\autocomplete\images\jqueryui_32x32.png" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\autocomplete\images\sizzlejs_32x32.png" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\autocomplete\images\transparent_1x1.png" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\autocomplete\images\ui-anim_basic_16x16.gif" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\autocomplete\index.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\autocomplete\london.xml" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\autocomplete\maxheight.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\autocomplete\multiple-remote.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\autocomplete\multiple.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\autocomplete\remote-jsonp.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\autocomplete\remote-with-cache.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\autocomplete\remote.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\autocomplete\search.php" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\autocomplete\xml.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\button\checkbox.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\button\default.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\button\icons.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\button\index.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\button\radio.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\button\splitbutton.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\button\toolbar.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\datepicker\alt-field.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\datepicker\animation.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\datepicker\buttonbar.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\datepicker\date-formats.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\datepicker\date-range.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\datepicker\default.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\datepicker\dropdown-month-year.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\datepicker\icon-trigger.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\datepicker\images\calendar.gif" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\datepicker\index.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\datepicker\inline.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\datepicker\jquery.ui.datepicker-ar.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\datepicker\jquery.ui.datepicker-fr.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\datepicker\jquery.ui.datepicker-he.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\datepicker\jquery.ui.datepicker-zh-TW.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\datepicker\localization.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\datepicker\min-max.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\datepicker\multiple-calendars.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\datepicker\other-months.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\datepicker\show-week.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\demos.css" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\dialog\animated.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\dialog\default.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\dialog\index.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\dialog\modal-confirmation.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\dialog\modal-form.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\dialog\modal-message.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\dialog\modal.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\draggable\constrain-movement.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\draggable\cursor-style.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\draggable\default.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\draggable\delay-start.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\draggable\events.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\draggable\handle.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\draggable\index.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\draggable\revert.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\draggable\scroll.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\draggable\snap-to.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\draggable\sortable.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\draggable\visual-feedback.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\droppable\accepted-elements.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\droppable\default.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\droppable\images\high_tatras.jpg" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\droppable\images\high_tatras2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\droppable\images\high_tatras2_min.jpg" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\droppable\images\high_tatras3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\droppable\images\high_tatras3_min.jpg" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\droppable\images\high_tatras4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\droppable\images\high_tatras4_min.jpg" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\droppable\images\high_tatras_min.jpg" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\droppable\index.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\droppable\photo-manager.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\droppable\propagation.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\droppable\revert.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\droppable\shopping-cart.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\droppable\visual-feedback.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\effect\default.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\effect\easing.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\effect\index.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\hide\default.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\hide\index.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\images\calendar.gif" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\images\demo-config-on-tile.gif" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\images\demo-config-on.gif" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\images\demo-spindown-closed.gif" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\images\demo-spindown-open.gif" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\images\icon-docs-info.gif" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\images\pbar-ani.gif" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\index.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\menu\default.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\menu\icons.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\menu\index.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\position\cycler.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\position\default.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\position\images\earth.jpg" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\position\images\flight.jpg" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\position\images\rocket.jpg" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\position\index.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\progressbar\default.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\progressbar\images\pbar-ani.gif" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\progressbar\indeterminate.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\progressbar\index.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\progressbar\label.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\removeClass\default.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\removeClass\index.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\resizable\animate.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\resizable\aspect-ratio.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\resizable\constrain-area.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\resizable\default.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\resizable\delay-start.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\resizable\helper.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\resizable\index.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\resizable\max-min.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\resizable\snap-to-grid.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\resizable\synchronous-resize.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\resizable\textarea.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\resizable\visual-feedback.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\selectable\default.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\selectable\display-grid.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\selectable\index.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\selectable\serialize.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\show\default.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\show\index.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\slider\colorpicker.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\slider\default.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\slider\hotelrooms.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\slider\index.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\slider\multiple-vertical.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\slider\range-vertical.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\slider\range.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\slider\rangemax.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\slider\rangemin.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\slider\side-scroll.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\slider\slider-vertical.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\slider\steps.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\sortable\connect-lists-through-tabs.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\sortable\connect-lists.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\sortable\default.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\sortable\delay-start.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\sortable\display-grid.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\sortable\empty-lists.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\sortable\index.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\sortable\items.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\sortable\placeholder.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\sortable\portlets.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\spinner\currency.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\spinner\decimal.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\spinner\default.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\spinner\index.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\spinner\latlong.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\spinner\overflow.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\spinner\time.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\switchClass\default.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\switchClass\index.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\tabs\ajax.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\tabs\ajax\content1.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\tabs\ajax\content2.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\tabs\ajax\content3-slow.php" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\tabs\ajax\content4-broken.php" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\tabs\bottom.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\tabs\collapsible.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\tabs\default.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\tabs\index.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\tabs\manipulation.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\tabs\mouseover.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\tabs\sortable.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\tabs\vertical.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\toggleClass\default.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\toggleClass\index.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\toggle\default.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\toggle\index.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\tooltip\ajax\content1.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\tooltip\ajax\content2.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\tooltip\custom-animation.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\tooltip\custom-content.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\tooltip\custom-style.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\tooltip\default.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\tooltip\forms.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\tooltip\images\st-stephens.jpg" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\tooltip\images\tower-bridge.jpg" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\tooltip\index.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\tooltip\tracking.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\tooltip\video-player.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\widget\default.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\demos\widget\index.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\docs\accordion.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\docs\autocomplete.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\docs\blind-effect.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\docs\bounce-effect.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\docs\button.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\docs\clip-effect.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\docs\datepicker.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\docs\dialog.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\docs\draggable.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\docs\drop-effect.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\docs\droppable.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\docs\explode-effect.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\docs\fade-effect.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\docs\fold-effect.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\docs\highlight-effect.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\docs\jQuery.widget.bridge.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\docs\jQuery.widget.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\docs\menu.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\docs\mouse.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\docs\position.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\docs\progressbar.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\docs\puff-effect.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\docs\pulsate-effect.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\docs\resizable.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\docs\scale-effect.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\docs\selectable.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\docs\shake-effect.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\docs\size-effect.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\docs\slide-effect.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\docs\slider.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\docs\sortable.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\docs\spinner.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\docs\tabs.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\docs\tooltip.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\docs\transfer-effect.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\external\globalize.culture.de-DE.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\external\globalize.culture.ja-JP.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\external\globalize.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\external\jquery.mousewheel.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\external\jshint.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\external\qunit.css" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\external\qunit.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\jquery-1.10.2.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\package.json" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\base\images\animated-overlay.gif" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\base\images\ui-bg_glass_75_dadada_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\base\images\ui-icons_222222_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\base\images\ui-icons_2e83ff_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\base\images\ui-icons_454545_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\base\images\ui-icons_888888_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\base\images\ui-icons_cd0a0a_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\base\jquery-ui.css" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\base\jquery.ui.accordion.css" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\base\jquery.ui.all.css" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\base\jquery.ui.autocomplete.css" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\base\jquery.ui.base.css" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\base\jquery.ui.button.css" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\base\jquery.ui.core.css" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\base\jquery.ui.datepicker.css" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\base\jquery.ui.dialog.css" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\base\jquery.ui.menu.css" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\base\jquery.ui.progressbar.css" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\base\jquery.ui.resizable.css" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\base\jquery.ui.selectable.css" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\base\jquery.ui.slider.css" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\base\jquery.ui.spinner.css" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\base\jquery.ui.tabs.css" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\base\jquery.ui.theme.css" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\base\jquery.ui.tooltip.css" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\base\minified\images\animated-overlay.gif" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\base\minified\images\ui-bg_flat_0_aaaaaa_40x100.png" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\base\minified\images\ui-bg_flat_75_ffffff_40x100.png" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\base\minified\images\ui-bg_glass_55_fbf9ee_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\base\minified\images\ui-bg_glass_65_ffffff_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\base\minified\images\ui-bg_glass_75_dadada_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\base\minified\images\ui-bg_glass_75_e6e6e6_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\base\minified\images\ui-bg_glass_95_fef1ec_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\base\minified\images\ui-bg_highlight-soft_75_cccccc_1x100.png" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\base\minified\images\ui-icons_222222_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\base\minified\images\ui-icons_2e83ff_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\base\minified\images\ui-icons_454545_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\base\minified\images\ui-icons_888888_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\base\minified\images\ui-icons_cd0a0a_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\base\minified\jquery-ui.min.css" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\base\minified\jquery.ui.accordion.min.css" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\base\minified\jquery.ui.autocomplete.min.css" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\base\minified\jquery.ui.button.min.css" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\base\minified\jquery.ui.core.min.css" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\base\minified\jquery.ui.datepicker.min.css" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\base\minified\jquery.ui.dialog.min.css" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\base\minified\jquery.ui.menu.min.css" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\base\minified\jquery.ui.progressbar.min.css" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\base\minified\jquery.ui.resizable.min.css" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\base\minified\jquery.ui.selectable.min.css" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\base\minified\jquery.ui.slider.min.css" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\base\minified\jquery.ui.spinner.min.css" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\base\minified\jquery.ui.tabs.min.css" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\base\minified\jquery.ui.theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\base\minified\jquery.ui.tooltip.min.css" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\smoothness\images\animated-overlay.gif" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\smoothness\images\ui-bg_flat_0_aaaaaa_40x100.png" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\smoothness\images\ui-bg_flat_75_ffffff_40x100.png" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\smoothness\images\ui-bg_glass_55_fbf9ee_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\smoothness\images\ui-bg_glass_65_ffffff_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\smoothness\images\ui-bg_glass_75_dadada_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\smoothness\images\ui-bg_glass_75_e6e6e6_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\smoothness\images\ui-bg_glass_95_fef1ec_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\smoothness\images\ui-bg_highlight-soft_75_cccccc_1x100.png" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\smoothness\images\ui-icons_222222_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\smoothness\images\ui-icons_2e83ff_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\smoothness\images\ui-icons_454545_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\smoothness\images\ui-icons_888888_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\smoothness\images\ui-icons_cd0a0a_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\smoothness\jquery-ui.css" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\smoothness\jquery.ui.accordion.css" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\smoothness\jquery.ui.all.css" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\smoothness\jquery.ui.autocomplete.css" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\smoothness\jquery.ui.base.css" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\smoothness\jquery.ui.button.css" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\smoothness\jquery.ui.core.css" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\smoothness\jquery.ui.datepicker.css" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\smoothness\jquery.ui.dialog.css" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\smoothness\jquery.ui.menu.css" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\smoothness\jquery.ui.progressbar.css" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\smoothness\jquery.ui.resizable.css" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\smoothness\jquery.ui.selectable.css" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\smoothness\jquery.ui.slider.css" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\smoothness\jquery.ui.spinner.css" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\smoothness\jquery.ui.tabs.css" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\smoothness\jquery.ui.theme.css" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\smoothness\jquery.ui.tooltip.css" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\smoothness\minified\images\animated-overlay.gif" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\smoothness\minified\images\ui-bg_flat_0_aaaaaa_40x100.png" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\smoothness\minified\images\ui-bg_flat_75_ffffff_40x100.png" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\smoothness\minified\images\ui-bg_glass_55_fbf9ee_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\smoothness\minified\images\ui-bg_glass_65_ffffff_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\smoothness\minified\images\ui-bg_glass_75_dadada_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\smoothness\minified\images\ui-bg_glass_75_e6e6e6_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\smoothness\minified\images\ui-bg_glass_95_fef1ec_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\smoothness\minified\images\ui-bg_highlight-soft_75_cccccc_1x100.png" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\smoothness\minified\images\ui-icons_222222_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\smoothness\minified\images\ui-icons_2e83ff_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\smoothness\minified\images\ui-icons_454545_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\smoothness\minified\images\ui-icons_888888_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\smoothness\minified\images\ui-icons_cd0a0a_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\smoothness\minified\jquery-ui.min.css" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\smoothness\minified\jquery.ui.accordion.min.css" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\smoothness\minified\jquery.ui.autocomplete.min.css" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\smoothness\minified\jquery.ui.button.min.css" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\smoothness\minified\jquery.ui.core.min.css" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\smoothness\minified\jquery.ui.datepicker.min.css" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\smoothness\minified\jquery.ui.dialog.min.css" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\smoothness\minified\jquery.ui.menu.min.css" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\smoothness\minified\jquery.ui.progressbar.min.css" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\smoothness\minified\jquery.ui.resizable.min.css" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\smoothness\minified\jquery.ui.selectable.min.css" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\smoothness\minified\jquery.ui.slider.min.css" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\smoothness\minified\jquery.ui.spinner.min.css" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\smoothness\minified\jquery.ui.tabs.min.css" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\smoothness\minified\jquery.ui.theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\themes\smoothness\minified\jquery.ui.tooltip.min.css" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui.accordion.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui.autocomplete.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui.button.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui.core.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui.datepicker.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui.dialog.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui.draggable.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui.droppable.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui.effect-blind.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui.effect-bounce.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui.effect-clip.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui.effect-drop.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui.effect-explode.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui.effect-fade.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui.effect-fold.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui.effect-highlight.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui.effect-pulsate.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui.effect-scale.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui.effect-shake.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui.effect-slide.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui.effect-transfer.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui.effect.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui.menu.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui.mouse.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui.position.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui.progressbar.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui.resizable.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui.selectable.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui.slider.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui.sortable.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui.spinner.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui.tabs.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui.tooltip.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui.widget.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\i18n\jquery-ui-i18n.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\i18n\jquery.ui.datepicker-af.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\i18n\jquery.ui.datepicker-ar-DZ.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\i18n\jquery.ui.datepicker-ar.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\i18n\jquery.ui.datepicker-az.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\i18n\jquery.ui.datepicker-be.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\i18n\jquery.ui.datepicker-bg.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\i18n\jquery.ui.datepicker-bs.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\i18n\jquery.ui.datepicker-ca.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\i18n\jquery.ui.datepicker-cs.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\i18n\jquery.ui.datepicker-cy-GB.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\i18n\jquery.ui.datepicker-da.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\i18n\jquery.ui.datepicker-de.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\i18n\jquery.ui.datepicker-el.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\i18n\jquery.ui.datepicker-en-AU.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\i18n\jquery.ui.datepicker-en-GB.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\i18n\jquery.ui.datepicker-en-NZ.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\i18n\jquery.ui.datepicker-eo.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\i18n\jquery.ui.datepicker-es.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\i18n\jquery.ui.datepicker-et.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\i18n\jquery.ui.datepicker-eu.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\i18n\jquery.ui.datepicker-fa.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\i18n\jquery.ui.datepicker-fi.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\i18n\jquery.ui.datepicker-fo.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\i18n\jquery.ui.datepicker-fr-CA.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\i18n\jquery.ui.datepicker-fr-CH.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\i18n\jquery.ui.datepicker-fr.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\i18n\jquery.ui.datepicker-gl.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\i18n\jquery.ui.datepicker-he.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\i18n\jquery.ui.datepicker-hi.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\i18n\jquery.ui.datepicker-hr.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\i18n\jquery.ui.datepicker-hu.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\i18n\jquery.ui.datepicker-hy.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\i18n\jquery.ui.datepicker-id.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\i18n\jquery.ui.datepicker-is.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\i18n\jquery.ui.datepicker-it.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\i18n\jquery.ui.datepicker-ja.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\i18n\jquery.ui.datepicker-ka.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\i18n\jquery.ui.datepicker-kk.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\i18n\jquery.ui.datepicker-km.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\i18n\jquery.ui.datepicker-ko.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\i18n\jquery.ui.datepicker-ky.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\i18n\jquery.ui.datepicker-lb.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\i18n\jquery.ui.datepicker-lt.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\i18n\jquery.ui.datepicker-lv.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\i18n\jquery.ui.datepicker-mk.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\i18n\jquery.ui.datepicker-ml.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\i18n\jquery.ui.datepicker-ms.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\i18n\jquery.ui.datepicker-nb.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\i18n\jquery.ui.datepicker-nl-BE.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\i18n\jquery.ui.datepicker-nl.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\i18n\jquery.ui.datepicker-nn.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\i18n\jquery.ui.datepicker-no.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\i18n\jquery.ui.datepicker-pl.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\i18n\jquery.ui.datepicker-pt-BR.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\i18n\jquery.ui.datepicker-pt.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\i18n\jquery.ui.datepicker-rm.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\i18n\jquery.ui.datepicker-ro.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\i18n\jquery.ui.datepicker-ru.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\i18n\jquery.ui.datepicker-sk.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\i18n\jquery.ui.datepicker-sl.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\i18n\jquery.ui.datepicker-sq.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\i18n\jquery.ui.datepicker-sr-SR.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\i18n\jquery.ui.datepicker-sr.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\i18n\jquery.ui.datepicker-sv.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\i18n\jquery.ui.datepicker-ta.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\i18n\jquery.ui.datepicker-th.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\i18n\jquery.ui.datepicker-tj.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\i18n\jquery.ui.datepicker-tr.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\i18n\jquery.ui.datepicker-uk.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\i18n\jquery.ui.datepicker-vi.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\i18n\jquery.ui.datepicker-zh-CN.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\i18n\jquery.ui.datepicker-zh-HK.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\i18n\jquery.ui.datepicker-zh-TW.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\jquery-ui.custom.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\jquery.ui.accordion.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\jquery.ui.autocomplete.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\jquery.ui.button.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\jquery.ui.core.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\jquery.ui.datepicker.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\jquery.ui.dialog.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\jquery.ui.draggable.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\jquery.ui.droppable.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\jquery.ui.effect-blind.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\jquery.ui.effect-bounce.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\jquery.ui.effect-clip.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\jquery.ui.effect-drop.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\jquery.ui.effect-explode.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\jquery.ui.effect-fade.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\jquery.ui.effect-fold.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\jquery.ui.effect-highlight.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\jquery.ui.effect-pulsate.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\jquery.ui.effect-scale.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\jquery.ui.effect-shake.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\jquery.ui.effect-slide.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\jquery.ui.effect-transfer.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\jquery.ui.effect.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\jquery.ui.menu.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\jquery.ui.mouse.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\jquery.ui.position.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\jquery.ui.progressbar.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\jquery.ui.resizable.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\jquery.ui.selectable.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\jquery.ui.slider.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\jquery.ui.sortable.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\jquery.ui.spinner.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\jquery.ui.tabs.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\jquery.ui.tooltip.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\jquery.ui.widget.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\i18n\jquery-ui-i18n.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-af.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-ar-DZ.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-ar.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-az.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-be.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-bg.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-bs.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-ca.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-cs.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-cy-GB.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-da.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-de.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-el.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-en-AU.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-en-GB.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-en-NZ.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-eo.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-es.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-et.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-eu.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-fa.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-fi.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-fo.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-fr-CA.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-fr-CH.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-fr.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-gl.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-he.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-hi.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-hr.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-hu.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-hy.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-id.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-is.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-it.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-ja.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-ka.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-kk.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-km.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-ko.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-ky.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-lb.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-lt.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-lv.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-mk.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-ml.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-ms.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-nb.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-nl-BE.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-nl.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-nn.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-no.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-pl.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-pt-BR.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-pt.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-rm.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-ro.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-ru.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-sk.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-sl.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-sq.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-sr-SR.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-sr.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-sv.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-ta.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-th.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-tj.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-tr.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-uk.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-vi.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-zh-CN.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-zh-HK.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\i18n\jquery.ui.datepicker-zh-TW.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\jquery-ui.custom.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\jquery.ui.accordion.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\jquery.ui.autocomplete.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\jquery.ui.button.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\jquery.ui.core.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\jquery.ui.datepicker.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\jquery.ui.dialog.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\jquery.ui.draggable.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\jquery.ui.droppable.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\jquery.ui.effect-blind.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\jquery.ui.effect-bounce.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\jquery.ui.effect-clip.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\jquery.ui.effect-drop.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\jquery.ui.effect-explode.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\jquery.ui.effect-fade.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\jquery.ui.effect-fold.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\jquery.ui.effect-highlight.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\jquery.ui.effect-pulsate.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\jquery.ui.effect-scale.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\jquery.ui.effect-shake.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\jquery.ui.effect-slide.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\jquery.ui.effect-transfer.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\jquery.ui.effect.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\jquery.ui.menu.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\jquery.ui.mouse.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\jquery.ui.position.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\jquery.ui.progressbar.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\jquery.ui.resizable.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\jquery.ui.selectable.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\jquery.ui.slider.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\jquery.ui.sortable.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\jquery.ui.spinner.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\jquery.ui.tabs.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\jquery.ui.tooltip.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\development-bundle\ui\minified\jquery.ui.widget.min.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\jquery-ui-1.10.4.custom\index.html" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\js\foundation\foundation.abide.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\js\foundation\foundation.accordion.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\js\foundation\foundation.alert.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\js\foundation\foundation.clearing.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\js\foundation\foundation.dropdown.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\js\foundation\foundation.equalizer.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\js\foundation\foundation.interchange.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\js\foundation\foundation.joyride.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\js\foundation\foundation.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\js\foundation\foundation.magellan.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\js\foundation\foundation.offcanvas.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\js\foundation\foundation.orbit.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\js\foundation\foundation.reveal.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\js\foundation\foundation.slider.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\js\foundation\foundation.tab.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\js\foundation\foundation.tooltip.js" afterPath="" />
+      <change type="DELETED" beforePath="R:\wamp\www\residanat\assets\js\foundation\foundation.topbar.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/admin.php" afterPath="$PROJECT_DIR$/application/controllers/admin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/admin_model.php" afterPath="$PROJECT_DIR$/application/models/admin_model.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/administration/ajout_article.php" afterPath="$PROJECT_DIR$/application/views/administration/ajout_article.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/administration/ajout_etudiant.php" afterPath="$PROJECT_DIR$/application/views/administration/ajout_etudiant.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/application.css" afterPath="$PROJECT_DIR$/assets/css/application.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/administration/dashboard.php" afterPath="$PROJECT_DIR$/application/views/administration/dashboard.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/administration/dashboardheader.php" afterPath="$PROJECT_DIR$/application/views/administration/dashboardheader.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/etudiant_model.php" afterPath="$PROJECT_DIR$/application/models/etudiant_model.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/administration/liste_etudiant.php" afterPath="$PROJECT_DIR$/application/views/administration/liste_etudiant.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/administration/liste_media.php" afterPath="$PROJECT_DIR$/application/views/administration/liste_media.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/administration/login.php" afterPath="$PROJECT_DIR$/application/views/administration/login.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/loginSpecialite.php" afterPath="$PROJECT_DIR$/application/controllers/loginSpecialite.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/media_model.php" afterPath="$PROJECT_DIR$/application/models/media_model.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/administration/modif_article.php" afterPath="$PROJECT_DIR$/application/views/administration/modif_article.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/specialite.php" afterPath="$PROJECT_DIR$/application/controllers/specialite.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/specialite_model.php" afterPath="$PROJECT_DIR$/application/models/specialite_model.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/zoombox/zoombox.css" afterPath="$PROJECT_DIR$/assets/zoombox/zoombox.css" />
     </list>
-    <list default="true" id="7fad9f16-3c73-4067-ae76-4b8ad3acac61" name="home page &amp; specialite modification (cherry picked from commit 437d27a)" comment="home page &amp; specialite modification&#10;(cherry picked from commit 437d27a)" />
     <ignored path="resedanat.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -29,49 +701,10 @@
       <file leaf-file-name="admin.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/controllers/admin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="5" selection-start="1500" selection-end="1500" vertical-scroll-proportion="0.18803419" vertical-offset="655" max-vertical-offset="4216">
+            <state line="325" column="13" selection-start="11847" selection-end="11847" vertical-scroll-proportion="0.73846155" vertical-offset="5093" max-vertical-offset="6052">
               <folding>
-                <marker date="1398248521586" expanded="true" signature="1254:1409" placeholder="..." />
+                <marker date="1398810451083" expanded="true" signature="1469:1624" placeholder="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dashboard.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/administration/dashboard.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="0" selection-start="2433" selection-end="2433" vertical-scroll-proportion="0.0" vertical-offset="544" max-vertical-offset="2669">
-              <folding>
-                <marker date="1398248521593" expanded="true" signature="2768:2799" placeholder="..." />
-                <marker date="1398248521593" expanded="true" signature="3738:3847" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="textes_reglementaires.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/textes_reglementaires.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="204">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="accueil.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/accueil.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="6" selection-start="1070" selection-end="1070" vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="221">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Email.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/system/libraries/Email.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2082" column="21" selection-start="44601" selection-end="47762" vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="35666">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -79,8 +712,37 @@
       <file leaf-file-name="etudiant_model.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/models/etudiant_model.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="51" selection-start="613" selection-end="613" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="1377">
+            <state line="66" column="36" selection-start="1617" selection-end="1617" vertical-scroll-proportion="-13.038462" vertical-offset="783" max-vertical-offset="1717">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="etudiant.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/administration/etudiant.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="103" column="13" selection-start="4453" selection-end="5429" vertical-scroll-proportion="-3.5" vertical-offset="1660" max-vertical-offset="2295">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ajout_user.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/administration/ajout_user.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="38" column="46" selection-start="1926" selection-end="1926" vertical-scroll-proportion="-0.0" vertical-offset="646" max-vertical-offset="2788">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="liste_etudiant.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/administration/liste_etudiant.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="48" selection-start="833" selection-end="833" vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="1207">
+              <folding>
+                <marker date="1398808282959" expanded="true" signature="1447:1575" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -95,6 +757,7 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
+        <option value="Nejm eddine Hidr" />
         <option value="haddada &lt;haddadaseif@gmail.com&gt;" />
         <option value="Nejm" />
       </list>
@@ -126,26 +789,11 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/application/views/home.php" />
-        <option value="$PROJECT_DIR$/assets/js/specialite.js" />
-        <option value="$PROJECT_DIR$/application/views/login.php" />
-        <option value="$PROJECT_DIR$/application/views/specialite.php" />
-        <option value="$PROJECT_DIR$/application/models/admin_model.php" />
-        <option value="$PROJECT_DIR$/application/views/dashboradtemplate.php" />
-        <option value="$PROJECT_DIR$/application/views/dashboard.php" />
-        <option value="$PROJECT_DIR$/application/views/dashboardheader.php" />
-        <option value="$PROJECT_DIR$/application/views/ajout_article.php" />
-        <option value="$PROJECT_DIR$/application/views/dashboardfooter.php" />
-        <option value="$PROJECT_DIR$/application/views/liste_article.php" />
-        <option value="$PROJECT_DIR$/application/models/article_model.php" />
-        <option value="$PROJECT_DIR$/assets/css/signin.css" />
-        <option value="$PROJECT_DIR$/system/libraries/Pagination.php" />
         <option value="$PROJECT_DIR$/application/helpers/assets_helper.php" />
         <option value="$PROJECT_DIR$/assets/js/bootstrap.file-input.js" />
         <option value="$PROJECT_DIR$/assets/css/bootstrap.min.css" />
         <option value="$PROJECT_DIR$/application/views/administration/choix.php" />
         <option value="$PROJECT_DIR$/application/models/choix_model.php" />
-        <option value="$PROJECT_DIR$/application/views/administration/login.php" />
         <option value="$PROJECT_DIR$/application/views/features.php" />
         <option value="$PROJECT_DIR$/system/helpers/url_helper.php" />
         <option value="$PROJECT_DIR$/application/views/Pages_Content.php" />
@@ -156,26 +804,41 @@
         <option value="$PROJECT_DIR$/application/controllers/errors.php" />
         <option value="$PROJECT_DIR$/application/views/header.php" />
         <option value="$PROJECT_DIR$/application/views/menu.php" />
-        <option value="$PROJECT_DIR$/application/views/register.php" />
         <option value="$PROJECT_DIR$/application/models/register_model.php" />
         <option value="$PROJECT_DIR$/application/controllers/signup.php" />
-        <option value="$PROJECT_DIR$/application/views/administration/modif_article.php" />
-        <option value="$PROJECT_DIR$/application/views/administration/ajout_etudiant.php" />
         <option value="$PROJECT_DIR$/application/views/administration/liste_article.php" />
         <option value="$PROJECT_DIR$/application/views/footer.php" />
         <option value="$PROJECT_DIR$/application/controllers/login.php" />
-        <option value="$PROJECT_DIR$/application/views/administration/dashboardheader.php" />
         <option value="$PROJECT_DIR$/application/views/administration/header.php" />
-        <option value="$PROJECT_DIR$/application/models/media_model.php" />
-        <option value="$PROJECT_DIR$/application/views/administration/ajout_article.php" />
-        <option value="$PROJECT_DIR$/application/views/administration/liste_media.php" />
-        <option value="$PROJECT_DIR$/application/views/administration/liste_etudiant.php" />
         <option value="$PROJECT_DIR$/application/views/administration/liste_choix.php" />
         <option value="$PROJECT_DIR$/application/models/spec_model.php" />
-        <option value="$PROJECT_DIR$/application/models/etudiant_model.php" />
-        <option value="$PROJECT_DIR$/application/views/administration/dashboard.php" />
         <option value="$PROJECT_DIR$/application/views/accueil.php" />
         <option value="$PROJECT_DIR$/system/libraries/Email.php" />
+        <option value="$PROJECT_DIR$/assets/css/login.css" />
+        <option value="$PROJECT_DIR$/application/controllers/loginSpecialite.php" />
+        <option value="$PROJECT_DIR$/application/views/administration/login.php" />
+        <option value="$PROJECT_DIR$/application/views/administration/profile.php" />
+        <option value="$PROJECT_DIR$/application/models/Online_model.php" />
+        <option value="$PROJECT_DIR$/application/models/online_model.php" />
+        <option value="$PROJECT_DIR$/application/models/media_model.php" />
+        <option value="$PROJECT_DIR$/application/views/administration/liste_media.php" />
+        <option value="$PROJECT_DIR$/assets/zoombox/zoombox.css" />
+        <option value="$PROJECT_DIR$/application/views/administration/etudiant.php" />
+        <option value="$PROJECT_DIR$/application/views/administration/ajout_etudiant.php" />
+        <option value="$PROJECT_DIR$/application/views/administration/modif_article.php" />
+        <option value="$PROJECT_DIR$/application/views/administration/dashboardheader.php" />
+        <option value="$PROJECT_DIR$/application/views/administration/dashboard.php" />
+        <option value="$PROJECT_DIR$/application/views/register.php" />
+        <option value="$PROJECT_DIR$/application/views/administration/ajout_article.php" />
+        <option value="$PROJECT_DIR$/application/controllers/specialite.php" />
+        <option value="$PROJECT_DIR$/application/models/admin_model.php" />
+        <option value="$PROJECT_DIR$/application/views/administration/ajout_user.php" />
+        <option value="$PROJECT_DIR$/assets/css/application.css" />
+        <option value="$PROJECT_DIR$/application/views/specialite.php" />
+        <option value="$PROJECT_DIR$/application/models/specialite_model.php" />
+        <option value="$PROJECT_DIR$/application/libraries/fpdf/fpdf.php" />
+        <option value="$PROJECT_DIR$/application/views/administration/liste_etudiant.php" />
+        <option value="$PROJECT_DIR$/application/models/etudiant_model.php" />
         <option value="$PROJECT_DIR$/application/controllers/admin.php" />
       </list>
     </option>
@@ -228,70 +891,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="residanat" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resedanat" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="residanat" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="system" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resedanat" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="residanat" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="system" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resedanat" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="residanat" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resedanat" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="residanat" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -381,6 +980,46 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resedanat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="residanat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fpdf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resedanat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="residanat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -422,14 +1061,15 @@
     <property name="LayoutCode.rearrangeEntriesPHP" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="R:\wamp\www\residanat\application\views\administration" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="R:\wamp\www\residanat\assets\css" />
       <recent name="R:\wamp\www\residanat\application\views\administration" />
     </key>
   </component>
   <component name="RunManager" selected="PHP Script.accueil.php">
-    <configuration default="false" name="accueil.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/application/views/accueil.php">
-      <method />
-    </configuration>
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner />
       <method />
@@ -446,14 +1086,12 @@
     <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
+    <configuration default="false" name="accueil.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" path="$PROJECT_DIR$/application/views/accueil.php">
+      <method />
+    </configuration>
     <list size="1">
       <item index="0" class="java.lang.String" itemvalue="PHP Script.accueil.php" />
     </list>
-    <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="PHP Script.accueil.php" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
@@ -567,20 +1205,20 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31653544" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21522693" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21083455" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913387" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32810047" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32810047" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32810047" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -606,101 +1244,15 @@
     <MESSAGE value="improve" />
     <MESSAGE value="modal signup" />
     <MESSAGE value="charts and a lot of other stuff" />
-    <option name="LAST_COMMIT_MESSAGE" value="charts and a lot of other stuff" />
+    <MESSAGE value="more stuff" />
+    <option name="LAST_COMMIT_MESSAGE" value="more stuff" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/models/etudiant_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1377">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/login_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="9" selection-start="487" selection-end="487" vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="493" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/signin.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="29" selection-start="575" selection-end="575" vertical-scroll-proportion="0.6530612" vertical-offset="126" max-vertical-offset="782" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/system/libraries/Pagination.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="31" selection-start="1472" selection-end="1472" vertical-scroll-proportion="0.47719297" vertical-offset="442" max-vertical-offset="5865" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/helpers/assets_helper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="57" selection-start="897" selection-end="897" vertical-scroll-proportion="0.88336194" vertical-offset="80" max-vertical-offset="765" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/bootstrap.file-input.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="128" column="11" selection-start="5751" selection-end="5751" vertical-scroll-proportion="0.942953" vertical-offset="1614" max-vertical-offset="2278" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/bootstrap.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="21" selection-start="99983" selection-end="99983" vertical-scroll-proportion="0.20695652" vertical-offset="0" max-vertical-offset="575" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/choix_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="2" selection-start="504" selection-end="504" vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="510" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/article_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="0" selection-start="566" selection-end="930" vertical-scroll-proportion="0.46324787" vertical-offset="443" max-vertical-offset="1054" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/college.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="564" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/administration/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="0" selection-start="491" selection-end="491" vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="680" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/system/helpers/url_helper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="2" selection-start="1425" selection-end="1443" vertical-scroll-proportion="0.13248639" vertical-offset="879" max-vertical-offset="10183" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/features.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1258" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/login_view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="11" selection-start="1041" selection-end="1069" vertical-scroll-proportion="0.8741135" vertical-offset="0" max-vertical-offset="680" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/config/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="164" column="2" selection-start="5444" selection-end="5444" vertical-scroll-proportion="0.36347517" vertical-offset="2583" max-vertical-offset="6256" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/config/constants.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="782" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/errors_View/e404.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="38" selection-start="1083" selection-end="1083" vertical-scroll-proportion="0.43194193" vertical-offset="0" max-vertical-offset="551" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/config/routes.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="41" column="32" selection-start="1466" selection-end="1466" vertical-scroll-proportion="-15.153846" vertical-offset="303" max-vertical-offset="867" />
@@ -716,7 +1268,7 @@
         <state line="17" column="51" selection-start="926" selection-end="926" vertical-scroll-proportion="-11.076923" vertical-offset="1" max-vertical-offset="629" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/Errors.php">
+    <entry file="file://$PROJECT_DIR$/application/controllers/errors.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="36" selection-start="258" selection-end="258" vertical-scroll-proportion="0.34871796" vertical-offset="0" max-vertical-offset="585" />
       </provider>
@@ -756,29 +1308,9 @@
         <state line="6" column="0" selection-start="83612" selection-end="83612" vertical-scroll-proportion="0.17056856" vertical-offset="0" max-vertical-offset="598" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/administration/ajout_etudiant.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="33" selection-start="523" selection-end="523" vertical-scroll-proportion="0.0" vertical-offset="40" max-vertical-offset="969" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/footer.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="67" column="44" selection-start="2845" selection-end="2845" vertical-scroll-proportion="0.0" vertical-offset="680" max-vertical-offset="1700" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/administration/modif_article.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="0" selection-start="2570" selection-end="2570" vertical-scroll-proportion="-42.5" vertical-offset="0" max-vertical-offset="1258" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/media_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="50" selection-start="614" selection-end="614" vertical-scroll-proportion="0.63297874" vertical-offset="0" max-vertical-offset="578" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/administration/dashboardheader.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="52" selection-start="0" selection-end="1711" vertical-scroll-proportion="0.041025642" vertical-offset="197" max-vertical-offset="782" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/login.php">
@@ -796,41 +1328,9 @@
         <state line="236" column="0" selection-start="112791" selection-end="112791" vertical-scroll-proportion="0.8294314" vertical-offset="3516" max-vertical-offset="4114" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/administration/liste_etudiant.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="760" selection-end="760" vertical-scroll-proportion="0.35213676" vertical-offset="49" max-vertical-offset="1173" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/administration/ajout_article.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="23" selection-start="2441" selection-end="2460" vertical-scroll-proportion="0.45299146" vertical-offset="806" max-vertical-offset="1513" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/administration/liste_choix.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="26" selection-start="1066" selection-end="1066" vertical-scroll-proportion="0.4905983" vertical-offset="36" max-vertical-offset="935" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/administration/liste_media.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="43" selection-start="1687" selection-end="1687" vertical-scroll-proportion="0.8153846" vertical-offset="186" max-vertical-offset="1139" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/admin_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="20" selection-start="462" selection-end="469" vertical-scroll-proportion="0.4923077" vertical-offset="103" max-vertical-offset="714" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/specialite.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="13" selection-start="349" selection-end="349" vertical-scroll-proportion="0.37777779" vertical-offset="0" max-vertical-offset="585" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/etudiant_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="51" selection-start="613" selection-end="613" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="1377">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/system/core/Router.php">
@@ -838,52 +1338,204 @@
         <state line="119" column="0" selection-start="2794" selection-end="2794" vertical-scroll-proportion="0.94055945" vertical-offset="1485" max-vertical-offset="8959" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/administration/dashboard.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="0" selection-start="2433" selection-end="2433" vertical-scroll-proportion="0.0" vertical-offset="544" max-vertical-offset="2669">
-          <folding>
-            <marker date="1398248521593" expanded="true" signature="2768:2799" placeholder="..." />
-            <marker date="1398248521593" expanded="true" signature="3738:3847" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/welcome_message.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="0" selection-start="167" selection-end="167" vertical-scroll-proportion="0.17435898" vertical-offset="0" max-vertical-offset="585" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/register.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="15" selection-start="387" selection-end="1663" vertical-scroll-proportion="0.6803419" vertical-offset="265" max-vertical-offset="918" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/textes_reglementaires.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="204">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="204" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/accueil.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="6" selection-start="1070" selection-end="1070" vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="221">
-          <folding />
-        </state>
+        <state line="7" column="6" selection-start="1070" selection-end="1070" vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="221" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/system/libraries/Email.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2082" column="21" selection-start="44601" selection-end="47762" vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="35666">
+        <state line="2082" column="21" selection-start="44601" selection-end="47762" vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="35666" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/login.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="186" column="24" selection-start="3385" selection-end="3385" vertical-scroll-proportion="0.2220339" vertical-offset="3031" max-vertical-offset="3689" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/login_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="11" selection-start="1041" selection-end="1069" vertical-scroll-proportion="0.8741135" vertical-offset="0" max-vertical-offset="680" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/administration/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="71" column="8" selection-start="3199" selection-end="3199" vertical-scroll-proportion="2.063248" vertical-offset="0" max-vertical-offset="1377" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/administration/profile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="7" selection-start="1030" selection-end="1030" vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="510" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/online_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="4" selection-start="360" selection-end="450" vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="544" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/media_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="0" selection-start="791" selection-end="791" vertical-scroll-proportion="0.90957445" vertical-offset="48" max-vertical-offset="680" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/zoombox/zoombox.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="109" column="16" selection-start="2278" selection-end="2278" vertical-scroll-proportion="0.39152542" vertical-offset="1622" max-vertical-offset="5729" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/administration/liste_media.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="103" column="38" selection-start="4187" selection-end="4187" vertical-scroll-proportion="-12.538462" vertical-offset="1425" max-vertical-offset="2397" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/administration/ajout_etudiant.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="7" selection-start="2123" selection-end="2123" vertical-scroll-proportion="0.9179487" vertical-offset="296" max-vertical-offset="952" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/administration/dashboard.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="45" selection-start="72" selection-end="97" vertical-scroll-proportion="0.061705988" vertical-offset="0" max-vertical-offset="2669" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/register.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="24" selection-start="376" selection-end="376" vertical-scroll-proportion="0.23247863" vertical-offset="51" max-vertical-offset="918" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/administration/dashboardheader.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="26" selection-start="56" selection-end="56" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="799" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/article_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="0" selection-start="566" selection-end="930" vertical-scroll-proportion="0.64273506" vertical-offset="338" max-vertical-offset="1054" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/administration/ajout_article.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="73" column="26" selection-start="3122" selection-end="3122" vertical-scroll-proportion="0.5641026" vertical-offset="911" max-vertical-offset="1496" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="3" selection-start="3" selection-end="3" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="598" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/loginSpecialite.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="81" column="0" selection-start="2147" selection-end="2147" vertical-scroll-proportion="-20.384615" vertical-offset="847" max-vertical-offset="1479" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/admin_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="43" selection-start="963" selection-end="1009" vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="1156">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/application.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="730" column="18" selection-start="29275" selection-end="29275" vertical-scroll-proportion="0.23956443" vertical-offset="12278" max-vertical-offset="83011" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="590">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="29" selection-start="118" selection-end="118" vertical-scroll-proportion="0.086440675" vertical-offset="0" max-vertical-offset="590">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/specialite.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="9" selection-start="1001" selection-end="1001" vertical-scroll-proportion="0.93971634" vertical-offset="116" max-vertical-offset="901">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/specialite_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="13" selection-start="116" selection-end="116" vertical-scroll-proportion="0.093406595" vertical-offset="0" max-vertical-offset="1377">
+          <folding>
+            <marker date="1398779294782" expanded="true" signature="-1:-1" placeholder="select code_..specialite..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/specialite.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="0" selection-start="1692" selection-end="1692" vertical-scroll-proportion="0.64440435" vertical-offset="527" max-vertical-offset="2363">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/administration/modif_article.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="85" column="7" selection-start="3781" selection-end="3781" vertical-scroll-proportion="0.7619048" vertical-offset="1013" max-vertical-offset="1632">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/administration/ajout_user.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="46" selection-start="1926" selection-end="1926" vertical-scroll-proportion="0.0" vertical-offset="646" max-vertical-offset="2788">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/libraries/fpdf/fpdf.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1876" column="0" selection-start="47487" selection-end="47487" vertical-scroll-proportion="-20.0" vertical-offset="31270" max-vertical-offset="31892">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/administration/etudiant.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="103" column="13" selection-start="4453" selection-end="5429" vertical-scroll-proportion="-3.5" vertical-offset="1660" max-vertical-offset="2295">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/administration/liste_etudiant.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="48" selection-start="833" selection-end="833" vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="1207">
+          <folding>
+            <marker date="1398808282959" expanded="true" signature="1447:1575" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/etudiant_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="66" column="36" selection-start="1617" selection-end="1617" vertical-scroll-proportion="-13.038462" vertical-offset="783" max-vertical-offset="1717">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/admin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="5" selection-start="1500" selection-end="1500" vertical-scroll-proportion="0.18803419" vertical-offset="655" max-vertical-offset="4216">
+        <state line="325" column="13" selection-start="11847" selection-end="11847" vertical-scroll-proportion="0.73846155" vertical-offset="5093" max-vertical-offset="6052">
           <folding>
-            <marker date="1398248521586" expanded="true" signature="1254:1409" placeholder="..." />
+            <marker date="1398810451083" expanded="true" signature="1469:1624" placeholder="..." />
           </folding>
         </state>
       </provider>

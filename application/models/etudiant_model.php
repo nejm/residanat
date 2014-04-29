@@ -19,6 +19,26 @@ class Etudiant_model extends CI_Model {
         return $q->row();
     }
 
+    function getByName($name)
+    {
+        $q = $this->db->like('nom',$name)->get('candidats');
+        if($q->num_rows > 0)
+            return $q->result();
+        return false;
+    }
+
+    function search($name,$moymin,$moymax)
+    {
+        $q = $this->db
+            ->like('nom',$name)
+            ->where('moyenne >= ',$moymin)
+            ->where('moyenne <= ',$moymax)
+            ->get('candidats');
+        if($q->num_rows > 0)
+            return $q->result();
+        return false;
+    }
+
     function getNbr()
     {
         return $this->db->count_all_results('candidats');
@@ -36,15 +56,15 @@ class Etudiant_model extends CI_Model {
         return false;
     }
 
-    public function getEtudiant($limit, $start) {
-        $this->db->limit($limit, $start);
-        $query = $this->db->get("candidats");
+    public function getEtudiant($limit, $start)
+    {
+        $query = $this
+                        ->db
+                        ->limit($limit, $start)
+                        ->get("candidats");
 
-        if ($query->num_rows() > 0) {
-            foreach ($query->result() as $row) {
-                $data[] = $row;
-            }
-            return $data;
+        if ($query->num_rows > 0) {
+            return $query->result();
         }
         return false;
     }

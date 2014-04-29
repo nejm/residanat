@@ -11,8 +11,10 @@
         </div>
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
             <h1 class="page-header">Liste des étudiants</h1>
-
-
+            <div class="">
+            <a href='<?=base_url("admin/exporter")?>' class="btn btn-default" target="_blank" id="export">Exporter la liste des étudiants</a>
+            </div>
+            <hr />
             <table class="table table-bordered table-hover" id="tableau_filtre">
                 <thead>
                 <tr>

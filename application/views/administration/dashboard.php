@@ -6,7 +6,8 @@
                 <li><a href=<?=base_url("admin/modifier/");?>>Liste Article</a></li>
                 <li><a href=<?=base_url("admin/media")?>>Gérer Media</a></li>
                 <li><a href=<?=base_url("admin/choix/");?>>Liste Etudiant</a></li>
-                <li><a href=<?=base_url("admin/etudiant/")?>>Ajouter Utilisateur</a></li>
+                <li><a href=<?=base_url("admin/user/")?>>Ajouter Utilisateur</a></li>
+                <li><a href=<?=base_url("admin/etudiant/")?>>Chercher Etudiant</a></li>
             </ul>
         </div>
 
@@ -37,10 +38,8 @@
                 $i=0;
                 foreach ($spec as $s)
                 {
-
                     if($s->nbr_place > 0){
                         $i++;
-                        //$places->nbr_place-=$s->nbr_place;
                         $data.="[ '$s->libelle' , $s->nbr_place ],";
                     }
                     if($i===10) break;
@@ -145,6 +144,7 @@
         var chart3 = new google.visualization.PieChart(document.getElementById('choix'));
         chart3.draw(data3, options3);
     }
+
 </script>
 
 </body>

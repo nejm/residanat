@@ -5,12 +5,13 @@
 
     <link rel="stylesheet" href=<?=css_url("bootstrap.min");?>>
     <link rel="stylesheet" href=<?=css_url("dashboard");?>>
-    <link rel="stylesheet" href=<?=css_url("flat-ui");?>>
+    <link rel="stylesheet" href=<?=css_url("semantic");?>>
+
     <link rel="stylesheet" href=<?=css_url("bootstrap-switch");?>>
     <link rel="stylesheet" href=<?=css_url("alertify.bootstrap");?>>
     <link rel="stylesheet" href=<?=css_url("alertify.core");?>>
     <link rel="stylesheet" href=<?=css_url("alertify.default");?>>
-    <!--<link rel="stylesheet" href=<?=css_url("foundation.min");?>>-->
+    <link rel="stylesheet" href=<?=css_url("slider");?>>
     <link rel="stylesheet" href=<?=zoombox_css();?>>
 
 
@@ -32,7 +33,7 @@
             <ul class="nav navbar-nav navbar-right">
                 <li><a href=<?=base_url('admin/dashboard')?>>Dashboard</a></li>
                 <li><a href="http://getbootstrap.com/examples/dashboard/#">Settings</a></li>
-                <li><a href="http://getbootstrap.com/examples/dashboard/#">Profile</a></li>
+                <li><a href=<?=base_url()."admin/profile";?>>Profile</a></li>
                 <li><a href=<?=base_url()."admin/logout";?>>Déconexion</a></li>
             </ul>
         </div>
