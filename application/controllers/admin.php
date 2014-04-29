@@ -303,12 +303,16 @@ class Admin extends CI_Controller
         $perpage = ceil($max/42);
 
         $pdf = new FPDF();
-        $pdf->SetFont('Arial','B',10);
+        $pdf->AddFont('DejaVu','','DejaVuSansCondensed.ttf',true);
+        $pdf->SetFont('DejaVu','',10);
+        $pdf->SetFillColor(128,50,10);
+        $pdf->SetTextColor(0);
+        $pdf->SetDrawColor(64,21,5);
 
         for($j=0;$j<$perpage;$j++)
         {
 
-            $header=['convocation','cin','Nom & Prenom','Moyenne'];
+            $header=['convocation','cin','Nom & Prénom','Moyenne'];
             $data = $this->etudiant_model->getEtudiant(42,$j*42);
 
             $pdf->AddPage();
@@ -318,7 +322,7 @@ class Admin extends CI_Controller
 
             // En-tête
             for($i=0;$i<count($header);$i++)
-                $pdf->Cell($w[$i],7,$header[$i],1,0,'C');
+                $pdf->Cell($w[$i],7,$header[$i],1,0,'C',true);
             $pdf->Ln();
             // Données
 
