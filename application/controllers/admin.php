@@ -56,16 +56,30 @@ class Admin extends CI_Controller
         $this->load->model('specialite_model');
         $moyennes=[];
         $data['nombre'] = $this->etudiant_model->getNbr();
+
         $data['places'] = $this->specialite_model->getSum();
         $data['spec']=$this->specialite_model->getAll('DESC');
-        $data['choix']=$this->etudiant_model->getNbrMadeChoice();
-        for($i=12;$i<17;$i=$i+2)
+
+        $data['admis']=$this->etudiant_model->getNbrAdmis();
+
+        $data['sousse'] = $this->etudiant_model->getByFac('SOUSSE');
+        $data['sfax'] = $this->etudiant_model->getByFac('SFAX');
+        $data['monastir'] = $this->etudiant_model->getByFac('MONASTIR');
+        $data['tunis'] = $this->etudiant_model->getByFac('TUNIS');
+
+        $min = $this->etudiant_model->getMinMoy();
+        $max = $this->etudiant_model->getMaxMoy();
+
+        for($i=floor($min->moyenne);$i<ceil($max->moyenne);$i++)
         {
             $j=$i+1;
-            $moyennes["$i-$i.5"] = $this->etudiant_model->getByMoy($i,$i+(1/2));
-            $moyennes["$i.5-$j"] = $this->etudiant_model->getByMoy(($i+(1/2)),$i+1);
+
+            $moyennes["$i-$j"] = $this->etudiant_model->getByMoy($i,$i+1);
+
+            //$moyennes["$i.5-$j"] = $this->etudiant_model->getByMoy(($i+(1/2)),$i+1);
         }
         $data['moyenne'] = $moyennes;
+
         $this->load->view("administration/dashboardheader");
         $this->load->view("administration/dashboard", $data);
 
@@ -95,7 +109,7 @@ class Admin extends CI_Controller
                     'etat' => $this->input->post('pb'),
                     'par' => $_SESSION['id']
                 ));
-            redirect('admin/dashboard');
+            redirect('admin/modifier');
             die();
         }
         $this->load->view("administration/dashboardheader");
@@ -145,8 +159,9 @@ class Admin extends CI_Controller
     function choix($cin = NULL)
     {
         if (!isset($_SESSION['name'])) redirect('admin/');
-        if (is_null($cin) or $cin < 592) {
-            $this->load->model('etudiant_model');
+
+        $this->load->model('etudiant_model');
+        if (is_null($cin) or $cin < $this->etudiant_model->getNbr()) {
 
             $this->load->library('pagination');
 
@@ -225,7 +240,7 @@ class Admin extends CI_Controller
                 redirect($_SERVER['HTTP_REFERER']);
             }
             // on fait un test de sécurité
-            $name_file = $_FILES['fichier']['name'];
+            $name_file = $this->input->post('filename');
             if (preg_match('#[\x00-\x1F\x7F-\x9F/\\\\]#', $name_file)) {
                 $_SESSION['msg'] = "Nom de fichier non valide" ;
             } // on copie le fichier dans le dossier de destination
@@ -303,8 +318,8 @@ class Admin extends CI_Controller
         $perpage = ceil($max/42);
 
         $pdf = new FPDF();
-        $pdf->AddFont('DejaVu','','DejaVuSansCondensed.ttf',true);
-        $pdf->SetFont('DejaVu','',10);
+        //$pdf->AddFont('Arial','','',true);
+
         $pdf->SetFillColor(128,50,10);
         $pdf->SetTextColor(0);
         $pdf->SetDrawColor(64,21,5);
@@ -321,8 +336,10 @@ class Admin extends CI_Controller
             $w=[30,20,80,20];
 
             // En-tête
+            $pdf->SetFont('Arial','B',11);
             for($i=0;$i<count($header);$i++)
-                $pdf->Cell($w[$i],7,$header[$i],1,0,'C',true);
+                $pdf->Cell($w[$i],7,iconv('UTF-8', 'windows-1252',$header[$i]),1,0,'C',true);
+            $pdf->SetFont('Arial','',10);
             $pdf->Ln();
             // Données
 
@@ -347,6 +364,27 @@ class Admin extends CI_Controller
         unset($_SESSION['id']);
         unset($_SESSION['name']);
         redirect(base_url('admin'), 'refresh');
+    }
+
+    function deleteFile()
+    {
+
+        $filename = $this->input->post('file');
+        $path = "R:\\wamp\\www\\residanat\\assets\\img\\".$filename;
+        if (file_exists($path)) {
+            unlink($path);
+            echo 'File '.$path.' has been deleted';
+        } else {
+            echo 'Could not delete '.$path.', file does not exist';
+        }
+    }
+    function deleteArticle()
+    {
+
+        $id = $this->input->post('id');
+        $this->load->model("article_model");
+        $this->article_model->deleteById($id);
+        echo "Article supprimer avec succès";
     }
 
 

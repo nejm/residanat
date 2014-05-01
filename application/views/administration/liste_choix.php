@@ -6,28 +6,33 @@
                 <li><a href=<?=base_url("admin/modifier/");?>>Modifier Article</a></li>
                 <li><a href=<?=base_url("admin/media");?>>Gérer Media</a></li>
                 <li class="active"><a href=<?=base_url("admin/choix/");?>>Liste Etudiant</a></li>
-                <li><a href=<?=base_url("admin/etudiant/")?>>Ajouter Etudiant</a></li>
+                <li><a href=<?=base_url("admin/user/")?>>Ajouter Utilisateur</a></li>
+                <li><a href=<?=base_url("admin/etudiant/")?>>Chercher Etudiant</a></li>
             </ul>
         </div>
-        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-            <h1 class="page-header">Dashboard</h1>
+        <div class="col-sm-9 col-sm-offset-3 col-md-8 col-md-offset-2 main">
+            <h1 class="page-header">Les Choix</h1>
             <h4>
                 <?php if($choix==false) echo "Etudiant Introuvable";else{?>
-                <span class="tool" data-toggle="tooltip" title="
-                        <?=$etudiant->cin?>
-                        <?=$etudiant->mail?>
-                        <?=$etudiant->tel?>
-                " data-placement="right">
                 <?=ucwords(strtolower($etudiant->nom))?></span>
             </h4>
-            <table class="table table-bordered table-hover">
                 <?php
                 if($choix !== false)
-                {
+                {?>
+                    <table class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th>Code</th>
+                            <th>Libelle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                <?php
                     foreach ($choix as $c)
                     {
-                        echo "<tr><td>{$c->libelle}</td><td>{$c->priorite}</td></tr>";
+                        echo "<tr><td>{$c->id}</td><td>{$c->libelle}</td></tr>";
                     }
+                echo "</tbody>";
                 }else
                 {
                     echo "Cet étudiant n'a pas encore fait son choix";

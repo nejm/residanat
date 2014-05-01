@@ -44,21 +44,27 @@
                     }
                     if($i===10) break;
                 }
-                foreach ($moyenne as $k=>$v)
+
+            //moyenne
+                foreach ($moyenne as $k => $v)
                 {
-                    $data2.="[ '$k' , $v ],";
+                    $data2.= "[ '$k' , $v ],";
                 }
-                $s=$nombre-$choix;
-                $data3= "[ 'Oui' , $choix ],";
-                $data3.= "[ 'Non' , $s ]";
+
+
+            //admission
+                $s=$nombre-$admis;
+                $data3= "[ 'Admis(e)' , $admis ],";
+                $data3.= "[ 'Non Admis(e)' , $s ]";
 
                 substr($data2,0,-1);
                 substr($data,0,-1);
             ?>
 
-            <div id="moy" style="width:700; height:500"></div>
-            <div class="col-sm-6" id="spec" style="width:600; height:500"></div>
-            <div class="col-sm-6" id="choix" style="width:600; height:500"></div>
+            <div id="moy" style="width:900px; height:500px"></div>
+            <div class="col-sm-6" id="spec" style="width:600px; height:500px"></div>
+            <div class="col-sm-6" id="choix" style="width:600px; height:500px"></div>
+            <div class="col-sm-6" id="fac" style="width:600px; height:500px"></div>
         </div>
 <!--        </div>
         <div class="col-xs-6 col-sm-3 placeholder">
@@ -84,6 +90,7 @@
     google.setOnLoadCallback(drawChart);
     google.setOnLoadCallback(drawChart2);
     google.setOnLoadCallback(drawChart3);
+    google.setOnLoadCallback(drawChart4);
 
 
     // Callback that creates and populates a data table,
@@ -112,13 +119,18 @@
     //---------------------------------------------------------\\
     function drawChart2() {
         var data2 = google.visualization.arrayToDataTable([
-            ['Myenne', 'Nombre d\'étudiants'],
+            ['Moyenne', 'Nombre d\'étudiants'],
             <?=$data2?>
         ]);
 
         var options2 = {
             title: 'Classement par moyenne',
-            hAxis: {title: 'Moyenne', titleTextStyle: {color: 'black'}}
+            hAxis: {
+                title: 'Moyenne',
+                titleTextStyle: {color: 'black'}
+                },
+            is3D :true
+
         };
 
         var chart2 = new google.visualization.ColumnChart(document.getElementById('moy'));
@@ -136,7 +148,7 @@
         ]);
 
         // Set chart options
-        var options3 = {'title':'Pourcentage des personne ayant fait le choix',
+        var options3 = {'title':'Pourcentage des personne selon leurs résultat',
             'width':540,
             'height':500};
 
@@ -144,9 +156,31 @@
         var chart3 = new google.visualization.PieChart(document.getElementById('choix'));
         chart3.draw(data3, options3);
     }
+//-----------------------------------------------------------------------------------------
+    //---------------------------------------------------------------
+    function drawChart4() {
 
+        // Create the data table.
+        var data4 = new google.visualization.DataTable();
+        data4.addColumn('string', 'Topping');
+        data4.addColumn('number', 'Slices');
+        data4.addRows([
+            ['Sousse',  <?=$sousse?>   ],
+            ['Sfax',    <?=$sfax?>     ],
+            ['Monastir',<?=$monastir?> ],
+            ['Tunis',   <?=$tunis?>    ]
+        ]);
+
+        // Set chart options
+        var options4 = {'title':'Pourcentage des personne selon la faculté',
+            'width':540,
+            'height':500};
+
+        // Instantiate and draw our chart, passing in some options.
+        var chart4 = new google.visualization.PieChart(document.getElementById('fac'));
+        chart4.draw(data4, options4);
+    }
 </script>
 
-</body>
 </body>
 </html>

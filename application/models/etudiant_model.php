@@ -2,6 +2,8 @@
 
 class Etudiant_model extends CI_Model {
 
+    private  $table = "resultats_concours";
+
     function __construct()
     {
         parent::__construct();
@@ -9,31 +11,31 @@ class Etudiant_model extends CI_Model {
 
     function getAll()
     {
-        $q = $this->db->get("candidats");
+        $q = $this->db->get($this->table);
         return $q->result();
     }
 
     function getByCin($cin)
     {
-        $q = $this->db->where('cin',$cin)->limit(1)->get("candidats");
+        $q = $this->db->where('cin',$cin)->limit(1)->get($this->table);
         return $q->row();
     }
 
     function getByName($name)
     {
-        $q = $this->db->like('nom',$name)->get('candidats');
+        $q = $this->db->like('nom',$name)->get($this->table);
         if($q->num_rows > 0)
             return $q->result();
         return false;
     }
 
-    function search($name,$moymin,$moymax)
+    function search($name,$moymin=0,$moymax=20)
     {
         $q = $this->db
             ->like('nom',$name)
             ->where('moyenne >= ',$moymin)
             ->where('moyenne <= ',$moymax)
-            ->get('candidats');
+            ->get($this->table);
         if($q->num_rows > 0)
             return $q->result();
         return false;
@@ -41,8 +43,31 @@ class Etudiant_model extends CI_Model {
 
     function getNbr()
     {
-        return $this->db->count_all_results('candidats');
+        return $this->db->count_all_results($this->table);
     }
+
+    function getNbrAdmis()
+    {
+        return $this->db->where("resultat","Admis(e)")->count_all_results($this->table);
+    }
+
+    function getByFac($fac)
+    {
+        return $this->db->where("fac",$fac)->count_all_results($this->table);
+    }
+
+    function getMaxMoy()
+    {
+        $query = $this->db->select_max("moyenne")->get($this->table);
+        return $query->row();
+    }
+
+    function getMinMoy()
+    {
+        $query = $this->db->select_min("moyenne")->get($this->table);
+        return $query->row();
+    }
+
     function getNbrMadeChoice()
     {
         return $this->db->where('deja_choisit',1)->count_all_results('candidats');
@@ -61,7 +86,7 @@ class Etudiant_model extends CI_Model {
         $query = $this
                         ->db
                         ->limit($limit, $start)
-                        ->get("candidats");
+                        ->get($this->table);
 
         if ($query->num_rows > 0) {
             return $query->result();
@@ -69,25 +94,18 @@ class Etudiant_model extends CI_Model {
         return false;
     }
 
-    function ajout($data)
-    {
-        $insert=array(
-            'num'  => $data['conv'],
-            'cin'=> $data['cin'],
-            'nom'  => $data['nom'],
-            'nationalite'   => $data['nationalite']
-        );
-        $this->db->insert('article',$insert);
-
-    }
-
     function getByMoy($min,$max)
     {
-        return $this->db->where('moyenne > ',$min)->where('moyenne < ',$max)->count_all_results('candidats');
+        return $this->db
+                    ->where('moyenne >= ',$min)
+                    ->where('moyenne <= ',$max)
+                    ->count_all_results($this->table);
     }
+
+
     function searchByName($name)
     {
-        $q = $this->db->like('nom',$name)->get('candidats');
+        $q = $this->db->like('nom',$name)->get($this->table);
         if($q->num_rows > 0)
             return $q->result();
         return false;

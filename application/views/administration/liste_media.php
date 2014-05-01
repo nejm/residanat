@@ -6,11 +6,12 @@
                 <li><a href=<?=base_url("admin/modifier/");?>>Modifier Article</a></li>
                 <li  class="active"><a href=<?=base_url("admin/media/");?>>Gérer Media</a></li>
                 <li><a href=<?=base_url("admin/choix/");?>>Liste Etudiant</a></li>
-                <li><a href=<?=base_url("admin/etudiant/")?>>Ajouter Etudiant</a></li>
+                <li><a href=<?=base_url("admin/user/")?>>Ajouter Utilisateur</a></li>
+                <li><a href=<?=base_url("admin/etudiant/")?>>Chercher Etudiant</a></li>
             </ul>
         </div>
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-            <h1 class="page-header">Dashboard</h1>
+            <h1 class="page-header">Media</h1>
             <form class="form" id="form" method="post" action=<?=base_url("admin/media")?> enctype="multipart/form-data">
                 <div class="form-group">
                     <div class="col-sm-1">
@@ -33,16 +34,15 @@
                     <th>Action</th>
                 </tr>
                 <?php
-                //var_dump($img);
+                    $i=0;
                     foreach ($img as $i)
                     {
-
                         echo "<tr><td>".$i['nom']."</td><td>";
                         echo "<a href=".$i['real']." class='zoombox'>";
                         echo $i['url'];
                         echo "</a></td>";
-                        echo "<td><button class='btn btn-danger' name='".$i['nom']."' data-toggle='modal'
-                        data-target='#deleteModal'>Supprimer</button></td></tr>";
+                        echo "<td><button class='btn btn-danger' onclick=deleteFile('".$i['nom']."') data-toggle='modal'
+                        data-target='#deleteModal'>Supprimer</button></td>";
                     }
                 ?>
             </table>
@@ -65,7 +65,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Non</button>
-                <button type="button" class="btn btn-danger">Oui</button>
+                <button type="button" id="validate" class="btn btn-danger">Oui</button>
             </div>
         </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
@@ -89,10 +89,16 @@
     <?php if(isset($msg)):?>
         alertify.error("Extension du fichier invalide");
     <?php endif ?>
-    $(".btn-danger").click(function(e){
-        e.preventDefault();
+    function deleteFile(name){
+        $("#validate").click(function(){
+            $.ajax({
+                url: 'http://localhost/residanat/admin/deleteFile',
+                type: 'post',
+                data: 'file=' + name
+            }).done(location.reload());
+        });
 
-    });
+    }
 
 </script>
 <!--file upload-->

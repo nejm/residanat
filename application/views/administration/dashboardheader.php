@@ -27,12 +27,11 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="">Administration</a>
+            <a class="navbar-brand" href=<?=base_url('admin/dashboard')?>>Administration</a>
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
                 <li><a href=<?=base_url('admin/dashboard')?>>Dashboard</a></li>
-                <li><a href="http://getbootstrap.com/examples/dashboard/#">Settings</a></li>
                 <li><a href=<?=base_url()."admin/profile";?>>Profile</a></li>
                 <li><a href=<?=base_url()."admin/logout";?>>Déconexion</a></li>
             </ul>

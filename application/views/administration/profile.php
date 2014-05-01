@@ -6,15 +6,16 @@
                 <li><a href=<?=base_url("admin/modifier/");?>>Modifier Article</a></li>
                 <li><a href=<?=base_url("admin/media")?>>Gérer Media</a></li>
                 <li><a href=<?=base_url("admin/choix/");?>>Liste Etudiant</a></li>
-                <li><a href=<?=base_url("admin/etudiant/")?>>Ajouter Etudiant</a></li>
+                <li><a href=<?=base_url("admin/user/")?>>Ajouter Utilisateur</a></li>
+                <li><a href=<?=base_url("admin/etudiant/")?>>Chercher Etudiant</a></li>
             </ul>
         </div>
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
             <h1 class="page-header"><?=$_SESSION['name']?></h1>
-            <div>Login :</div>
-            <div>Nom :</div>
-            <div>Prénom :</div>
-            <div>Date de naissance :</div>
+            <div>Login : nejm</div>
+            <div>Nom : Hidri</div>
+            <div>Prénom : Nejm Eddine</div>
+            <div>Date de naissance : 20/09/1992</div>
         </div>
     </div>
 </div>
