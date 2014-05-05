@@ -90,7 +90,10 @@ class Admin extends CI_Controller
         if (!isset($_SESSION['name'])) redirect('admin/');
         $data['nom'] = $_SESSION['name'];
         $this->load->model('media_model');
+        $this->load->model('menu_model');
+
         $data['imgs'] = $this->media_model->getAll();
+        $data['menu'] = $this->menu_model->getAll();
 
         $this->load->library('form_validation');
         $this->form_validation->set_rules('titre', 'Titre', 'trim|required');
@@ -107,7 +110,8 @@ class Admin extends CI_Controller
                     'contenu' => $this->input->post('contenu'),
                     'alias' => $this->input->post('alias'),
                     'etat' => $this->input->post('pb'),
-                    'par' => $_SESSION['id']
+                    'par' => $_SESSION['id'],
+                    'menu' => $this->input->post('menu')
                 ));
             redirect('admin/modifier');
             die();
@@ -124,9 +128,11 @@ class Admin extends CI_Controller
             unset($_SESSION['flash']);
         }
         $this->load->model("article_model");
+        $this->load->model("menu_model");
         //afficher toutes la liste des article
         $this->load->model('media_model');
         $data['imgs'] = $this->media_model->getAll();
+
         if ($a == 0) {
             $articles = $this->article_model->getAll();
             $data['articles'] = $articles;
@@ -135,6 +141,7 @@ class Admin extends CI_Controller
         } else {
             $article = $this->article_model->getById($a);
             $data['article'] = $article;
+            $data['menu'] = $data['menu'] = $this->menu_model->getAll();
             $this->load->view("administration/dashboardheader");
             $this->load->view("administration/modif_article", $data);
         }

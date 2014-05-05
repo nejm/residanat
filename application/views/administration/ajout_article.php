@@ -32,6 +32,15 @@
                          <input type="checkbox" name="pb" value="1" id="pb">
                     </div>
 
+                    <div class="form-group">
+                         <label for="menu">Menu</label><br>
+                         <select class="form-control" name="menu" id="menu">
+                             <?php foreach ($menu as $m)
+                                 echo "<option value=\"$m->id\">$m->nom</option>";
+                             ?>
+                         </select>
+                    </div>
+
                     <!---->
 
                     <div class="form-group">

@@ -40,7 +40,8 @@ class Article_model extends CI_Model {
             'contenu'=> $data['contenu'],
             'alias'  => $data['alias'],
             'etat'   => $data['etat'],
-            'par'    => $data['par']
+            'par'    => $data['par'],
+            'menu'   => $data['menu']
         );
         $this->db->insert('article',$insert);
 
@@ -53,7 +54,8 @@ class Article_model extends CI_Model {
             'contenu'=> $data['contenu'],
             'alias'  => $data['alias'],
             'etat'   => $data['etat'],
-            'par'    => $data['par']
+            'par'    => $data['par'],
+            'menu'   => $data['menu']
         );
         $this->db->where('id', $data['id']);
         $this->db->update('article', $update);

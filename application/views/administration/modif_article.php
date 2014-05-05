@@ -28,7 +28,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-6">
+                <div class="col-md-3">
                     <div class="form-group">
                         <label for="pb">Publier</label><br>
                         <?php
@@ -39,6 +39,24 @@
                         ?>
                     </div>
                 </div>
+
+                <div class="col-md-3">
+                    <div class="form-group">
+                        <label for="menu">Menu</label><br>
+                        <select class="form-control" name="menu" id="menu">
+                            <?php $i=0;
+                            foreach ($menu as $m)
+                            {
+                                $i++;
+                                echo "<option value=\"$m->id\"";
+                                if($i==$m->id) echo "selected";
+                                echo ">$m->nom</option>";
+                            }
+                            ?>
+                        </select>
+                    </div>
+                </div>
+
 
                     <!---->
                 <div class="col-md-6">
