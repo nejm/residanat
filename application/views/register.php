@@ -1,9 +1,4 @@
-<!doctype html>
-<html>
-<head>
-    <link rel="stylesheet" href=<?=css_url("bootstrap.min");?>>
-    <link rel="stylesheet" href=<?=css_url("signin");?>>
-</head>
+
 <body>
 <div class="container">
  <h2 class="featurette-heading">Sign Up <span class="text-muted">Accéder au choix des spécialités </span></h2>
@@ -43,7 +38,3 @@
     <div class="col-md-4"></div>
 </div>
 </div>
-<script type="text/javascript" src=<?=js_url("jquery");?>></script>
-<script type="text/javascript" src=<?=js_url("bootstrap.min");?>></script>
-</body>
-</html>

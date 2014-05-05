@@ -8,6 +8,7 @@ class Register_model extends CI_Model{
 
     public function register($num,$cin,$email,$tel,$pass)
     {
+        
     	$data = array(
 		   'num' => $num ,
 		   'cin' => $cin ,
