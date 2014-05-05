@@ -415,12 +415,12 @@ class Admin extends CI_Controller
     }
 
     function logout()
-    {url('admin'), 'refresh');
+    {
+        if (!isset($_SESSION['name'])) redirect('admin/');
+        unset($_SESSION['id']);
+        unset($_SESSION['name']);
+        redirect(base_url('admin'), 'refresh');
     }
-if (!isset($_SESSION['name'])) redirect('admin/');
-unset($_SESSION['id']);
-unset($_SESSION['name']);
-redirect(base_
 
     function deleteFile()
     {
