@@ -21,6 +21,16 @@ class Article_model extends CI_Model {
         return false;
     }
 
+    function getByMenu($id)
+    {
+        $q = $this->db
+                    ->where("menu",$id)
+                    ->get("article");
+        if ($q->num_rows >0)
+            return $q->result();
+        return false;
+    }
+
     function getById($id)
     {
         $q = $this->db

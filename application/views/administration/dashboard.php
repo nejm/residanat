@@ -41,11 +41,26 @@
                 substr($data2,0,-1);
                 substr($data,0,-1);
             ?>
+            <div class="row-fluid sortable">
+                <div class="box span12 tour">
+                    <div class="box-header well" data-original-title>
+                        <h2><i class="icon-picture"></i>Blank</h2>
+                        <div class="box-icon">
+                            <a href="#" class="btn btn-minimize btn-round"><i class="icon-chevron-up"></i></a>
+                            <a href="#" class="btn btn-close btn-round"><i class="icon-remove"></i></a>
+                        </div>
+                    </div>
+                    <div class="box-content">
+                        Test
+                    </div>
+                </div><!--/span-->
 
-            <div id="moy" st></div>
-            <div class="col-sm-6" id="spec"></div>
-            <div class="col-sm-6" id="choix"></div>
-            <div class="col-sm-6" id="fac"></div>
+            </div><!--/row-->
+
+            <div id="moy" class="box"></div>
+            <div class="col-sm-6 box" id="spec"></div>
+            <div class="col-sm-6 box" id="choix"></div>
+            <div class="col-sm-6 box" id="fac"></div>
         </div>
 <!--        </div>
         <div class="col-xs-6 col-sm-3 placeholder">
@@ -60,6 +75,8 @@
 <script src=<?=js_url("jquery")?>></script>
 <script src=<?=js_url("bootstrap.min")?>></script>
 <script src=<?=js_url("bootstrap-switch")?>></script>
+<script src=<?=js_url("jquery-ui")?>></script>
+<script src=<?=js_url("bootstrap-collapse")?>></script>
 <script type="text/javascript" src="https://www.google.com/jsapi"></script>
 
 <script type="text/javascript">

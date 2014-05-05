@@ -12,6 +12,8 @@
     <link rel="stylesheet" href=<?=css_url("alertify.core");?>>
     <link rel="stylesheet" href=<?=css_url("alertify.default");?>>
     <link rel="stylesheet" href=<?=css_url("slider");?>>
+    <link rel="stylesheet" href=<?=css_url("charisma-app");?>>
+    <link rel="stylesheet" href=<?=css_url("opa-icons");?>>
     <link rel="stylesheet" href=<?=zoombox_css();?>>
 
 
