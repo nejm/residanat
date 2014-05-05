@@ -29,6 +29,8 @@
 class CI_Email {
 
 	var	$useragent		= "CodeIgniter";
+
+
 	var	$mailpath		= "";	// Sendmail path
 	var	$protocol		= "smtp";	// mail/sendmail/smtp
 	var	$smtp_host		= "smtp.gmail.com";		// SMTP Server.  Example: mail.earthlink.net
@@ -41,6 +43,8 @@ class CI_Email {
 	var	$wrapchars		= "76";		// Number of characters to wrap at.
 	var	$mailtype		= "html";	// text/html  Defines email formatting
 	var	$charset		= "utf-8";	// Default char set: iso-8859-1 or us-ascii
+
+
 	var	$multipart		= "mixed";	// "mixed" (in the body) or "related" (separate)
 	var $alt_message	= '';		// Alternative message for HTML emails
 	var	$validate		= FALSE;	// TRUE/FALSE.  Enables email validation

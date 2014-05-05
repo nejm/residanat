@@ -1,128 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list id="2d8039a6-4a93-44cc-a0e8-3e7e9d03633b" name="Default" comment="charts and a lot of other stuff" />
-    <list default="true" id="7fad9f16-3c73-4067-ae76-4b8ad3acac61" name="home page &amp; specialite modification (cherry picked from commit 437d27a)" comment="more stuff">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/font/DejaVuSansCondensed.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/tutorial/calligra.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/tutorial/calligra.z" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/tutorial/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/tutorial/20k_c1.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/tutorial/20k_c2.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/FAQ.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/doc/acceptpagebreak.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/doc/addfont.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/doc/addlink.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/doc/addpage.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/doc/aliasnbpages.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/tutorial/calligra.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/doc/cell.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/changelog.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/doc/close.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/font/courier.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/font/courierb.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/font/courierbi.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/font/courieri.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/makefont/cp1250.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/makefont/cp1251.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/makefont/cp1252.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/makefont/cp1253.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/makefont/cp1254.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/makefont/cp1255.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/makefont/cp1257.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/makefont/cp1258.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/makefont/cp874.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/doc/error.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/doc/footer.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/fpdf.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/doc/fpdf.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/fpdf.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/doc/getstringwidth.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/doc/getx.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/doc/gety.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/doc/header.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/font/helvetica.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/font/helveticab.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/font/helveticabi.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/font/helveticai.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/doc/image.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/doc/index.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/tutorial/index.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/install.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/makefont/iso-8859-1.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/makefont/iso-8859-11.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/makefont/iso-8859-15.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/makefont/iso-8859-16.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/makefont/iso-8859-2.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/makefont/iso-8859-4.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/makefont/iso-8859-5.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/makefont/iso-8859-7.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/makefont/iso-8859-9.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/makefont/koi8-r.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/makefont/koi8-u.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/license.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/doc/line.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/doc/link.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/doc/ln.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/makefont/makefont.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/tutorial/makefont.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/doc/multicell.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/doc/output.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/doc/pageno.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/tutorial/pays.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/doc/rect.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/doc/setauthor.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/doc/setautopagebreak.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/doc/setcompression.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/doc/setcreator.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/doc/setdisplaymode.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/doc/setdrawcolor.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/doc/setfillcolor.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/doc/setfont.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/doc/setfontsize.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/doc/setkeywords.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/doc/setleftmargin.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/doc/setlinewidth.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/doc/setlink.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/doc/setmargins.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/doc/setrightmargin.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/doc/setsubject.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/doc/settextcolor.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/doc/settitle.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/doc/settopmargin.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/doc/setx.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/doc/setxy.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/doc/sety.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/font/symbol.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/doc/text.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/font/times.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/font/timesb.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/font/timesbi.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/font/timesi.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/makefont/ttfparser.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/tutorial/tuto1.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/tutorial/tuto1.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/tutorial/tuto2.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/tutorial/tuto2.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/tutorial/tuto3.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/tutorial/tuto3.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/tutorial/tuto4.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/tutorial/tuto4.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/tutorial/tuto5.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/tutorial/tuto5.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/tutorial/tuto6.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/tutorial/tuto6.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/tutorial/tuto7.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/tutorial/tuto7.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/doc/write.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fpdf/font/zapfdingbats.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/admin.php" afterPath="$PROJECT_DIR$/application/controllers/admin.php" />
+    <list id="2d8039a6-4a93-44cc-a0e8-3e7e9d03633b" name="Default" comment="charts and a lot of other stuff">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/loginSpecialite.php" afterPath="$PROJECT_DIR$/application/controllers/loginSpecialite.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
+    <list default="true" id="7fad9f16-3c73-4067-ae76-4b8ad3acac61" name="home page &amp; specialite modification (cherry picked from commit 437d27a)" comment="delete article, delete media, pdf export done">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/administration/made_choice.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.htaccess" afterPath="$PROJECT_DIR$/.htaccess" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/system/libraries/Email.php" afterPath="$PROJECT_DIR$/system/libraries/Email.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/admin.php" afterPath="$PROJECT_DIR$/application/controllers/admin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/administration/ajout_article.php" afterPath="$PROJECT_DIR$/application/views/administration/ajout_article.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/administration/ajout_user.php" afterPath="$PROJECT_DIR$/application/views/administration/ajout_user.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/administration/dashboard.php" afterPath="$PROJECT_DIR$/application/views/administration/dashboard.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/administration/etudiant.php" afterPath="$PROJECT_DIR$/application/views/administration/etudiant.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/etudiant_model.php" afterPath="$PROJECT_DIR$/application/models/etudiant_model.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/administration/liste_article.php" afterPath="$PROJECT_DIR$/application/views/administration/liste_article.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/administration/liste_choix.php" afterPath="$PROJECT_DIR$/application/views/administration/liste_choix.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/administration/liste_etudiant.php" afterPath="$PROJECT_DIR$/application/views/administration/liste_etudiant.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/administration/liste_media.php" afterPath="$PROJECT_DIR$/application/views/administration/liste_media.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/administration/modif_article.php" afterPath="$PROJECT_DIR$/application/views/administration/modif_article.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/administration/profile.php" afterPath="$PROJECT_DIR$/application/views/administration/profile.php" />
+    </list>
     <ignored path="resedanat.iws" />
     <ignored path=".idea/workspace.xml" />
+    <file path="$PROJECT_DIR$/.idea/workspace.xml" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,40 +44,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="admin.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="admin.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/controllers/admin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="312" column="9" selection-start="11564" selection-end="11564" vertical-scroll-proportion="-9.153846" vertical-offset="5066" max-vertical-offset="6120">
+            <state line="421" column="25" selection-start="15546" selection-end="15546" vertical-scroll-proportion="0.9128205" vertical-offset="5671" max-vertical-offset="6783">
               <folding>
-                <marker date="1398811934412" expanded="true" signature="1469:1624" placeholder="..." />
+                <element signature="n#media#0;n#Admin#0;n#!!top" expanded="false" />
+                <element signature="n#chercher#0;n#Admin#0;n#!!top" expanded="false" />
+                <element signature="n#recherche#0;n#Admin#0;n#!!top" expanded="false" />
+                <element signature="n#profile#0;n#Admin#0;n#!!top" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fpdf.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/application/libraries/fpdf/fpdf.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="109" column="5" selection-start="4753" selection-end="4753" vertical-scroll-proportion="0.50183153" vertical-offset="1477" max-vertical-offset="31892">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="etudiant_model.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/models/etudiant_model.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="66" column="36" selection-start="1617" selection-end="1617" vertical-scroll-proportion="-13.038462" vertical-offset="783" max-vertical-offset="1717">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="etudiant.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/administration/etudiant.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="103" column="13" selection-start="4453" selection-end="5429" vertical-scroll-proportion="-3.5" vertical-offset="1660" max-vertical-offset="2295">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -183,19 +61,8 @@
       <file leaf-file-name="ajout_user.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/administration/ajout_user.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="46" selection-start="1926" selection-end="1926" vertical-scroll-proportion="-0.0" vertical-offset="646" max-vertical-offset="2788">
+            <state line="92" column="3" selection-start="4610" selection-end="4610" vertical-scroll-proportion="0.0" vertical-offset="1547" max-vertical-offset="2788">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="liste_etudiant.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/administration/liste_etudiant.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="48" selection-start="833" selection-end="833" vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="1207">
-              <folding>
-                <marker date="1398808282959" expanded="true" signature="1447:1575" placeholder="..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -210,6 +77,7 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
+        <option value="Nej" />
         <option value="Nejm eddine Hidr" />
         <option value="haddada &lt;haddadaseif@gmail.com&gt;" />
         <option value="Nejm" />
@@ -236,15 +104,14 @@
     </option>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/application/views/administration/dashboard.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/application/controllers/admin.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/application/models/etudiant_model.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/application/views/administration/liste_etudiant.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/application/helpers/assets_helper.php" />
-        <option value="$PROJECT_DIR$/assets/js/bootstrap.file-input.js" />
-        <option value="$PROJECT_DIR$/assets/css/bootstrap.min.css" />
         <option value="$PROJECT_DIR$/application/views/administration/choix.php" />
         <option value="$PROJECT_DIR$/application/models/choix_model.php" />
         <option value="$PROJECT_DIR$/application/views/features.php" />
@@ -259,40 +126,43 @@
         <option value="$PROJECT_DIR$/application/views/menu.php" />
         <option value="$PROJECT_DIR$/application/models/register_model.php" />
         <option value="$PROJECT_DIR$/application/controllers/signup.php" />
-        <option value="$PROJECT_DIR$/application/views/administration/liste_article.php" />
         <option value="$PROJECT_DIR$/application/views/footer.php" />
         <option value="$PROJECT_DIR$/application/controllers/login.php" />
         <option value="$PROJECT_DIR$/application/views/administration/header.php" />
-        <option value="$PROJECT_DIR$/application/views/administration/liste_choix.php" />
         <option value="$PROJECT_DIR$/application/models/spec_model.php" />
         <option value="$PROJECT_DIR$/application/views/accueil.php" />
-        <option value="$PROJECT_DIR$/system/libraries/Email.php" />
         <option value="$PROJECT_DIR$/assets/css/login.css" />
         <option value="$PROJECT_DIR$/application/controllers/loginSpecialite.php" />
         <option value="$PROJECT_DIR$/application/views/administration/login.php" />
-        <option value="$PROJECT_DIR$/application/views/administration/profile.php" />
         <option value="$PROJECT_DIR$/application/models/Online_model.php" />
         <option value="$PROJECT_DIR$/application/models/online_model.php" />
         <option value="$PROJECT_DIR$/application/models/media_model.php" />
-        <option value="$PROJECT_DIR$/application/views/administration/liste_media.php" />
         <option value="$PROJECT_DIR$/assets/zoombox/zoombox.css" />
-        <option value="$PROJECT_DIR$/application/views/administration/etudiant.php" />
         <option value="$PROJECT_DIR$/application/views/administration/ajout_etudiant.php" />
-        <option value="$PROJECT_DIR$/application/views/administration/modif_article.php" />
-        <option value="$PROJECT_DIR$/application/views/administration/dashboardheader.php" />
-        <option value="$PROJECT_DIR$/application/views/administration/dashboard.php" />
         <option value="$PROJECT_DIR$/application/views/register.php" />
-        <option value="$PROJECT_DIR$/application/views/administration/ajout_article.php" />
         <option value="$PROJECT_DIR$/application/controllers/specialite.php" />
         <option value="$PROJECT_DIR$/application/models/admin_model.php" />
-        <option value="$PROJECT_DIR$/application/views/administration/ajout_user.php" />
         <option value="$PROJECT_DIR$/assets/css/application.css" />
         <option value="$PROJECT_DIR$/application/views/specialite.php" />
         <option value="$PROJECT_DIR$/application/models/specialite_model.php" />
-        <option value="$PROJECT_DIR$/application/views/administration/liste_etudiant.php" />
-        <option value="$PROJECT_DIR$/application/models/etudiant_model.php" />
-        <option value="$PROJECT_DIR$/application/controllers/admin.php" />
         <option value="$PROJECT_DIR$/application/libraries/fpdf/fpdf.php" />
+        <option value="$PROJECT_DIR$/application/views/administration/dashboardheader.php" />
+        <option value="$PROJECT_DIR$/application/models/article_model.php" />
+        <option value="$PROJECT_DIR$/.htaccess" />
+        <option value="$PROJECT_DIR$/system/libraries/Email.php" />
+        <option value="$PROJECT_DIR$/application/models/etudiant_model.php" />
+        <option value="$PROJECT_DIR$/application/views/administration/dashboard.php" />
+        <option value="$PROJECT_DIR$/application/views/administration/etudiant.php" />
+        <option value="$PROJECT_DIR$/application/views/administration/made_choice.php" />
+        <option value="$PROJECT_DIR$/application/views/administration/profile.php" />
+        <option value="$PROJECT_DIR$/application/views/administration/ajout_article.php" />
+        <option value="$PROJECT_DIR$/application/views/administration/liste_choix.php" />
+        <option value="$PROJECT_DIR$/application/views/administration/liste_article.php" />
+        <option value="$PROJECT_DIR$/application/views/administration/liste_etudiant.php" />
+        <option value="$PROJECT_DIR$/application/views/administration/liste_media.php" />
+        <option value="$PROJECT_DIR$/application/views/administration/modif_article.php" />
+        <option value="$PROJECT_DIR$/application/views/administration/ajout_user.php" />
+        <option value="$PROJECT_DIR$/application/controllers/admin.php" />
       </list>
     </option>
   </component>
@@ -302,6 +172,22 @@
     <option name="y" value="-8" />
     <option name="width" value="1382" />
     <option name="height" value="744" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>SASS/SCSS</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -398,64 +284,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="administration" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resedanat" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="residanat" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resedanat" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="residanat" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resedanat" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="residanat" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fpdf" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -630,7 +458,15 @@
       <created>1398810641118</created>
       <updated>1398810641118</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Export pdf">
+      <created>1398812467816</created>
+      <updated>1398812467816</updated>
+    </task>
+    <task id="LOCAL-00017" summary="delete article, delete media, pdf export done">
+      <created>1398972188803</created>
+      <updated>1398972188803</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -654,16 +490,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32810047" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6420722" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31653544" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21083455" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21010248" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32810047" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
@@ -671,11 +506,12 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32810047" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32810047" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -703,7 +539,9 @@
     <MESSAGE value="charts and a lot of other stuff" />
     <MESSAGE value="more stuff" />
     <MESSAGE value="Exportation done" />
-    <option name="LAST_COMMIT_MESSAGE" value="Exportation done" />
+    <MESSAGE value="Export pdf" />
+    <MESSAGE value="delete article, delete media, pdf export done" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete article, delete media, pdf export done" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -711,26 +549,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/config/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="32" selection-start="1466" selection-end="1466" vertical-scroll-proportion="-15.153846" vertical-offset="303" max-vertical-offset="867" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/errors_View/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="21" selection-start="879" selection-end="879" vertical-scroll-proportion="0.24113475" vertical-offset="0" max-vertical-offset="564" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/Pages_Content.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="51" selection-start="926" selection-end="926" vertical-scroll-proportion="-11.076923" vertical-offset="1" max-vertical-offset="629" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/errors.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="36" selection-start="258" selection-end="258" vertical-scroll-proportion="0.34871796" vertical-offset="0" max-vertical-offset="585" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/menu.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="32" column="36" selection-start="1290" selection-end="1290" vertical-scroll-proportion="-20.692308" vertical-offset="6" max-vertical-offset="1479" />
@@ -776,19 +594,9 @@
         <state line="71" column="32" selection-start="1975" selection-end="1975" vertical-scroll-proportion="0.6803419" vertical-offset="809" max-vertical-offset="1394" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/administration/liste_article.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="10" selection-start="1755" selection-end="1755" vertical-scroll-proportion="0.4353147" vertical-offset="397" max-vertical-offset="969" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/picnet.table.filter.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="236" column="0" selection-start="112791" selection-end="112791" vertical-scroll-proportion="0.8294314" vertical-offset="3516" max-vertical-offset="4114" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/administration/liste_choix.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="26" selection-start="1066" selection-end="1066" vertical-scroll-proportion="0.4905983" vertical-offset="36" max-vertical-offset="935" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/system/core/Router.php">
@@ -811,11 +619,6 @@
         <state line="7" column="6" selection-start="1070" selection-end="1070" vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="221" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/system/libraries/Email.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2082" column="21" selection-start="44601" selection-end="47762" vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="35666" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/login.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="186" column="24" selection-start="3385" selection-end="3385" vertical-scroll-proportion="0.2220339" vertical-offset="3031" max-vertical-offset="3689" />
@@ -829,11 +632,6 @@
     <entry file="file://$PROJECT_DIR$/application/views/administration/login.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="71" column="8" selection-start="3199" selection-end="3199" vertical-scroll-proportion="2.063248" vertical-offset="0" max-vertical-offset="1377" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/administration/profile.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="7" selection-start="1030" selection-end="1030" vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="510" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/models/online_model.php">
@@ -851,39 +649,9 @@
         <state line="109" column="16" selection-start="2278" selection-end="2278" vertical-scroll-proportion="0.39152542" vertical-offset="1622" max-vertical-offset="5729" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/administration/liste_media.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="103" column="38" selection-start="4187" selection-end="4187" vertical-scroll-proportion="-12.538462" vertical-offset="1425" max-vertical-offset="2397" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/administration/ajout_etudiant.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="7" selection-start="2123" selection-end="2123" vertical-scroll-proportion="0.9179487" vertical-offset="296" max-vertical-offset="952" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/administration/dashboard.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="45" selection-start="72" selection-end="97" vertical-scroll-proportion="0.061705988" vertical-offset="0" max-vertical-offset="2669" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/register.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="24" selection-start="376" selection-end="376" vertical-scroll-proportion="0.23247863" vertical-offset="51" max-vertical-offset="918" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/administration/dashboardheader.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="26" selection-start="56" selection-end="56" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="799" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/article_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="0" selection-start="566" selection-end="930" vertical-scroll-proportion="0.64273506" vertical-offset="338" max-vertical-offset="1054" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/administration/ajout_article.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="26" selection-start="3122" selection-end="3122" vertical-scroll-proportion="0.5641026" vertical-offset="911" max-vertical-offset="1496" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/bootstrap.min.css">
@@ -898,9 +666,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/models/admin_model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="43" selection-start="963" selection-end="1009" vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="1156">
-          <folding />
-        </state>
+        <state line="44" column="43" selection-start="963" selection-end="1009" vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="1156" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/application.css">
@@ -910,91 +676,140 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="590">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.htaccess">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="29" selection-start="118" selection-end="118" vertical-scroll-proportion="0.086440675" vertical-offset="0" max-vertical-offset="590">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="590" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/specialite.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="9" selection-start="1001" selection-end="1001" vertical-scroll-proportion="0.93971634" vertical-offset="116" max-vertical-offset="901">
-          <folding />
-        </state>
+        <state line="38" column="9" selection-start="1001" selection-end="1001" vertical-scroll-proportion="0.93971634" vertical-offset="116" max-vertical-offset="901" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/models/specialite_model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="13" selection-start="116" selection-end="116" vertical-scroll-proportion="0.093406595" vertical-offset="0" max-vertical-offset="1377">
-          <folding>
-            <marker date="1398779294782" expanded="true" signature="-1:-1" placeholder="select code_..specialite..." />
-          </folding>
-        </state>
+        <state line="3" column="13" selection-start="116" selection-end="116" vertical-scroll-proportion="0.093406595" vertical-offset="0" max-vertical-offset="1377" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/specialite.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="0" selection-start="1692" selection-end="1692" vertical-scroll-proportion="0.64440435" vertical-offset="527" max-vertical-offset="2363">
-          <folding />
-        </state>
+        <state line="52" column="0" selection-start="1692" selection-end="1692" vertical-scroll-proportion="0.64440435" vertical-offset="527" max-vertical-offset="2363" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/administration/modif_article.php">
+    <entry file="file://$PROJECT_DIR$/application/libraries/fpdf/fpdf.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="7" selection-start="3781" selection-end="3781" vertical-scroll-proportion="0.7619048" vertical-offset="1013" max-vertical-offset="1632">
-          <folding />
-        </state>
+        <state line="109" column="5" selection-start="4753" selection-end="4753" vertical-scroll-proportion="0.0" vertical-offset="1853" max-vertical-offset="31994" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/administration/ajout_user.php">
+    <entry file="file://$PROJECT_DIR$/application/views/administration/dashboardheader.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="46" selection-start="1926" selection-end="1926" vertical-scroll-proportion="0.0" vertical-offset="646" max-vertical-offset="2788">
-          <folding />
-        </state>
+        <state line="29" column="73" selection-start="1197" selection-end="1197" vertical-scroll-proportion="-11.384615" vertical-offset="197" max-vertical-offset="782" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/administration/etudiant.php">
+    <entry file="file://$PROJECT_DIR$/application/models/article_model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="103" column="13" selection-start="4453" selection-end="5429" vertical-scroll-proportion="-3.5" vertical-offset="1660" max-vertical-offset="2295">
-          <folding />
-        </state>
+        <state line="64" column="54" selection-start="1387" selection-end="1387" vertical-scroll-proportion="-17.26923" vertical-offset="554" max-vertical-offset="1156" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/administration/liste_etudiant.php">
+    <entry file="file://$PROJECT_DIR$/application/config/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="48" selection-start="833" selection-end="833" vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="1207">
-          <folding>
-            <marker date="1398808282959" expanded="true" signature="1447:1575" placeholder="..." />
-          </folding>
-        </state>
+        <state line="41" column="32" selection-start="1466" selection-end="1466" vertical-scroll-proportion="0.7446808" vertical-offset="277" max-vertical-offset="867" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="629" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/libraries/Email.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="3" selection-start="783" selection-end="783" vertical-scroll-proportion="0.31760436" vertical-offset="284" max-vertical-offset="35734" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/choix_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="590" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/models/etudiant_model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="36" selection-start="1617" selection-end="1617" vertical-scroll-proportion="-13.038462" vertical-offset="783" max-vertical-offset="1717">
+        <state line="27" column="42" selection-start="626" selection-end="626" vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="2329" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="32" selection-start="2813" selection-end="2813" vertical-scroll-proportion="0.54787236" vertical-offset="626" max-vertical-offset="1258" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/administration/etudiant.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="81" selection-start="707" selection-end="772" vertical-scroll-proportion="0.23247863" vertical-offset="34" max-vertical-offset="2873" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/administration/made_choice.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="96" selection-start="754" selection-end="754" vertical-scroll-proportion="0.26153848" vertical-offset="17" max-vertical-offset="1003" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/administration/profile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="81" selection-start="730" selection-end="730" vertical-scroll-proportion="0.2905983" vertical-offset="0" max-vertical-offset="585" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/administration/ajout_etudiant.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="7" selection-start="2123" selection-end="2123" vertical-scroll-proportion="1.4239316" vertical-offset="0" max-vertical-offset="952" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/administration/dashboard.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="17" selection-start="757" selection-end="757" vertical-scroll-proportion="-5.230769" vertical-offset="51" max-vertical-offset="2924" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/administration/liste_choix.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="55" selection-start="644" selection-end="644" vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="1020" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/administration/ajout_article.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="55" selection-start="471" selection-end="471" vertical-scroll-proportion="-3.9230769" vertical-offset="17" max-vertical-offset="1530" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/administration/liste_article.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="55" selection-start="645" selection-end="645" vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="1598" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/administration/liste_etudiant.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="68" selection-start="744" selection-end="744" vertical-scroll-proportion="-5.730769" vertical-offset="21" max-vertical-offset="1224" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/administration/liste_media.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="51" selection-start="730" selection-end="730" vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="2516" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/administration/modif_article.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="77" selection-start="754" selection-end="754" vertical-scroll-proportion="0.2905983" vertical-offset="0" max-vertical-offset="1666" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/administration/ajout_user.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="92" column="3" selection-start="4610" selection-end="4610" vertical-scroll-proportion="0.0" vertical-offset="1547" max-vertical-offset="2788">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/admin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="312" column="9" selection-start="11564" selection-end="11564" vertical-scroll-proportion="-9.153846" vertical-offset="5066" max-vertical-offset="6120">
+        <state line="421" column="25" selection-start="15546" selection-end="15546" vertical-scroll-proportion="0.9128205" vertical-offset="5671" max-vertical-offset="6783">
           <folding>
-            <marker date="1398811934412" expanded="true" signature="1469:1624" placeholder="..." />
+            <element signature="n#media#0;n#Admin#0;n#!!top" expanded="false" />
+            <element signature="n#chercher#0;n#Admin#0;n#!!top" expanded="false" />
+            <element signature="n#recherche#0;n#Admin#0;n#!!top" expanded="false" />
+            <element signature="n#profile#0;n#Admin#0;n#!!top" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/libraries/fpdf/fpdf.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="109" column="5" selection-start="4753" selection-end="4753" vertical-scroll-proportion="0.50183153" vertical-offset="1477" max-vertical-offset="31892">
-          <folding />
         </state>
       </provider>
     </entry>

@@ -38,19 +38,14 @@ class LoginSpecialite extends CI_Controller{
         $this->form_validation->set_rules('cin','CIN','trim|required');
         $this->form_validation->set_rules('password','mot de passe','trim|required');
         $this->form_validation->set_message('required','il faut saisir %s');
-        
-
-
 
         if($this->form_validation->run() !== false)
         {
-    
-
              $res = $this
                     ->login_model
                     ->validateResidant(
-                        $this->input->post('cin'),
-                        $this->input->post('password')
+                            $this->input->post('cin'),
+                            $this->input->post('password')
                         );
 
             if($res !== false)
