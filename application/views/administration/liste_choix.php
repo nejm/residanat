@@ -5,16 +5,17 @@
                 <li><a href=<?=base_url("admin/ajout/");?>>Nouveau Article</a></li>
                 <li><a href=<?=base_url("admin/modifier/");?>>Modifier Article</a></li>
                 <li><a href=<?=base_url("admin/media");?>>Gérer Media</a></li>
-                <li class="active"><a href=<?=base_url("admin/choix/");?>>Liste Etudiant</a></li>
+                <li class="active"><a href=<?=base_url("admin/etudiant/");?>>Liste Etudiant</a></li>
                 <li><a href=<?=base_url("admin/user/")?>>Ajouter Utilisateur</a></li>
-                <li><a href=<?=base_url("admin/etudiant/")?>>Chercher Etudiant</a></li>
+                <li><a href=<?=base_url("admin/chercher/")?>>Chercher Etudiant</a></li>
+                <li><a href=<?=base_url("admin/choix/")?>>List choix</a></li>
             </ul>
         </div>
         <div class="col-sm-9 col-sm-offset-3 col-md-8 col-md-offset-2 main">
             <h1 class="page-header">Les Choix</h1>
             <h4>
                 <?php if($choix==false) echo "Etudiant Introuvable";else{?>
-                <?=ucwords(strtolower($etudiant->nom))?></span>
+                <?=ucwords(strtolower($etudiant->nom))?>
             </h4>
                 <?php
                 if($choix !== false)
@@ -48,7 +49,6 @@
 <script src=<?=js_url("bootstrap.min")?>></script>
 <script src=<?=js_url("bootstrap-switch")?>></script>
 <script type="text/javascript">
-    $(".tool").tooltip("hgiuh");
 </script>
 </body>
 </body>

@@ -21,6 +21,16 @@ class Etudiant_model extends CI_Model {
         return $q->row();
     }
 
+    function getByCinMadeChoice($cin)
+    {
+        $q = $this->db
+                  ->where('cin',$cin)
+                  ->where('deja_choisit',1)
+                  ->limit(1)
+                  ->get('candidats');
+        return $q->row();
+    }
+
     function getByName($name)
     {
         $q = $this->db->like('nom',$name)->get($this->table);
@@ -73,13 +83,27 @@ class Etudiant_model extends CI_Model {
         return $this->db->where('deja_choisit',1)->count_all_results('candidats');
     }
 
-    function getMadeChoice()
+    function getMadeChoice($limit, $start)
+    {
+        $query = $this
+            ->db
+            ->where('deja_choisit',1)
+            ->limit($limit, $start)
+            ->get('candidats');
+
+        if ($query->num_rows > 0) {
+            return $query->result();
+        }
+        return false;
+    }
+
+    /*function getMadeChoice()
     {
         $q = $this->db->where('deja_choisit',1)->get('candidats');
         if($q->num_rows > 0)
             return $q->result();
         return false;
-    }
+    }*/
 
     public function getEtudiant($limit, $start)
     {

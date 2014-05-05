@@ -1,13 +1,14 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-sm-3 col-md-2 sidebar">
-            <ul class="nav nav-sidebar">
+            <ul class="nav nav-pills nav-stacked">
                 <li class="active"><a href=<?=base_url("admin/ajout/");?>>Nouveau Article</a></li>
                 <li><a href=<?=base_url("admin/modifier/");?>>Modifier Article</a></li>
                 <li><a href=<?=base_url("admin/media")?>>Gérer Media</a></li>
-                <li><a href=<?=base_url("admin/choix/");?>>Liste Etudiant</a></li>
+                <li class="active"><a href=<?=base_url("admin/etudiant/");?>>Liste Etudiant</a></li>
                 <li><a href=<?=base_url("admin/user/")?>>Ajouter Utilisateur</a></li>
-                <li><a href=<?=base_url("admin/etudiant/")?>>Chercher Etudiant</a></li>
+                <li><a href=<?=base_url("admin/chercher/")?>>Chercher Etudiant</a></li>
+                <li><a href=<?=base_url("admin/choix/")?>>List des choix</a></li>
             </ul>
         </div>
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
@@ -90,6 +91,38 @@
     $("#moy").on('slide', function(slideEvt) {
         moymin=slideEvt.value[0];
         moymax=slideEvt.value[1];
+        if($("#name").val().length > 3){
+            $.ajax({
+                type: "post",
+                url: "http://localhost/residanat/admin/recherche",
+                cache: false,
+                data:'name='+$("#name").val()+'&moymin='+moymin+'&moymax='+moymax,
+                success: function(response){
+                    $('#result').empty();
+                    var obj = JSON.parse(response);
+                    if(obj.length>0){
+                        try{
+                            var items=[];
+                            $.each(obj, function(i,val){
+                                items.push('<tr><td>'+(val.cin)+
+                                    '</td><td>'+(val.nom)+
+                                    '</td><td>'+(Math.round(val.moyenne*Math.pow(10,2))/Math.pow(10,2))+
+                                    '</td></tr>');
+                            });
+                            $('#result').append.apply($('#result'), items);
+                        }catch(e) {
+                            $('#result').html("Aucune résultat");
+                        }
+                    }else{
+                        $('#result').html($('<li/>').text("Aucune résultat"));
+                    }
+                },
+                error: function(){
+                    alert('Error while request..');
+                }
+            });
+        }
+        return false;
     });
 
     $("#name").keyup(function(){

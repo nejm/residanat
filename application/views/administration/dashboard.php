@@ -5,33 +5,14 @@
                 <li><a href=<?=base_url("admin/ajout/");?>>Nouveau Article</a></li>
                 <li><a href=<?=base_url("admin/modifier/");?>>Liste Article</a></li>
                 <li><a href=<?=base_url("admin/media")?>>Gérer Media</a></li>
-                <li><a href=<?=base_url("admin/choix/");?>>Liste Etudiant</a></li>
+                <li><a href=<?=base_url("admin/etudiant/");?>>Liste Etudiant</a></li>
                 <li><a href=<?=base_url("admin/user/")?>>Ajouter Utilisateur</a></li>
-                <li><a href=<?=base_url("admin/etudiant/")?>>Chercher Etudiant</a></li>
+                <li><a href=<?=base_url("admin/chercher/")?>>Chercher Etudiant</a></li>
+                <li><a href=<?=base_url("admin/choix/")?>>List des choix</a></li>
             </ul>
         </div>
-
-
-
-
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
             <h1 class="page-header">Dashboard</h1>
-            <!--<div class="row placeholders">
-                <div class="col-xs-8 col-sm-4 placeholder">
-                    <img data-src="holder.js/200x200/auto/sky" class="img-thumbnail" alt="200x200" src=<?=img_url('etudiant.png')?>>
-                    <h4>Etudiants</h4>
-                    <span class="text-muted">Total de <?=$nombre?></span>
-                </div>
-                <div class="col-xs-8 col-sm-4 placeholder">
-                    <img data-src="holder.js/200x200/auto/vine" class="img-thumbnail" alt="200x200" src=<?=img_url("specialite.png")?>>
-                    <h4>Spécialités</h4>
-                    <span class="text-muted">Total de <?=$places->nbr_place?> places libres</span>
-                </div>
-                <div class="col-xs-8 col-sm-4 placeholder">
-                    <img data-src="holder.js/200x200/auto/sky" class="img-thumbnail" alt="200x200" src=<?=img_url('articles.png')?>>
-                    <h4>Articles</h4>
-                </div>
-            </div>-->
             <?php
                 $data ="";
                 $data2="";
@@ -61,10 +42,10 @@
                 substr($data,0,-1);
             ?>
 
-            <div id="moy" style="width:900px; height:500px"></div>
-            <div class="col-sm-6" id="spec" style="width:600px; height:500px"></div>
-            <div class="col-sm-6" id="choix" style="width:600px; height:500px"></div>
-            <div class="col-sm-6" id="fac" style="width:600px; height:500px"></div>
+            <div id="moy" st></div>
+            <div class="col-sm-6" id="spec"></div>
+            <div class="col-sm-6" id="choix"></div>
+            <div class="col-sm-6" id="fac"></div>
         </div>
 <!--        </div>
         <div class="col-xs-6 col-sm-3 placeholder">

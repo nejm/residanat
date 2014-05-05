@@ -2,12 +2,13 @@
     <div class="row">
         <div class="col-sm-3 col-md-2 sidebar">
             <ul class="nav nav-pills nav-stacked">
-                <li class="active"><a href=<?=base_url("admin/ajout/");?>>Nouveau Article</a></li>
+                <li><a href=<?=base_url("admin/ajout/");?>>Nouveau Article</a></li>
                 <li><a href=<?=base_url("admin/modifier/");?>>Modifier Article</a></li>
                 <li><a href=<?=base_url("admin/media")?>>Gérer Media</a></li>
-                <li><a href=<?=base_url("admin/choix/");?>>Liste Etudiant</a></li>
+                <li><a href=<?=base_url("admin/etudiant/");?>>Liste Etudiant</a></li>
                 <li class="active"><a href=<?=base_url("admin/user/")?>>Ajouter Utilisateur</a></li>
-                <li><a href=<?=base_url("admin/etudiant/")?>>Chercher Etudiant</a></li>
+                <li><a href=<?=base_url("admin/chercher/")?>>Chercher Etudiant</a></li>
+                <li><a href=<?=base_url("admin/choix/")?>>List des choix</a></li>
             </ul>
         </div>
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
@@ -153,8 +154,6 @@ $('#pass2').keyup(function(){
     else
         $("#pass2").parent().removeClass('has-error').addClass('has-success');
 });
-
-
 </script>
 </body>
 </html>

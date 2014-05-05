@@ -156,7 +156,7 @@ class Admin extends CI_Controller
         redirect('admin/modifier');
     }
 
-    function choix($cin = NULL)
+    function etudiant($cin = NULL)
     {
         if (!isset($_SESSION['name'])) redirect('admin/');
 
@@ -214,6 +214,62 @@ class Admin extends CI_Controller
         }
     }
 
+    function choix($cin = NULL)
+    {
+        if (!isset($_SESSION['name'])) redirect('admin/');
+
+        $this->load->model('etudiant_model');
+        if (is_null($cin) or $cin < $this->etudiant_model->getNbrMadeChoice()) {
+
+            $this->load->library('pagination');
+
+            $config['full_tag_open'] = '<ul class="pagination">';
+            $config['full_tag_close'] = '</ul>';
+            $config['first_link'] = '&laquo; First';
+            $config['first_tag_open'] = '<li class="prev page">';
+            $config['first_tag_close'] = '</li>';
+            $config['last_link'] = 'Last &raquo;';
+            $config['last_tag_open'] = '<li class="next page">';
+            $config['last_tag_close'] = '</li>';
+            $config['next_link'] = '>';
+            $config['next_tag_open'] = '<li class="next page">';
+            $config['next_tag_close'] = '</li>';
+            $config['prev_link'] = '<';
+            $config['prev_tag_open'] = '<li class="prev page">';
+            $config['prev_tag_close'] = '</li>';
+            $config['cur_tag_open'] = '<li class="active"><a href="">';
+            $config['cur_tag_close'] = '</a></li>';
+            $config['num_tag_open'] = '<li class="page">';
+            $config['num_tag_close'] = '</li>';
+            $config['anchor_class'] = 'class="follow_link"';
+
+
+            $config['base_url'] = base_url('admin/choix');
+            $config['total_rows'] = $this->etudiant_model->getNbrMadeChoice();
+            $config['per_page'] = 20;
+
+            $this->pagination->initialize($config);
+
+            $page = ($this->uri->segment(3)) ? $this->uri->segment(3) : 0;
+            $data["etudiants"] = $this->
+                                 etudiant_model->
+                                 getMadeChoice($config["per_page"], $page);
+            $data["links"] = $this->pagination->create_links();
+
+            $this->load->view('administration/dashboardheader');
+            $this->load->view('administration/made_choice', $data);
+        } else {
+            $this->load->model('choix_model');
+            $this->load->model('etudiant_model');
+
+            $data ['choix'] = ($this->choix_model->get($cin)!==false) ? $this->choix_model->get($cin) : false;
+
+            $data ['etudiant'] = $this->etudiant_model->getByCinMadeChoice($cin);
+            $this->load->view('administration/dashboardheader');
+            $this->load->view('administration/liste_choix', $data);
+        }
+    }
+
     function media()
     {
         if(isset($_SESSION['msg']))
@@ -252,7 +308,7 @@ class Admin extends CI_Controller
         }
     }
 
-    function etudiant()
+    function chercher()
     {
         $this->load->view("administration/dashboardheader");
         $this->load->view("administration/etudiant");
@@ -359,12 +415,12 @@ class Admin extends CI_Controller
     }
 
     function logout()
-    {
-        if (!isset($_SESSION['name'])) redirect('admin/');
-        unset($_SESSION['id']);
-        unset($_SESSION['name']);
-        redirect(base_url('admin'), 'refresh');
+    {url('admin'), 'refresh');
     }
+if (!isset($_SESSION['name'])) redirect('admin/');
+unset($_SESSION['id']);
+unset($_SESSION['name']);
+redirect(base_
 
     function deleteFile()
     {
@@ -378,6 +434,7 @@ class Admin extends CI_Controller
             echo 'Could not delete '.$path.', file does not exist';
         }
     }
+
     function deleteArticle()
     {
 
