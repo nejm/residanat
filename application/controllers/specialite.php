@@ -11,6 +11,12 @@ class Specialite extends CI_Controller{
 
     
      function index(){
+
+
+
+     		
+		
+		
      	 if(!isset($_SESSION['cinSpec']))
         {
            redirect('loginSpecialite');
@@ -23,7 +29,10 @@ class Specialite extends CI_Controller{
     	$data['spec']=$res;
     	$data['specChoisi']=$resChoisi;
     	//var_dump($res);
+    	$this->load->view('CostomizedHeader');
+     	$this->load->view('CostomizedMenu');
     	$this->load->view("specialite",$data);
+    	$this->load->view('footer');
     }
 
     function send($variable){
