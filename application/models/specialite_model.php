@@ -15,6 +15,7 @@ class Specialite_model extends CI_Model{
     {
         $q = $this
             ->db
+            ->order_by('nbr_place',"desc")
             ->get('specialite');
         return $q->result();
     }
@@ -26,9 +27,6 @@ class Specialite_model extends CI_Model{
 
     }
 
-
-
-
     function getChoisit($cin)
     {
        $q = $this->db->where('cin',$cin)->from('choix_candidats')
@@ -38,12 +36,6 @@ class Specialite_model extends CI_Model{
             return $q->result();
         return false;
     }
-
-
-
-
-
-
 
     function getNonChoisi($cin){
 

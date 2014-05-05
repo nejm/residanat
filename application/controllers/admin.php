@@ -21,9 +21,9 @@ class Admin extends CI_Controller
         $this->form_validation->set_rules('pass', 'Mot de passe', 'trim|required');
 
         if ($this->form_validation->run() !== false) {
-            if (isset($_SESSION['id'])) {
+            /*if (isset($_SESSION['id'])) {
                 redirect('admin/dashboard');
-            }
+            }*/
             $this->load->model('admin_model');
             $res = $this
                 ->admin_model
@@ -32,8 +32,11 @@ class Admin extends CI_Controller
                     $this->input->post('pass')
                 );
             if ($res !== false) {
-                $_SESSION['id'] = "1";
-                $_SESSION['name'] = $this->input->post('login');
+                $_SESSION['id'] = $_SESSION['name'] = $this->input->post('login');
+                //----------------//
+                $this->load->model('online_model');
+                $this->online_model->add($_SESSION['name'],$this->input->ip_address());
+                //**********************************//
                 redirect('admin/dashboard');
             } else {
                 $data['msg'] = "<div class='alert alert-danger'>
@@ -48,21 +51,35 @@ class Admin extends CI_Controller
     function dashboard()
     {
         if (!isset($_SESSION['name'])) redirect('admin/');
+
         $this->load->model('etudiant_model');
         $this->load->model('specialite_model');
         $moyennes=[];
         $data['nombre'] = $this->etudiant_model->getNbr();
+
         $data['places'] = $this->specialite_model->getSum();
-        $data['spec']=$this->specialite_model->getAll();
-        $data['choix']=$this->etudiant_model->getNbrMadeChoice();
-        //$data['test'] = $this->etudiant_model->getByMoy(13.5,14);
-        for($i=12;$i<17;$i=$i+2)
+        $data['spec']=$this->specialite_model->getAll('DESC');
+
+        $data['admis']=$this->etudiant_model->getNbrAdmis();
+
+        $data['sousse'] = $this->etudiant_model->getByFac('SOUSSE');
+        $data['sfax'] = $this->etudiant_model->getByFac('SFAX');
+        $data['monastir'] = $this->etudiant_model->getByFac('MONASTIR');
+        $data['tunis'] = $this->etudiant_model->getByFac('TUNIS');
+
+        $min = $this->etudiant_model->getMinMoy();
+        $max = $this->etudiant_model->getMaxMoy();
+
+        for($i=floor($min->moyenne);$i<ceil($max->moyenne);$i++)
         {
             $j=$i+1;
-            $moyennes["$i-$i.5"] = $this->etudiant_model->getByMoy($i,$i+(1/2));
-            $moyennes["$i.5-$j"] = $this->etudiant_model->getByMoy(($i+(1/2)),$i+1);
+
+            $moyennes["$i-$j"] = $this->etudiant_model->getByMoy($i,$i+1);
+
+            //$moyennes["$i.5-$j"] = $this->etudiant_model->getByMoy(($i+(1/2)),$i+1);
         }
         $data['moyenne'] = $moyennes;
+
         $this->load->view("administration/dashboardheader");
         $this->load->view("administration/dashboard", $data);
 
@@ -92,7 +109,7 @@ class Admin extends CI_Controller
                     'etat' => $this->input->post('pb'),
                     'par' => $_SESSION['id']
                 ));
-            redirect('admin/dashboard');
+            redirect('admin/modifier');
             die();
         }
         $this->load->view("administration/dashboardheader");
@@ -108,6 +125,8 @@ class Admin extends CI_Controller
         }
         $this->load->model("article_model");
         //afficher toutes la liste des article
+        $this->load->model('media_model');
+        $data['imgs'] = $this->media_model->getAll();
         if ($a == 0) {
             $articles = $this->article_model->getAll();
             $data['articles'] = $articles;
@@ -137,11 +156,12 @@ class Admin extends CI_Controller
         redirect('admin/modifier');
     }
 
-    function choix($cin = NULL)
+    function etudiant($cin = NULL)
     {
         if (!isset($_SESSION['name'])) redirect('admin/');
-        if (is_null($cin) or $cin < 592) {
-            $this->load->model('etudiant_model');
+
+        $this->load->model('etudiant_model');
+        if (is_null($cin) or $cin < $this->etudiant_model->getNbr()) {
 
             $this->load->library('pagination');
 
@@ -194,6 +214,62 @@ class Admin extends CI_Controller
         }
     }
 
+    function choix($cin = NULL)
+    {
+        if (!isset($_SESSION['name'])) redirect('admin/');
+
+        $this->load->model('etudiant_model');
+        if (is_null($cin) or $cin < $this->etudiant_model->getNbrMadeChoice()) {
+
+            $this->load->library('pagination');
+
+            $config['full_tag_open'] = '<ul class="pagination">';
+            $config['full_tag_close'] = '</ul>';
+            $config['first_link'] = '&laquo; First';
+            $config['first_tag_open'] = '<li class="prev page">';
+            $config['first_tag_close'] = '</li>';
+            $config['last_link'] = 'Last &raquo;';
+            $config['last_tag_open'] = '<li class="next page">';
+            $config['last_tag_close'] = '</li>';
+            $config['next_link'] = '>';
+            $config['next_tag_open'] = '<li class="next page">';
+            $config['next_tag_close'] = '</li>';
+            $config['prev_link'] = '<';
+            $config['prev_tag_open'] = '<li class="prev page">';
+            $config['prev_tag_close'] = '</li>';
+            $config['cur_tag_open'] = '<li class="active"><a href="">';
+            $config['cur_tag_close'] = '</a></li>';
+            $config['num_tag_open'] = '<li class="page">';
+            $config['num_tag_close'] = '</li>';
+            $config['anchor_class'] = 'class="follow_link"';
+
+
+            $config['base_url'] = base_url('admin/choix');
+            $config['total_rows'] = $this->etudiant_model->getNbrMadeChoice();
+            $config['per_page'] = 20;
+
+            $this->pagination->initialize($config);
+
+            $page = ($this->uri->segment(3)) ? $this->uri->segment(3) : 0;
+            $data["etudiants"] = $this->
+                                 etudiant_model->
+                                 getMadeChoice($config["per_page"], $page);
+            $data["links"] = $this->pagination->create_links();
+
+            $this->load->view('administration/dashboardheader');
+            $this->load->view('administration/made_choice', $data);
+        } else {
+            $this->load->model('choix_model');
+            $this->load->model('etudiant_model');
+
+            $data ['choix'] = ($this->choix_model->get($cin)!==false) ? $this->choix_model->get($cin) : false;
+
+            $data ['etudiant'] = $this->etudiant_model->getByCinMadeChoice($cin);
+            $this->load->view('administration/dashboardheader');
+            $this->load->view('administration/liste_choix', $data);
+        }
+    }
+
     function media()
     {
         if(isset($_SESSION['msg']))
@@ -220,7 +296,7 @@ class Admin extends CI_Controller
                 redirect($_SERVER['HTTP_REFERER']);
             }
             // on fait un test de sécurité
-            $name_file = $_FILES['fichier']['name'];
+            $name_file = $this->input->post('filename');
             if (preg_match('#[\x00-\x1F\x7F-\x9F/\\\\]#', $name_file)) {
                 $_SESSION['msg'] = "Nom de fichier non valide" ;
             } // on copie le fichier dans le dossier de destination
@@ -232,12 +308,143 @@ class Admin extends CI_Controller
         }
     }
 
-    function logout()
+    function chercher()
     {
-        if (!isset($_SESSION['name'])) redirect('admin/');
-        unset($_SESSION['id']);
-        unset($_SESSION['name']);
-        //$this->session->unset_userdata('name');
-        redirect(base_url('admin'), 'refresh');
+        $this->load->view("administration/dashboardheader");
+        $this->load->view("administration/etudiant");
     }
+
+    function recherche()
+    {
+        $search=  $this->input->post('name');
+        $moymin=  $this->input->post('moymin');
+        $moymax=  $this->input->post('moymax');
+
+        $this->load->model('etudiant_model');
+        $query = $this->etudiant_model->search($search,$moymin,$moymax);
+        if($query !==false)
+            echo json_encode ($query);
+        else
+            echo json_encode("aucune résultat");
+    }
+
+    function profile()
+    {
+        $this->load->view("administration/dashboardheader");
+        $this->load->view("administration/profile");
+    }
+
+    function user()
+    {
+        $this->load->view("administration/dashboardheader");
+        $this->load->view("administration/ajout_user");
+    }
+
+    function verifLogin()
+    {
+        $login =  $this->input->post('login');
+        $this->load->model('admin_model');
+        echo json_encode($this->admin_model->verifyLogin($login));
+    }
+
+    function addUser()
+    {
+        explode($this->input->post());
+        $privilège = 0;
+        if(isset($media)) $privilège+=1;
+        if(isset($etudiant)) $privilège+=2;
+        if(isset($admin)) $privilège+=4;
+
+        $this->load->model('admin_model');
+        $this->admin_model->addUser(array(
+            'nom'       => $nom,
+            'prenom'    => $prenom,
+            'login'     => $login,
+            'pass'      => $pass,
+            'mail'      => $mail,
+            'privilege' => $privilege
+        ));
+    }
+
+    function exporter()
+    {
+        $this->load->library("fpdf/fpdf");
+        $this->load->model("etudiant_model");
+        $max = $this->etudiant_model->getNbr();
+        $perpage = ceil($max/42);
+
+        $pdf = new FPDF();
+        //$pdf->AddFont('Arial','','',true);
+
+        $pdf->SetFillColor(128,50,10);
+        $pdf->SetTextColor(0);
+        $pdf->SetDrawColor(64,21,5);
+
+        for($j=0;$j<$perpage;$j++)
+        {
+
+            $header=['convocation','cin','Nom & Prénom','Moyenne'];
+            $data = $this->etudiant_model->getEtudiant(42,$j*42);
+
+            $pdf->AddPage();
+
+            // Largeurs des colonnes
+            $w=[30,20,80,20];
+
+            // En-tête
+            $pdf->SetFont('Arial','B',11);
+            for($i=0;$i<count($header);$i++)
+                $pdf->Cell($w[$i],7,iconv('UTF-8', 'windows-1252',$header[$i]),1,0,'C',true);
+            $pdf->SetFont('Arial','',10);
+            $pdf->Ln();
+            // Données
+
+            foreach($data as $row)
+            {
+                $pdf->Cell($w[0],6,$row->num,1,'LR');
+                $pdf->Cell($w[1],6,$row->cin,1,'LR');
+                $pdf->Cell($w[2],6,$row->nom,1,'L');
+                $pdf->Cell($w[3],6,number_format($row->moyenne,2,',',' '),1,'R');
+                $pdf->Ln();
+            }
+            // Trait de terminaison
+            $pdf->Cell(array_sum($w),0,'','T');
+        }
+        $pdf->Output();
+
+    }
+
+    function logout()
+    {url('admin'), 'refresh');
+    }
+if (!isset($_SESSION['name'])) redirect('admin/');
+unset($_SESSION['id']);
+unset($_SESSION['name']);
+redirect(base_
+
+    function deleteFile()
+    {
+
+        $filename = $this->input->post('file');
+        $path = "R:\\wamp\\www\\residanat\\assets\\img\\".$filename;
+        if (file_exists($path)) {
+            unlink($path);
+            echo 'File '.$path.' has been deleted';
+        } else {
+            echo 'Could not delete '.$path.', file does not exist';
+        }
+    }
+
+    function deleteArticle()
+    {
+
+        $id = $this->input->post('id');
+        $this->load->model("article_model");
+        $this->article_model->deleteById($id);
+        echo "Article supprimer avec succès";
+    }
+
+
+    // FPDF functions
+
 } 

@@ -5,61 +5,47 @@
                 <li><a href=<?=base_url("admin/ajout/");?>>Nouveau Article</a></li>
                 <li><a href=<?=base_url("admin/modifier/");?>>Liste Article</a></li>
                 <li><a href=<?=base_url("admin/media")?>>Gérer Media</a></li>
-                <li><a href=<?=base_url("admin/choix/");?>>Liste Etudiant</a></li>
-                <li><a href=<?=base_url("admin/etudiant/")?>>Ajouter Utilisateur</a></li>
+                <li><a href=<?=base_url("admin/etudiant/");?>>Liste Etudiant</a></li>
+                <li><a href=<?=base_url("admin/user/")?>>Ajouter Utilisateur</a></li>
+                <li><a href=<?=base_url("admin/chercher/")?>>Chercher Etudiant</a></li>
+                <li><a href=<?=base_url("admin/choix/")?>>List des choix</a></li>
             </ul>
         </div>
-
-
-
-
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
             <h1 class="page-header">Dashboard</h1>
-            <!--<div class="row placeholders">
-                <div class="col-xs-8 col-sm-4 placeholder">
-                    <img data-src="holder.js/200x200/auto/sky" class="img-thumbnail" alt="200x200" src=<?=img_url('etudiant.png')?>>
-                    <h4>Etudiants</h4>
-                    <span class="text-muted">Total de <?=$nombre?></span>
-                </div>
-                <div class="col-xs-8 col-sm-4 placeholder">
-                    <img data-src="holder.js/200x200/auto/vine" class="img-thumbnail" alt="200x200" src=<?=img_url("specialite.png")?>>
-                    <h4>Spécialités</h4>
-                    <span class="text-muted">Total de <?=$places->nbr_place?> places libres</span>
-                </div>
-                <div class="col-xs-8 col-sm-4 placeholder">
-                    <img data-src="holder.js/200x200/auto/sky" class="img-thumbnail" alt="200x200" src=<?=img_url('articles.png')?>>
-                    <h4>Articles</h4>
-                </div>
-            </div>-->
             <?php
                 $data ="";
                 $data2="";
                 $i=0;
                 foreach ($spec as $s)
                 {
-
                     if($s->nbr_place > 0){
                         $i++;
-                        //$places->nbr_place-=$s->nbr_place;
                         $data.="[ '$s->libelle' , $s->nbr_place ],";
                     }
                     if($i===10) break;
                 }
-                foreach ($moyenne as $k=>$v)
+
+            //moyenne
+                foreach ($moyenne as $k => $v)
                 {
-                    $data2.="[ '$k' , $v ],";
+                    $data2.= "[ '$k' , $v ],";
                 }
-                $s=$nombre-$choix;
-                $data3= "[ 'Oui' , $choix ],";
-                $data3.= "[ 'Non' , $s ]";
+
+
+            //admission
+                $s=$nombre-$admis;
+                $data3= "[ 'Admis(e)' , $admis ],";
+                $data3.= "[ 'Non Admis(e)' , $s ]";
 
                 substr($data2,0,-1);
                 substr($data,0,-1);
             ?>
 
-            <div id="moy" style="width:700; height:500"></div>
-            <div class="col-sm-6" id="spec" style="width:600; height:500"></div>
-            <div class="col-sm-6" id="choix" style="width:600; height:500"></div>
+            <div id="moy" st></div>
+            <div class="col-sm-6" id="spec"></div>
+            <div class="col-sm-6" id="choix"></div>
+            <div class="col-sm-6" id="fac"></div>
         </div>
 <!--        </div>
         <div class="col-xs-6 col-sm-3 placeholder">
@@ -85,6 +71,7 @@
     google.setOnLoadCallback(drawChart);
     google.setOnLoadCallback(drawChart2);
     google.setOnLoadCallback(drawChart3);
+    google.setOnLoadCallback(drawChart4);
 
 
     // Callback that creates and populates a data table,
@@ -113,13 +100,18 @@
     //---------------------------------------------------------\\
     function drawChart2() {
         var data2 = google.visualization.arrayToDataTable([
-            ['Myenne', 'Nombre d\'étudiants'],
+            ['Moyenne', 'Nombre d\'étudiants'],
             <?=$data2?>
         ]);
 
         var options2 = {
             title: 'Classement par moyenne',
-            hAxis: {title: 'Moyenne', titleTextStyle: {color: 'black'}}
+            hAxis: {
+                title: 'Moyenne',
+                titleTextStyle: {color: 'black'}
+                },
+            is3D :true
+
         };
 
         var chart2 = new google.visualization.ColumnChart(document.getElementById('moy'));
@@ -137,7 +129,7 @@
         ]);
 
         // Set chart options
-        var options3 = {'title':'Pourcentage des personne ayant fait le choix',
+        var options3 = {'title':'Pourcentage des personne selon leurs résultat',
             'width':540,
             'height':500};
 
@@ -145,8 +137,31 @@
         var chart3 = new google.visualization.PieChart(document.getElementById('choix'));
         chart3.draw(data3, options3);
     }
+//-----------------------------------------------------------------------------------------
+    //---------------------------------------------------------------
+    function drawChart4() {
+
+        // Create the data table.
+        var data4 = new google.visualization.DataTable();
+        data4.addColumn('string', 'Topping');
+        data4.addColumn('number', 'Slices');
+        data4.addRows([
+            ['Sousse',  <?=$sousse?>   ],
+            ['Sfax',    <?=$sfax?>     ],
+            ['Monastir',<?=$monastir?> ],
+            ['Tunis',   <?=$tunis?>    ]
+        ]);
+
+        // Set chart options
+        var options4 = {'title':'Pourcentage des personne selon la faculté',
+            'width':540,
+            'height':500};
+
+        // Instantiate and draw our chart, passing in some options.
+        var chart4 = new google.visualization.PieChart(document.getElementById('fac'));
+        chart4.draw(data4, options4);
+    }
 </script>
 
-</body>
 </body>
 </html>

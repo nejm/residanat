@@ -31,4 +31,10 @@ class Media_model extends CI_Model{
         return $data;
     }
 
+    function delete($nom)
+    {
+        if( file_exists ( $nom))
+            unlink( $nom ) ;
+    }
+
 } 
