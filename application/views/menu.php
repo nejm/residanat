@@ -27,9 +27,9 @@
           <?php if(!isset($_SESSION['cinSpec'])):?>
             <a class="item" href=""  data-target="#myModal1" style="font-size: 100%;"  data-toggle="modal" >signup</a>
               <a data-toggle="modal" class="item" href="#loginModal" data-target="#myModal" style="font-size: 100%;">Log in</a>
-          <?php endif?>
+          <?php else:?>
             <a class="item" href='<?php echo base_url(); ?>loginSpecialite/logout' style="font-size: 100%;">logout</a>
-
+          <?php endif?>
           </div>
           </div>
 
