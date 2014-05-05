@@ -2,26 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list id="2d8039a6-4a93-44cc-a0e8-3e7e9d03633b" name="Default" comment="charts and a lot of other stuff">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.htaccess" afterPath="$PROJECT_DIR$/.htaccess" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/system/libraries/Email.php" afterPath="$PROJECT_DIR$/system/libraries/Email.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/loginSpecialite.php" afterPath="$PROJECT_DIR$/application/controllers/loginSpecialite.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
-    <list default="true" id="7fad9f16-3c73-4067-ae76-4b8ad3acac61" name="home page &amp; specialite modification (cherry picked from commit 437d27a)" comment="delete article, delete media, pdf export done">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/administration/made_choice.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.htaccess" afterPath="$PROJECT_DIR$/.htaccess" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/system/libraries/Email.php" afterPath="$PROJECT_DIR$/system/libraries/Email.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/admin.php" afterPath="$PROJECT_DIR$/application/controllers/admin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/administration/ajout_article.php" afterPath="$PROJECT_DIR$/application/views/administration/ajout_article.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/administration/ajout_user.php" afterPath="$PROJECT_DIR$/application/views/administration/ajout_user.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/administration/dashboard.php" afterPath="$PROJECT_DIR$/application/views/administration/dashboard.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/administration/etudiant.php" afterPath="$PROJECT_DIR$/application/views/administration/etudiant.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/etudiant_model.php" afterPath="$PROJECT_DIR$/application/models/etudiant_model.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/administration/liste_article.php" afterPath="$PROJECT_DIR$/application/views/administration/liste_article.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/administration/liste_choix.php" afterPath="$PROJECT_DIR$/application/views/administration/liste_choix.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/administration/liste_etudiant.php" afterPath="$PROJECT_DIR$/application/views/administration/liste_etudiant.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/administration/liste_media.php" afterPath="$PROJECT_DIR$/application/views/administration/liste_media.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/administration/modif_article.php" afterPath="$PROJECT_DIR$/application/views/administration/modif_article.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/administration/profile.php" afterPath="$PROJECT_DIR$/application/views/administration/profile.php" />
-    </list>
+    <list default="true" id="7fad9f16-3c73-4067-ae76-4b8ad3acac61" name="home page &amp; specialite modification (cherry picked from commit 437d27a)" comment="delete article, delete media, pdf export done" />
     <ignored path="resedanat.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="$PROJECT_DIR$/.idea/workspace.xml" ignored="false" />
@@ -47,7 +33,7 @@
       <file leaf-file-name="admin.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/controllers/admin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="421" column="25" selection-start="15546" selection-end="15546" vertical-scroll-proportion="0.9128205" vertical-offset="5671" max-vertical-offset="6783">
+            <state line="399" column="22" selection-start="14925" selection-end="14925" vertical-scroll-proportion="0.2735043" vertical-offset="5671" max-vertical-offset="6783">
               <folding>
                 <element signature="n#media#0;n#Admin#0;n#!!top" expanded="false" />
                 <element signature="n#chercher#0;n#Admin#0;n#!!top" expanded="false" />
@@ -466,7 +452,11 @@
       <created>1398972188803</created>
       <updated>1398972188803</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="stuff">
+      <created>1399284706503</created>
+      <updated>1399284706503</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -493,6 +483,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
     <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32810047" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6420722" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31653544" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -508,7 +499,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32810047" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -541,7 +531,8 @@
     <MESSAGE value="Exportation done" />
     <MESSAGE value="Export pdf" />
     <MESSAGE value="delete article, delete media, pdf export done" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete article, delete media, pdf export done" />
+    <MESSAGE value="stuff" />
+    <option name="LAST_COMMIT_MESSAGE" value="stuff" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -731,7 +722,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/models/etudiant_model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="42" selection-start="626" selection-end="626" vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="2329" />
+        <state line="27" column="42" selection-start="626" selection-end="626" vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="2329">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/config/database.php">
@@ -741,17 +734,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/administration/etudiant.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="81" selection-start="707" selection-end="772" vertical-scroll-proportion="0.23247863" vertical-offset="34" max-vertical-offset="2873" />
+        <state line="10" column="81" selection-start="707" selection-end="772" vertical-scroll-proportion="0.23247863" vertical-offset="34" max-vertical-offset="2873">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/administration/made_choice.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="96" selection-start="754" selection-end="754" vertical-scroll-proportion="0.26153848" vertical-offset="17" max-vertical-offset="1003" />
+        <state line="10" column="96" selection-start="754" selection-end="754" vertical-scroll-proportion="0.26153848" vertical-offset="17" max-vertical-offset="1003">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/administration/profile.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="81" selection-start="730" selection-end="730" vertical-scroll-proportion="0.2905983" vertical-offset="0" max-vertical-offset="585" />
+        <state line="10" column="81" selection-start="730" selection-end="730" vertical-scroll-proportion="0.2905983" vertical-offset="0" max-vertical-offset="585">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/administration/ajout_etudiant.php">
@@ -761,37 +760,51 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/administration/dashboard.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="17" selection-start="757" selection-end="757" vertical-scroll-proportion="-5.230769" vertical-offset="51" max-vertical-offset="2924" />
+        <state line="11" column="17" selection-start="757" selection-end="757" vertical-scroll-proportion="-5.230769" vertical-offset="51" max-vertical-offset="2924">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/administration/liste_choix.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="55" selection-start="644" selection-end="644" vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="1020" />
+        <state line="9" column="55" selection-start="644" selection-end="644" vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="1020">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/administration/ajout_article.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="55" selection-start="471" selection-end="471" vertical-scroll-proportion="-3.9230769" vertical-offset="17" max-vertical-offset="1530" />
+        <state line="7" column="55" selection-start="471" selection-end="471" vertical-scroll-proportion="-3.9230769" vertical-offset="17" max-vertical-offset="1530">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/administration/liste_article.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="55" selection-start="645" selection-end="645" vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="1598" />
+        <state line="9" column="55" selection-start="645" selection-end="645" vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="1598">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/administration/liste_etudiant.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="68" selection-start="744" selection-end="744" vertical-scroll-proportion="-5.730769" vertical-offset="21" max-vertical-offset="1224" />
+        <state line="10" column="68" selection-start="744" selection-end="744" vertical-scroll-proportion="-5.730769" vertical-offset="21" max-vertical-offset="1224">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/administration/liste_media.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="51" selection-start="730" selection-end="730" vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="2516" />
+        <state line="10" column="51" selection-start="730" selection-end="730" vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="2516">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/administration/modif_article.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="77" selection-start="754" selection-end="754" vertical-scroll-proportion="0.2905983" vertical-offset="0" max-vertical-offset="1666" />
+        <state line="10" column="77" selection-start="754" selection-end="754" vertical-scroll-proportion="0.2905983" vertical-offset="0" max-vertical-offset="1666">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/administration/ajout_user.php">
@@ -803,7 +816,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/admin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="421" column="25" selection-start="15546" selection-end="15546" vertical-scroll-proportion="0.9128205" vertical-offset="5671" max-vertical-offset="6783">
+        <state line="399" column="22" selection-start="14925" selection-end="14925" vertical-scroll-proportion="0.2735043" vertical-offset="5671" max-vertical-offset="6783">
           <folding>
             <element signature="n#media#0;n#Admin#0;n#!!top" expanded="false" />
             <element signature="n#chercher#0;n#Admin#0;n#!!top" expanded="false" />

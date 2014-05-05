@@ -11,7 +11,13 @@ class Specialite extends CI_Controller{
 
     
      function index(){
-     	if(!isset($_SESSION['cinSpec']))
+
+
+
+     		
+		
+		
+     	 if(!isset($_SESSION['cinSpec']))
         {
            redirect('loginSpecialite');
         }
@@ -23,7 +29,10 @@ class Specialite extends CI_Controller{
     	$data['spec']=$res;
     	$data['specChoisi']=$resChoisi;
     	//var_dump($res);
+    	$this->load->view('CostomizedHeader');
+     	$this->load->view('CostomizedMenu');
     	$this->load->view("specialite",$data);
+    	$this->load->view('footer');
     }
 
     function send($variable){
@@ -31,17 +40,19 @@ class Specialite extends CI_Controller{
     }
 
     function getData(){
-         $this->specialite_model->deletePred($_SESSION['cinSpec']);
-         $length =count($_POST['idlist']);
-         for ($i=0; $i <$length ; $i++) {
-            $res[$i]=$this->specialite_model->getById($_POST['idlist'][$i]);
+     $this->specialite_model->deletePred($_SESSION['cinSpec']);
+     $length =count($_POST['idlist']);
+     for ($i=0; $i <$length ; $i++) { 
+     	$res[$i]=$this->specialite_model->getById($_POST['idlist'][$i]);
 
-             foreach ($res[$i] as $row)
-                {
-                   $this->specialite_model->DoChoix($row['code_specialite'],$i+1,$_SESSION['cinSpec']);//
+     	 foreach ($res[$i] as $row)
+		    {
+		       $this->specialite_model->DoChoix($row['code_specialite'],$i+1,$_SESSION['cinSpec']);//
+		       
+		    }
+     
+     }
 
-                }
-         }
     }
       
    
