@@ -7,6 +7,11 @@ class Admin_model extends CI_Model{
         parent::__construct();
     }
 
+    function getAll()
+    {
+        $q = $this->db->get("admin");
+        return $q->result();
+    }
     function verify($login,$pass)
     {
         $q = $this->db

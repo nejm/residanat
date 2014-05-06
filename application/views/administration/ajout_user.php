@@ -15,7 +15,7 @@
             <h1 class="page-header">Ajouter utilisateur</h1>
             <div class="col-sm-10 col-sm-offset-2">
 
-                <form id="form" role="form" class="form-horizontal" action='<?=base_url()?>admin/addUser' method='post'>
+                <form id="form" role="form" class="form-horizontal" action='<?=base_url()?>admin/user' method='post'>
                 <div class="form-group">
 
                     <div class="form-group">
@@ -83,21 +83,26 @@
                     </div>
 
                     <div class="form-group">
+                        <div class="col-sm-12">
+                            <label>Permission :</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
                         <div class="col-sm-3">
-                            <label for="media">Gérer les media</label>
+                            <label for="media">Media</label><br/>
                             <input type="checkbox" name="media" id="media"/>
                         </div>
                         <div class="col-sm-3">
-                            <label for="media">Gérer les étudiants</label>
+                            <label for="media">Etudiants</label><br/>
                             <input type="checkbox" name="etudiant" id="etudiant"/>
                         </div>
                         <div class="col-sm-3">
-                            <label for="media">Gérer les administrateurs</label>
+                            <label for="media">Administrateurs</label><br/>
                             <input type="checkbox" name="admin" id="admin"/>
                         </div>
                     </div>
                     <div class="col-sm-2 col-sm-offset-5">
-                        <input type="submit" class="btn btn-primary" value="Enregistrer">
+                        <input type="submit" class="btn btn-primary" value="Envoyer">
                     </div>
                 </div>
                 </form>

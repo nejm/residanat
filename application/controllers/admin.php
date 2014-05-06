@@ -343,8 +343,43 @@ class Admin extends CI_Controller
 
     function user()
     {
+        if (!isset($_SESSION['name'])) redirect('admin/');
+        $this->load->library("form_validation");
+        if ($this->form_validation->run() !== false) {
+            $privilège = 0;
+            if(isset($media)) $privilège+=1;
+            if(isset($etudiant)) $privilège+=2;
+            if(isset($admin)) $privilège+=4;
+            $this->load->model('admin_model');
+            $this->article_model
+                ->ajout(array(
+                    'nom'       => $this->input->post('nom'),
+                    'prenom'    => $this->input->post('prenom'),
+                    'login'     => $this->input->post('login'),
+                    'pass'      => $this->input->post('pass'),
+                    'mail'      => $this->input->post('mail'),
+                    'privilege' => $this->input->post('privilege')
+                ));
+            redirect('admin/liste');
+            die();
+        }
         $this->load->view("administration/dashboardheader");
         $this->load->view("administration/ajout_user");
+    }
+
+    function liste()
+    {
+        if (!isset($_SESSION['name'])) redirect('admin/');
+        $this->load->model('admin_model');
+        $data['users'] = $this->admin_model->getAll();
+        $this->load->view('administration/dashboardheader');
+        $this->load->view('administration/liste_user',$data);
+    }
+
+    function periode()
+    {
+        $this->load->view('administration/dashboardheader');
+        $this->load->view('administration/periode');
     }
 
     function verifLogin()
@@ -352,25 +387,6 @@ class Admin extends CI_Controller
         $login =  $this->input->post('login');
         $this->load->model('admin_model');
         echo json_encode($this->admin_model->verifyLogin($login));
-    }
-
-    function addUser()
-    {
-        explode($this->input->post());
-        $privilège = 0;
-        if(isset($media)) $privilège+=1;
-        if(isset($etudiant)) $privilège+=2;
-        if(isset($admin)) $privilège+=4;
-
-        $this->load->model('admin_model');
-        $this->admin_model->addUser(array(
-            'nom'       => $nom,
-            'prenom'    => $prenom,
-            'login'     => $login,
-            'pass'      => $pass,
-            'mail'      => $mail,
-            'privilege' => $privilege
-        ));
     }
 
     function exporter()

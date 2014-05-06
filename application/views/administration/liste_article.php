@@ -1,17 +1,6 @@
-<div class="container-fluid">
+<div id="page-wrapper">
     <div class="row">
-        <div class="col-sm-3 col-md-2 sidebar">
-            <ul class="nav nav-pills nav-stacked">
-                <li><a href=<?=base_url("admin/ajout/");?>>Nouveau Article</a></li>
-                <li class="active"><a href=<?=base_url("admin/modifier/");?>>Modifier Article</a></li>
-                <li><a href=<?=base_url("admin/media/");?>>Gérer Media</a></li>
-                <li><a href=<?=base_url("admin/etuciant/");?>>Liste Etudiant</a></li>
-                <li><a href=<?=base_url("admin/user/")?>>Ajouter Utilisateur</a></li>
-                <li><a href=<?=base_url("admin/chercher/")?>>Chercher Etudiant</a></li>
-                <li><a href=<?=base_url("admin/choix/")?>>Chercher Etudiant</a></li>
-            </ul>
-        </div>
-        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+        <div class="col-lg-12">
             <h1 class="page-header">Tous les articles</h1>
             <!--<form action=<?=base_url("admin/modifier/")?> method="post">-->
 
@@ -26,11 +15,11 @@
 
                     </thead>
                     <?php
-                        foreach ($articles as $article)
+
+                    "</td      foreach ($articles as $article)
                         {
                             echo "<tr><td>".$article->id.
-                                 "</td><td>".$article->titre.
-                                 "</td><td>";
+                                 "</td><td>".$article->titre.><td>";
                                 if($article->etat == 1) echo "Oui"; else echo "Non";
                                 echo "</td><td><a href='".base_url("admin/modifier/{$article->id}")."'
                                 class='btn btn-info'>Modifier</a>
@@ -50,7 +39,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title">Modal title</h4>
+                <h4 class="modal-title">Confirmation</h4>
             </div>
             <div class="modal-body">
                 <p>Etes-Vous sûr de vouloir supprimer l'article</p>
