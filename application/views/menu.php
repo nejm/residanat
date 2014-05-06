@@ -14,20 +14,35 @@
             </div>
           </div>
           
-          <a class="item">Acceuil</a>
-          <a class="item">Textes Règlementaire</a>
+          <a class="item" href="<?php echo base_url(); ?>">Acceuil</a>
+          <a class="item" href="<?php echo base_url(); ?>textes_reglementaire/">Textes Règlementaire</a>
           <a class="item">Collège et formation</a>
           <a class="item">Stage à l'étranger</a>
-          <a class="item"  href="#login">
+           <div class="ui dropdown item">
             resultat
-          </a>
+             <div class="menu">
+
+                  <a class="item"  style="font-size:100%" href="<?php echo base_url(); ?>resultat/">résultat</a>
+                  <?php if(!isset($_SESSION['cin'])):?>
+                  
+                    <a data-toggle="modal" class="item" href="#loginModal" data-target="#myModalResultat" style="font-size: 100%;">Log in</a>
+                  <?php else:?>
+                    <a class="item" href='<?php echo base_url(); ?>login/logout' style="font-size: 100%;">logout</a>
+                  <?php endif?>
+              </div>
+          </div>
+
           <a class="item">Plan du site</a>
-          <div class="ui dropdown item">choix 2014
+
+          <div class="ui dropdown item">
+            choix 2014
           <div class="menu">
+          <a class="item"  style="font-size:100%" href="<?php echo base_url(); ?>info_specialite/">specialite</a>
           <?php if(!isset($_SESSION['cinSpec'])):?>
             <a class="item" href=""  data-target="#myModal1" style="font-size: 100%;"  data-toggle="modal" >signup</a>
-              <a data-toggle="modal" class="item" href="#loginModal" data-target="#myModal" style="font-size: 100%;">Log in</a>
+            <a data-toggle="modal" class="item" href="#loginModal" data-target="#myModal" style="font-size: 100%;">Log in</a>
           <?php else:?>
+            <a class="ui dropdown item" style="font-size: 100%;" href="<?php echo base_url(); ?>specialite">choix</a>
             <a class="item" href='<?php echo base_url(); ?>loginSpecialite/logout' style="font-size: 100%;">logout</a>
           <?php endif?>
           </div>
@@ -132,4 +147,30 @@
       </div>
     </div>
   </div>
+</div>
+
+
+
+<div class="modal fade" id="myModalResultat" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+       <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+         <h3>Please Log In</h3>
+      </div>
+      <div class="modal-body">
+                 <form action='<?php echo base_url(); ?>login/user' method='post' name='process'>
+                        <fieldset>
+                    <div class="form-group">
+                      <input class="form-control" placeholder="CIN" name="cin" type="text">
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control" placeholder="numéro d'inscription" name="Num_inscription" type="password" >
+                  </div>
+                  <input class="btn btn-lg btn-success btn-block" type="submit" value="Login">
+                </fieldset>
+                  </form>
+      </div>
+</div>
+</div>
 </div>

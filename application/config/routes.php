@@ -39,6 +39,8 @@
 */
 
 $route['default_controller'] = "index";
+$route['textes_reglementaire']="index/textes_reglementaire";
+$route['info_specialite']="index/info_specialite";
 $route['404_override'] = 'errors';
 
 

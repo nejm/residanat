@@ -120,6 +120,7 @@ class Login extends CI_Controller{
     public function logout()
     {
         unset($_SESSION['cin']);
+        redirect("index");
     }
 
 }

@@ -6,33 +6,46 @@ class Index extends CI_Controller {
     {
         parent::__construct();
         $this->load->view("header");
-        $this->load->view("menu");
+        
         session_start();
     }
 
     function index()
     {
        // $this->load->view("pages_Content");
-        $this->load->view("features");
+        $data=[];
+        $this->load->model('article_model');
+         
+        $data['article']=$this->article_model->getById(12);
+        $this->load->view("menu");
+        $this->load->view("features",$data);
         $this->load->view("footer");
     }
 
-    function textes_reglementaires()
+    function info_specialite()
     {
-        $this->load->view("register");
-    }
-    function specialite()
-    {
-        $data=[];
-        $this->load->model("spec_model");
-        $data['spec']=$this->spec_model->getAll();
-        $this->load->view("specialite",$data);
-        $this->load->view("footer");
+         $data=[];
+         $this->load->model("article_model");
+         $data['article']=$this->article_model->getById(15);
+         $this->load->view("menu");
+         $this->load->view("features",$data);
+         $this->load->view("footer");
 
     }
     function college()
     {
+         $this->load->view("menu");
         $this->load->view("college");
         $this->load->view("footer");
+    }
+
+    function textes_reglementaire(){
+
+         $data=[];
+         $this->load->model("article_model");
+         $data['article']=$this->article_model->getById(13);
+         $this->load->view("menu");
+         $this->load->view("features",$data);
+         $this->load->view("footer");
     }
 } 

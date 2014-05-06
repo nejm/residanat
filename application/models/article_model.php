@@ -31,6 +31,15 @@ class Article_model extends CI_Model {
         return false;
     }
 
+     function getByAlias($alias)
+    {
+        $q = $this->db
+            ->where('alias',$alias)
+            ->get("article");
+        if ($q->num_rows >0)
+            return $q->result();
+        return false;
+    }
 
     function ajout($data)
     {

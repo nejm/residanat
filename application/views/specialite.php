@@ -3,7 +3,7 @@
 <body>
 
 
-<div class="col-md-6" style="height:800px;overflow-y:scroll">
+<div class="col-md-6 jumbotron" style="height:800px;overflow-y:scroll">
     <div><p>Les Spécialités à choisir</p></div>
     <input type="search" onkeyup="filter(this)" />
 
@@ -26,7 +26,7 @@
    
 
 
-    <div class="col-md-6" style="max-height:800px;overflow-y:scroll">
+    <div class="col-md-6 jumbotron" style="max-height:800px;overflow-y:scroll">
     <div><p>Remplir la formulaire</p></div>
         <ol class="simple_with_animation vertical" id="cat" height="100px">
         <p>drop les spécialité ici</p>
