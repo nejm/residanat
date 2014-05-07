@@ -7,15 +7,23 @@
     function __construct(){
         parent::__construct();
         session_start();
+        $this->load->view("header");
+        $this->load->model("resultat_model");
     }
+
     
     public function index(){
         if(isset($_SESSION['cin']))
         {
-            $this->load->view("welcome_message");
+            $data=[];
+            $data['resultat']=$this->resultat_model->get($_SESSION['cin']);
+            
+            $this->load->view("menu");
+            $this->load->view("featureResultat",$data);
+            $this->load->view("footer");
         }
         else{
-            redirect('login');
+            redirect('index');
         }
     }
  }

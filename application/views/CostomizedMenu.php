@@ -14,8 +14,8 @@
             </div>
           </div>
           
-          <a class="item">Acceuil</a>
-          <a class="item">Textes Règlementaire</a>
+          <a class="item" href="<?php echo base_url(); ?>">Acceuil</a>
+          <a class="item" href="<?php echo base_url(); ?>textes_reglementaire/">Textes Règlementaire</a>
           <a class="item">Collège et formation</a>
           <a class="item">Stage à l'étranger</a>
           <a class="item"  href="#login">
@@ -24,7 +24,7 @@
           <a class="item">Plan du site</a>
          
           <div class="ui dropdown item">
-          choix 2014 
+         choix 2014 
       
           <div class="menu">
            <a class="item" href='<?php echo base_url(); ?>loginSpecialite/logout' style="font-size: 100%;">logout</a>
